@@ -7,6 +7,11 @@
 // setAlarm(false, false) -> false
 // setAlarm(true, false) -> true
 
-function setAlarm(employed, vacation) {}
+function setAlarm(employed, vacation) {
+  return employed && !vacation ? true : false
+}
 
-console.log('testing')
+console.log(setAlarm(true, true))
+console.log(setAlarm(false, true))
+console.log(setAlarm(false, false))
+console.log(setAlarm(true, false))
