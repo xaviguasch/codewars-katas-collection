@@ -9,3 +9,9 @@ const removeChar = (str) => {
 }
 
 console.log(removeChar('amigo'))
+
+// Alternative more efficient solution:
+
+// function removeChar(str) {
+//   return str.slice(1, -1);
+// }
