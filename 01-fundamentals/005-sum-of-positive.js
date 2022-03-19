@@ -16,3 +16,9 @@ function positiveSum(arr) {
 }
 
 console.log(positiveSum([1, -4, 7, 12]))
+
+// ALTERNATIVE SOLUTION
+
+// function positiveSum(arr) {
+//    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+// }
