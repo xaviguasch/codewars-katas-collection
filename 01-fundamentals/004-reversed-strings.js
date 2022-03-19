@@ -16,3 +16,9 @@ function solution(str) {
 }
 
 console.log(solution('world'))
+
+// Alternative solution
+
+// function solution(str){
+//   return str.split('').reverse().join('');
+// }
