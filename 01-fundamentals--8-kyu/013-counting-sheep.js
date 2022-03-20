@@ -44,3 +44,9 @@ console.log(
     true,
   ])
 )
+
+// ALTERNATIVE SOLUTION
+
+// function countSheeps(arrayOfSheeps) {
+//   return arrayOfSheeps.filter(Boolean).length;
+// }
