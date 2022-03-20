@@ -7,3 +7,11 @@ const squareSum = (numbers) => {
 }
 
 console.log(squareSum([1, 2, 2]))
+
+// ALTERNATIVE SOLUTION
+
+// function squareSum(numbers){
+//   return numbers.reduce(function(sum, n){
+//     return (n*n) + sum;
+//   }, 0)
+// }
