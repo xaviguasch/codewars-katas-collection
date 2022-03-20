@@ -11,3 +11,36 @@
 // The correct answer would be 17.
 
 // Hint: Don't forget to check for bad values like null/undefined
+
+const countSheeps = (arrayOfSheeps) => {
+  return arrayOfSheeps.filter((el) => el).length
+}
+
+console.log(
+  countSheeps([
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+  ])
+)
