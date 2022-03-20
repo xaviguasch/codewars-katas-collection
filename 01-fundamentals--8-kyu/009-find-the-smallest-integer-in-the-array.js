@@ -19,3 +19,19 @@ const findSmallestInt = (args) => {
 
 console.log(findSmallestInt([34, 15, 88, 2]))
 console.log(findSmallestInt([34, -345, -1, 100]))
+
+// ALTERNATIVE SOLUTIONS
+
+// class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//     return Math.min(...args)
+//   }
+// }
+
+// class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//     args.sort(function(a, b) {
+//     return a - b; } )
+//     return args[0];
+//   }
+// }
