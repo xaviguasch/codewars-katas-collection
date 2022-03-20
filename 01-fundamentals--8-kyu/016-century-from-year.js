@@ -10,7 +10,13 @@
 // 1601 --> 17
 // 2000 --> 20
 
-const century = (year) => {}
+const century = (year) => {
+  if (year % 100 === 0) {
+    return Math.floor(year / 100)
+  } else {
+    return Math.floor(year / 100) + 1
+  }
+}
 
 console.log(century(1705))
 console.log(century(1900))
