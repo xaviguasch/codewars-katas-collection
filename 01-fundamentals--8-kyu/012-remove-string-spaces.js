@@ -1,5 +1,5 @@
 // Simple, remove the spaces from the string, then return the resultant string.
 
-const noSpace = (x) => {}
+const noSpace = (x) => x.replace(/\s+/g, '')
 
-console.log('This string has spaces')
+console.log(noSpace('Remove the spaces'))
