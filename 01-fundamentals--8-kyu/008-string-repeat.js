@@ -6,3 +6,9 @@
 const repeatStr = (n, s) => s.split('').join('').repeat(n)
 
 console.log(repeatStr(5, 'Hello'))
+
+// ALTERNTIVE SOLUTION (There was no need to transform the string to an array!)
+
+// function repeatStr (n, s) {
+//   return s.repeat(n);
+// }
