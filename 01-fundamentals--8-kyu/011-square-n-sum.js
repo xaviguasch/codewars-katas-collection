@@ -2,14 +2,8 @@
 
 // For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
-const squareSum(numbers) => {
-
-
+const squareSum = (numbers) => {
+  return numbers.map((num) => Math.pow(num, 2)).reduce((acc, currVal) => acc + currVal, 0)
 }
 
-
-
-
-
-
-console.log(squareSum([1, 2, 2]));
+console.log(squareSum([1, 2, 2]))
