@@ -10,7 +10,7 @@
 
 const stringToNumber = (str) => {
   // put your code here
-  return null
+  return Number(str)
 }
 
 console.log(stringToNumber('1234'))
