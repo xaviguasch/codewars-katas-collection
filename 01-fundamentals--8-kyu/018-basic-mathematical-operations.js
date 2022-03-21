@@ -10,7 +10,23 @@
 // ('/', 49, 7) --> 7
 
 const basicOp = (operation, value1, value2) => {
-  // Code
+  switch (operation) {
+    case '+':
+      return value1 + value2
+      break
+    case '-':
+      return value1 - value2
+      break
+    case '*':
+      return value1 * value2
+      break
+    case '/':
+      return value1 / value2
+      break
+    default:
+      break
+  }
 }
 
 console.log(basicOp('-', 15, 18))
+console.log(basicOp('*', 5, 5))
