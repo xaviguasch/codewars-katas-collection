@@ -9,6 +9,12 @@
 // findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 // should return "found the needle at position 5" (in COBOL "found the needle at position 6")
 
-const findNeedle = (haystack) => {}
+const findNeedle = (haystack) => {
+  for (let i = 0; i <= haystack.length; i++) {
+    if (haystack[i] === 'needle') {
+      return `found the needle at position ${i}`
+    }
+  }
+}
 
 console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
