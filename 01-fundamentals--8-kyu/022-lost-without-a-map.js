@@ -4,6 +4,6 @@
 
 // [1, 2, 3] --> [2, 4, 6]
 
-const maps = (x) => {}
+const maps = (x) => x.map((el) => el * 2)
 
 console.log(maps([1, 2, 3]))
