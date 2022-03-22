@@ -10,3 +10,9 @@ const invert = (array) => array.map((val) => (val >= 0 ? -Math.abs(val) : Math.a
 console.log(invert([1, 2, 3, 4, 5]))
 console.log(invert([1, -2, 3, -4, 5]))
 console.log(invert([]))
+
+// ALTERNATIVE SOLUTION
+
+// function invert(array) {
+//    return array.map( x => x === 0 ? x : -x);
+// }
