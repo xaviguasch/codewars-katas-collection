@@ -5,9 +5,7 @@
 // invert([]) == []
 // You can assume that all values are integers. Do not mutate the input array/list.
 
-const invert = (array) => {
-  return
-}
+const invert = (array) => array.map((val) => (val >= 0 ? -Math.abs(val) : Math.abs(val)))
 
 console.log(invert([1, 2, 3, 4, 5]))
 console.log(invert([1, -2, 3, -4, 5]))
