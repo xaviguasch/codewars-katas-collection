@@ -14,6 +14,12 @@
 // 0 <= m <= 59
 // 0 <= s <= 59
 
-const past = (h, m, s) => {}
+const past = (h, m, s) => {
+  const hours = h * 60 * 60 * 1000
+  const minutes = m * 60 * 1000
+  const seconds = s * 1000
 
-console.log(0, 1, 1)
+  return hours + minutes + seconds
+}
+
+console.log(past(0, 1, 1))
