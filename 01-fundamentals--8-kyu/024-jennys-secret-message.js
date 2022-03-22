@@ -10,3 +10,8 @@ const greet = (name) => {
 console.log(greet('Jenny'))
 console.log(greet('Johnny'))
 console.log(greet('Lauren'))
+
+// ALTERNATIVE SOLUTION
+// function greet(name){
+//   return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+// }
