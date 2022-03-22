@@ -3,8 +3,10 @@
 // Can you help her?
 
 const greet = (name) => {
-  return 'Hello, ' + name + '!'
   if (name === 'Johnny') return 'Hello, my love!'
+  else return 'Hello, ' + name + '!'
 }
 
 console.log(greet('Jenny'))
+console.log(greet('Johnny'))
+console.log(greet('Lauren'))
