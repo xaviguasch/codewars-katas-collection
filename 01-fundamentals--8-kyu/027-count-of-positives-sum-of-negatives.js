@@ -8,11 +8,12 @@
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 
 const countPositivesSumNegatives = (input) => {
-  let countOfPos = input.filter((el) => el > 0).length
-  let sumOfNeg = input.filter((el) => el < 0).reduce((acc, currVal) => acc + currVal, 0)
+  if (input === null || input.length < 1) {
+    return []
+  }
 
-  if (countOfPos === 0) countOfPos = null
-  if (sumOfNeg === 0) sumOfNeg = null
+  const countOfPos = input.filter((el) => el > 0).length
+  const sumOfNeg = input.filter((el) => el < 0).reduce((acc, currVal) => acc + currVal, 0)
 
   return [countOfPos, sumOfNeg]
 }
