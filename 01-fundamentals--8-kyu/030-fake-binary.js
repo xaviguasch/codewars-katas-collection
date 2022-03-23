@@ -2,4 +2,11 @@
 
 // Note: input will never be an empty string
 
-const fakeBin = (x) => {}
+const fakeBin = (x) => {
+  return x
+    .split('')
+    .map((num) => (num < 5 ? 0 : 1))
+    .join('')
+}
+
+console.log(fakeBin('5959942'))
