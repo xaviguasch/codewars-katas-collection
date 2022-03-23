@@ -1,5 +1,7 @@
 // Write a function which converts the input string to uppercase.
 
-const makeUpperCase = (str) => {}
+const makeUpperCase = (str) => {
+  return str.toUpperCase()
+}
 
-console.log('this is a string!')
+console.log(makeUpperCase('this is a string!'))
