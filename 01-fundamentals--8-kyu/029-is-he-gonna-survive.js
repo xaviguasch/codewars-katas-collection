@@ -2,9 +2,7 @@
 
 // Return True if yes, False otherwise :)
 
-const hero = (bullets, dragons) => {
-  return
-}
+const hero = (bullets, dragons) => bullets / 2 >= dragons
 
 console.log(hero(13, 7))
 console.log(hero(20, 10))
