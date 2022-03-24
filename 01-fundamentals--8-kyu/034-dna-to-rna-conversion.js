@@ -17,3 +17,9 @@ const DNAtoRNA = (dna) => {
 }
 
 console.log(DNAtoRNA('GCAT'))
+
+// ALTERNATIVE SOLUTION
+
+// function DNAtoRNA(dna){
+//   return dna.replace(/T/g, 'U');
+// }
