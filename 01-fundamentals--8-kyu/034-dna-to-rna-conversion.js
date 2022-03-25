@@ -14,6 +14,11 @@ const DNAtoRNA = (dna) => {
     .split('')
     .map((char) => (char === 'T' ? (char = 'U') : char))
     .join('')
+
+
+
+
+    
 }
 
 console.log(DNAtoRNA('GCAT'))
