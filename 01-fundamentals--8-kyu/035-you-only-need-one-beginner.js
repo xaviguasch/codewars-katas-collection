@@ -4,7 +4,7 @@
 
 // Return true if the array contains the value, false if not.
 
-const check = (a, x) => {}
+const check = (a, x) => a.includes(x)
 
 console.log(check([3, 4, 5, 6], 4))
 console.log(check(['la', 45, 0], 'bi'))
