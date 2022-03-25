@@ -18,6 +18,7 @@
 // We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
 // Advanced users may find this extremely easy and can easily write this in one line.
 
-const sum = (numbers) => {}
+const sum = (numbers) =>
+  numbers.length !== 0 ? numbers.reduce((acc, currV) => acc + currV, 0) : 0
 
 console.log(sum([1, 5.2, 4, 0, -1]))
