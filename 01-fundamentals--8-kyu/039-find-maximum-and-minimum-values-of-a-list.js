@@ -10,11 +10,14 @@
 // You may consider that there will not be any empty arrays/vectors.
 
 const min = (list) => {
-  return list[0]
+  const minList = list.sort((a, b) => a - b)
+  return minList[0]
 }
 
 const max = (list) => {
-  return list[0]
+  const maxList = list.sort((a, b) => b - a)
+
+  return maxList[0]
 }
 
 console.log(min([4, 6, 2, 1, 9, 63, -134, 566]))
