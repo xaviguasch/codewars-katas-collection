@@ -28,3 +28,8 @@ console.log(min([42, 54, 65, 87, 0]))
 console.log(max([42, 54, 65, 87, 0]))
 console.log(min([5]))
 console.log(max([5]))
+
+// ALTERNATIVE SOLUTION
+
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
