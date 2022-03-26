@@ -7,9 +7,8 @@
 // name + " does not play banjo"
 // Names given are always valid strings.
 
-const areYouPlayingBanjo = (name) => {
-  return name
-}
+const areYouPlayingBanjo = (name) =>
+  name.toLowerCase()[0] === 'r' ? name + ' plays banjo' : name + ' does not play banjo'
 
 console.log(areYouPlayingBanjo('Roger'))
 console.log(areYouPlayingBanjo('Mary'))
