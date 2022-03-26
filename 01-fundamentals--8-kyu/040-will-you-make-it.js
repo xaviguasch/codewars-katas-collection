@@ -6,3 +6,9 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) =>
 
 console.log(zeroFuel(50, 2, 25))
 console.log(zeroFuel(100, 50, 1))
+
+// ALTERNATIVE SOLUTION
+
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   return distanceToPump/mpg <= fuelLeft
+// };
