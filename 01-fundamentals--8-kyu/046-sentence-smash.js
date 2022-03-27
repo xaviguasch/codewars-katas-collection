@@ -3,9 +3,7 @@
 // Example
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 
-const smash = () => {
-  return
-}
+const smash = (words) => words.join(' ')
 
 console.log(smash(['hello', 'world', 'this', 'is', 'great']))
 console.log(smash([]))
