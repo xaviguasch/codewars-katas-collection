@@ -6,3 +6,9 @@ console.log(simpleMultiplication(2))
 console.log(simpleMultiplication(1))
 console.log(simpleMultiplication(8))
 console.log(simpleMultiplication(4))
+
+// ALTERNATIVE SOLUTION
+
+// function simpleMultiplication(n) {
+//   return n * (n % 2 ? 9 : 8);
+// }
