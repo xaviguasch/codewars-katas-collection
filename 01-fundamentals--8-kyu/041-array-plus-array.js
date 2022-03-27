@@ -11,3 +11,14 @@ const arrayPlusArray = (arr1, arr2) => {
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]))
 console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]))
 console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function arrayPlusArray(arr1, arr2) {
+//   return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+// }
+
+// // accepts indefinite number of arrays
+// function arrayPlusArray(...arrays) {
+//   return [].concat(...arrays).reduce((a,b) => a+b,0)
+// }
