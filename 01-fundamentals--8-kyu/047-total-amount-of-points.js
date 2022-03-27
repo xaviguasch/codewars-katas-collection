@@ -14,7 +14,19 @@
 // 0 <= y <= 4
 
 const points = (games) => {
-  return
+  return games
+    .map((game) => {
+      game = game.split('')
+
+      if (game[0] > game[2]) {
+        return 3
+      } else if (game[0] === game[2]) {
+        return 1
+      } else {
+        return 0
+      }
+    })
+    .reduce((acc, currV) => acc + currV, 0)
 }
 
 console.log(
@@ -22,4 +34,7 @@ console.log(
 )
 console.log(
   points(['1:1', '2:2', '3:3', '4:4', '2:2', '3:3', '4:4', '3:3', '4:4', '4:4'])
+)
+console.log(
+  points(['1:0', '2:0', '3:0', '4:0', '2:1', '1:3', '1:4', '2:3', '2:4', '3:4'])
 )
