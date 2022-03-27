@@ -2,7 +2,7 @@
 
 // [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 
-const grow = (x) => {}
+const grow = (x) => x.reduce((arr, currV) => arr * currV, 1)
 
 console.log(grow([1, 2, 3, 4]))
 console.log(grow([1, 2, 3]))
