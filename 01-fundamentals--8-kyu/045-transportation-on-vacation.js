@@ -6,7 +6,13 @@
 
 // Write a code that gives out the total amount for different days(d).
 
-const rentalCarCost = (d) => {}
+const rentalCarCost = (d) => {
+  const initialCost = d * 40
+
+  if (d >= 7) return initialCost - 50
+  else if (d >= 3) return initialCost - 20
+  else return initialCost
+}
 
 console.log(rentalCarCost(1))
 console.log(rentalCarCost(2))
