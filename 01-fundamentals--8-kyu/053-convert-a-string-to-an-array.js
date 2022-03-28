@@ -5,7 +5,7 @@
 
 // * "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
 
-const stringToArray = (string) => {}
+const stringToArray = (string) => string.split(' ')
 
 console.log(stringToArray('Robin Singh'))
 console.log(stringToArray('I love arrays they are my favorite'))
