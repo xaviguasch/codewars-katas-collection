@@ -39,3 +39,18 @@ const getPlanetName = (id) => {
 console.log(getPlanetName(2))
 console.log(getPlanetName(5))
 console.log(getPlanetName(3))
+
+// ALTERNATIVE SOLUTION
+
+// function getPlanetName(id){
+//   return {
+//     1: 'Mercury',
+//     2: 'Venus',
+//     3: 'Earth',
+//     4: 'Mars',
+//     5: 'Jupiter',
+//     6: 'Saturn',
+//     7: 'Uranus',
+//     8: 'Neptune'
+//   }[id]
+// }
