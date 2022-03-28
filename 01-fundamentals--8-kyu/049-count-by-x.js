@@ -22,3 +22,13 @@ const countBy = (x, n) => {
 
 console.log(countBy(1, 10))
 console.log(countBy(2, 5))
+
+// ALTERNATIVE SOLUTION
+
+// function countBy(x, n) {
+//   var z = [];
+//   for (i = 1; i <= n; i++) {
+//       z.push(x * i);
+//   }
+//   return z;
+// }
