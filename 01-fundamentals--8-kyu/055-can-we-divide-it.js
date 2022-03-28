@@ -11,7 +11,12 @@
 // (4, 1, 4)     ->  true
 // (15, -5, 3)   ->  true
 
-const isDividedBy = (number, a, b) => {}
+const isDividedBy = (number, a, b) => {
+  const first = Math.abs(number) % Math.abs(a)
+  const second = Math.abs(number) % Math.abs(b)
+
+  return first === 0 && second === 0 ? true : false
+}
 
 console.log(isDividedBy(-12, 2, -6))
 console.log(isDividedBy(-12, 2, -5))
