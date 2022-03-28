@@ -10,7 +10,14 @@
 // countBy(2,5) === [2,4,6,8,10]
 
 const countBy = (x, n) => {
-  return z
+  const newArr = [x]
+  let currNum = x
+  for (let i = 1; i < n; i++) {
+    currNum += x
+    newArr.push(currNum)
+  }
+
+  return newArr
 }
 
 console.log(countBy(1, 10))
