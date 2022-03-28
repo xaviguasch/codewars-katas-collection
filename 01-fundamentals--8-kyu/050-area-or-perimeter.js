@@ -5,7 +5,8 @@
 // area_or_perimeter(3, 3) --> 9
 // Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
 
-const areaOrPerimeter = (l, w) => {}
+const areaOrPerimeter = (l, w) => (l === w ? Math.pow(l, 2) : 2 * (l + w))
 
 console.log(areaOrPerimeter(6, 10))
 console.log(areaOrPerimeter(3, 3))
+console.log(areaOrPerimeter(4, 4))
