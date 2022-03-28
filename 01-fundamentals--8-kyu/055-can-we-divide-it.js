@@ -22,3 +22,7 @@ console.log(isDividedBy(-12, 2, -6))
 console.log(isDividedBy(-12, 2, -5))
 console.log(isDividedBy(45, 1, 6))
 console.log(isDividedBy(45, 5, 15))
+
+// ALTERNATIVE SOLUTION
+
+// const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
