@@ -2,9 +2,7 @@
 
 // Return your answer as a number.
 
-const sumMix = (x) => {
-  return
-}
+const sumMix = (x) => x.reduce((acc, currV) => acc + Number(currV), 0)
 
 console.log(sumMix([9, 3, '7', '3']))
 console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]))
