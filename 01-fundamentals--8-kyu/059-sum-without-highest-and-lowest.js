@@ -25,3 +25,7 @@ console.log(sumArray([3, 5]))
 console.log(sumArray([6, 2, 1, 8, 10]))
 console.log(sumArray([0, 1, 6, 10, 10]))
 console.log(sumArray([-6, -20, -1, -10, -12]))
+
+// ALTERNATIVE SOLUTION
+
+// sumArray = a => a ? a.sort((x, y) => x - y).slice(1, -1).reduce((s, e) => s + e, 0) : 0
