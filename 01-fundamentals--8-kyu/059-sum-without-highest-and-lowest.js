@@ -11,7 +11,11 @@
 // If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
 
 const sumArray = (array) => {
-  return
+  if (array === null || typeof array === 'undefined' || array.length === 0) return 0
+
+  const sortedAndSlicedArr = array.sort((a, b) => a - b).slice(1, array.length - 1)
+
+  return sortedAndSlicedArr.reduce((acc, currV) => acc + currV, 0)
 }
 
 console.log(sumArray(null))
