@@ -18,3 +18,10 @@ const firstNonConsecutive = (arr) => {
 }
 
 console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]))
+
+// ALTERNATIVE SOLUTION
+// function firstNonConsecutive(arr) {
+//   let result = arr.find((val, index) => val !== index + arr[0])
+
+//   return Number.isInteger(result) ? result : null
+// }
