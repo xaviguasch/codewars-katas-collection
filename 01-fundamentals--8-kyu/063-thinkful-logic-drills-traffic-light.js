@@ -4,9 +4,8 @@
 
 // For example, update_light('green') should return 'yellow'.
 
-const updateLight = (current) => {
-  return
-}
+const updateLight = (current) =>
+  current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green'
 
 console.log(updateLight('green'))
 console.log(updateLight('yellow'))
