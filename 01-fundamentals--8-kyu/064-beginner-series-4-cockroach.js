@@ -5,9 +5,7 @@
 // 1.08 --> 30
 // Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
 
-const cockroachSpeed = (s) => {
-  return
-}
+const cockroachSpeed = (s) => Math.floor((s * 100000) / 3600)
 
 console.log(cockroachSpeed(1.08))
 console.log(cockroachSpeed(1.09))
