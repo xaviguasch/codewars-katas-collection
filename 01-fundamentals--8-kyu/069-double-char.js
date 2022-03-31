@@ -16,3 +16,13 @@ const doubleChar = (str) => {
 console.log(doubleChar('abcd'))
 console.log(doubleChar('Adidas'))
 console.log(doubleChar('1234!_ '))
+
+// ALTERNATIVE SOLUTION
+
+// function doubleChar(str) {
+//   var word = '';
+//   for (var i = 0; i < str.length; i++){
+//     word = word + str[i] + str[i];
+//   };
+//   return word;
+// };
