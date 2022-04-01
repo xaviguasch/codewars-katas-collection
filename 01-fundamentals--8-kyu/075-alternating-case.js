@@ -20,3 +20,11 @@ String.prototype.toAlternatingCase = function () {
 console.log('hello world'.toAlternatingCase())
 console.log('HELLO WORLD'.toAlternatingCase())
 console.log('HeLLo WoRLD'.toAlternatingCase())
+
+// ALTERNATIVE SOLUTION
+
+// String.prototype.toAlternatingCase = function () {
+//   return this.split('')
+//     .map((a) => (a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase()))
+//     .join('')
+// }
