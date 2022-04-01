@@ -2,4 +2,5 @@
 
 ## TO TRY AGAIN (might have been hard)
 
-n60 - **Find the first non-consecutive number**
+n060 - **Find the first non-consecutive number**
+n073 - **Expressions Matter**
