@@ -40,6 +40,7 @@ const switchItUp = (number) => {
       break
 
     default:
+      return 'Unknown number'
       break
   }
 }
@@ -47,3 +48,8 @@ const switchItUp = (number) => {
 console.log(switchItUp(1))
 console.log(switchItUp(3))
 console.log(switchItUp(5))
+
+// ALTERNATIVE SOLUTION
+
+// const switchItUp = (n) =>
+//   ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'][n]
