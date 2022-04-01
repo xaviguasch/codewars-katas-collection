@@ -11,3 +11,9 @@ const feast = (beast, dish) =>
 console.log(feast('great blue heron', 'garlic naan'))
 console.log(feast('chickadee', 'chocolate cake'))
 console.log(feast('brown bear', 'bear claw'))
+
+// ALTERNATIVE SOLUTION
+
+// function feast(beast, dish) {
+//   return beast[0]===dish[0] && beast.slice(-1)===dish.slice(-1);
+// }
