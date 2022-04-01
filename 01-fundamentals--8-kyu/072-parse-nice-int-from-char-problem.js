@@ -7,3 +7,9 @@
 const getAge = (inputString) => Number(inputString[0])
 
 console.log(getAge('4 years old'))
+
+// ALTERNATIVE SOLUTION
+
+// function getAge(inputString){
+//   return parseInt(inputString);
+// }
