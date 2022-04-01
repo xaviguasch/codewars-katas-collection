@@ -9,8 +9,12 @@
 // "String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 // As usual, your function/method should be pure, i.e. it should not mutate the original string.
 
+const isLowerCase = (char) => char.toLowerCase() === char
+
+const swapCase = (char) => (isLowerCase(char) ? char.toUpperCase() : char.toLowerCase())
+
 String.prototype.toAlternatingCase = function () {
-  // Define your method here :)
+  return [...this].map(swapCase).join('')
 }
 
 console.log('hello world'.toAlternatingCase())
