@@ -31,9 +31,8 @@
 // Explanation:
 // After placing signs and brackets, the Maximum value obtained from the expression is 9 * (1+1) = 18.
 
-const expressionsMatter = (a, b, c) => {
-  return
-}
+const expressionMatter = (a, b, c) =>
+  Math.max(a + b + c, a * b * c, (a + b) * c, a * (b + c))
 
 console.log(expressionsMatter(2, 1, 2))
 console.log(expressionsMatter(5, 1, 3))
