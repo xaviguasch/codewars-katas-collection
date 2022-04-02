@@ -54,3 +54,52 @@ const greet = (language) => {
 console.log(greet('english'))
 console.log(greet('dutch'))
 console.log(greet('IP_ADDRESS_INVALID'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function greet(language) {
+//   var GreetingsDB = {
+//     english: 'Welcome',
+//     czech: 'Vitejte',
+//     danish: 'Velkomst',
+//     dutch: 'Welkom',
+//     estonian: 'Tere tulemast',
+//     finnish: 'Tervetuloa',
+//     flemish: 'Welgekomen',
+//     french: 'Bienvenue',
+//     german: 'Willkommen',
+//     irish: 'Failte',
+//     italian: 'Benvenuto',
+//     latvian: 'Gaidits',
+//     lithuanian: 'Laukiamas',
+//     polish: 'Witamy',
+//     spanish: 'Bienvenido',
+//     swedish: 'Valkommen',
+//     welsh: 'Croeso'
+//   },
+//   defaultLanguage = 'english';
+//   return GreetingsDB[language] || GreetingsDB[defaultLanguage];
+// }
+
+// function greet(language) {
+//   var welcomes = {
+//     english: 'Welcome',
+//     czech: 'Vitejte',
+//     danish: 'Velkomst',
+//     dutch: 'Welkom',
+//     estonian: 'Tere tulemast',
+//     finnish: 'Tervetuloa',
+//     flemish: 'Welgekomen',
+//     french: 'Bienvenue',
+//     german: 'Willkommen',
+//     irish: 'Failte',
+//     italian: 'Benvenuto',
+//     latvian: 'Gaidits',
+//     lithuanian: 'Laukiamas',
+//     polish: 'Witamy',
+//     spanish: 'Bienvenido',
+//     swedish: 'Valkommen',
+//     welsh: 'Croeso'
+//   };
+//   return language in welcomes ? welcomes[language] : welcomes.english;
+// };
