@@ -12,8 +12,11 @@
 
 String.prototype.isUpperCase = function () {
   // your code here
+  return this.split('').every((letter) => letter === letter.toUpperCase())
 }
 
-'hello world'.isUpperCase()
-'BOB WALKS HIS DOG EVERY DAY.'.isUpperCase()
-'#Lovewins'.isUpperCase()
+console.log('hello world'.isUpperCase())
+
+console.log('BOB WALKS HIS DOG EVERY DAY.'.isUpperCase())
+
+console.log('#Lovewins'.isUpperCase())
