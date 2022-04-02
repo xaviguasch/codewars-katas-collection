@@ -20,3 +20,9 @@ console.log('hello world'.isUpperCase())
 console.log('BOB WALKS HIS DOG EVERY DAY.'.isUpperCase())
 
 console.log('#Lovewins'.isUpperCase())
+
+// ALTERNATIVE SOLUTION
+
+String.prototype.isUpperCase = function () {
+  return this == this.toUpperCase()
+}
