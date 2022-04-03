@@ -14,7 +14,7 @@ const correct = (string) => {
     .split('')
     .map((char) => {
       if (char === '5') return 'S'
-      else if (char === '0') return '0'
+      else if (char === '0') return 'O'
       else if (char === '1') return 'I'
       else return char
     })
@@ -24,3 +24,18 @@ const correct = (string) => {
 console.log(correct('L0ND0N'))
 console.log(correct('DUBL1N'))
 console.log(correct('51NGAP0RE'))
+
+// ALTERNATIVE SOLUTIONS
+
+// correct = s => s.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S')
+
+// ///
+// const corrections = {
+//   '5': 'S',
+//   '0': 'O',
+//   '1': 'I',
+// };
+
+// const correct = string => (
+//   string.replace(/[501]/g, character => corrections[character])
+// );
