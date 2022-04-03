@@ -10,7 +10,15 @@
 // The test cases contain numbers only by mistake.
 
 const correct = (string) => {
-  return
+  return string
+    .split('')
+    .map((char) => {
+      if (char === '5') return 'S'
+      else if (char === '0') return '0'
+      else if (char === '1') return 'I'
+      else return char
+    })
+    .join('')
 }
 
 console.log(correct('L0ND0N'))
