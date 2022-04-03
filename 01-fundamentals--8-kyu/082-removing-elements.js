@@ -22,7 +22,6 @@ console.log(removeEveryOther([1, 2]))
 // }
 
 // function removeEveryOther(arr){
-//   //your code here
 //   for (var i = 1; i < arr.length;i++){
 //       arr.splice(i,1);
 //   }
