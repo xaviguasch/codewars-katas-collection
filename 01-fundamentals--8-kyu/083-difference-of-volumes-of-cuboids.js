@@ -14,3 +14,13 @@ const findDifference = (a, b) =>
 console.log(findDifference([3, 2, 5], [1, 4, 4]))
 console.log(findDifference([9, 7, 2], [5, 2, 2]))
 console.log(findDifference([6, 30, 8], [27, 18, 13]))
+
+// ALTERNATIVE SOLUTION
+
+// function volume(c) {
+//   return c.reduce((x, y) => x * y);
+// }
+
+// function find_difference(a, b) {
+//   return Math.abs(volume(a) - volume(b));
+// }
