@@ -8,12 +8,10 @@
 
 // Floats with decimal part non equal to zero are considered UNeven for this kata.
 
-const testEven = (n) => {
-  return
-}
+const testEven = (n) => n % 2 === 0
 
-console.log(isItEven(0))
-console.log(isItEven(0.5))
-console.log(isItEven(1))
-console.log(isItEven(2))
-console.log(isItEven(-4))
+console.log(testEven(0))
+console.log(testEven(0.5))
+console.log(testEven(1))
+console.log(testEven(2))
+console.log(testEven(-4))
