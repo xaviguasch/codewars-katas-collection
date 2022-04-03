@@ -6,9 +6,11 @@
 
 // If you can, try writing it in one line of code.
 
-const findDifference = (a, b) => {
-  return
-}
+const findDifference = (a, b) =>
+  Math.abs(
+    a.reduce((acc, currV) => acc * currV, 1) - b.reduce((acc, currV) => acc * currV, 1)
+  )
 
 console.log(findDifference([3, 2, 5], [1, 4, 4]))
 console.log(findDifference([9, 7, 2], [5, 2, 2]))
+console.log(findDifference([6, 30, 8], [27, 18, 13]))
