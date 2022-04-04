@@ -41,3 +41,7 @@ console.log(
     'ones',
   ])
 )
+
+// ALTERNATIVE SOLUTION
+
+// twoSort = s => s.sort()[0].split('').join('***')
