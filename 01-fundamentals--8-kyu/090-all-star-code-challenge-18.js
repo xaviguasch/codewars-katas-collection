@@ -15,7 +15,17 @@
 // The second string argument will always be of length 1
 
 const strCount = (str, letter) => {
-  return
+  const arr = str.split('')
+
+  let count = 0
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === letter) {
+      count += 1
+    }
+  }
+
+  return count
 }
 
 console.log(strCount('Hello', 'o'))
