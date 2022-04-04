@@ -13,9 +13,7 @@
 
 // Note: base is a non-negative number, factor is a positive number.
 
-const checkForFactor = (base, factor) => {
-  return
-}
+const checkForFactor = (base, factor) => base % factor === 0
 
 console.log(checkForFactor(10, 2))
 console.log(checkForFactor(63, 7))
