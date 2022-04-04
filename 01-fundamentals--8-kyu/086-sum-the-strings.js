@@ -17,3 +17,11 @@ const sumStr = (a, b) => (Number(a) + Number(b)).toString()
 
 console.log(sumStr('4', '5'))
 console.log(sumStr('34', '5'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function sumStr(a,b) {
+//   return String(Number(a)+Number(b));
+// }
+
+// sumStr = (a,b) => String(+a + +b);
