@@ -31,3 +31,13 @@ const strCount = (str, letter) => {
 console.log(strCount('Hello', 'o'))
 console.log(strCount('Hello', 'l'))
 console.log(strCount('', 'z'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function strCount(str, letter){
+//   return str.split(letter).length-1
+// }
+
+// function strCount(str, letter){
+//   return str.split('').filter(c => c == letter).length;
+// }
