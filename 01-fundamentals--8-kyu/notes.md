@@ -8,3 +8,4 @@ n074 - **Switch It Up!** Check alternative solution
 n075 - **Alternating Case**
 n082 - **Remove Elements ** Check 2nd alternative solution, quite clever.
 n084 - **Correct mistakes** Check alternative solutions
+n085 - **Is it even** Check alternative solution
