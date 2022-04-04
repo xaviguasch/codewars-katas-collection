@@ -5,7 +5,20 @@
 // You should not remove or add elements from/to the array.
 
 const twoSort = (s) => {
-  return
+  const firstWord = s.sort()[0]
+  const splittedFirstWord = firstWord.split('')
+
+  let finalWordArr = []
+
+  for (let i = 0; i < splittedFirstWord.length; i++) {
+    finalWordArr.push(splittedFirstWord[i])
+
+    if (i < splittedFirstWord.length - 1) {
+      finalWordArr.push('***')
+    }
+  }
+
+  return finalWordArr.join('')
 }
 
 console.log(
