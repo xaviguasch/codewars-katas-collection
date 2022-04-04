@@ -13,9 +13,7 @@
 
 // Inputs and the expected output will never exceed the signed 32-bit integer limit (2^31 - 1)
 
-const sumStr = (a, b) => {
-  return
-}
+const sumStr = (a, b) => (Number(a) + Number(b)).toString()
 
 console.log(sumStr('4', '5'))
 console.log(sumStr('34', '5'))
