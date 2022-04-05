@@ -16,3 +16,8 @@ class Ball {
 
 console.log(new Ball().ballType)
 console.log(new Ball('super').ballType)
+
+// ALTERNATIVE SOLUTION
+// var Ball = function(ballType) {
+//   this.ballType = ballType || 'regular';
+// };
