@@ -5,9 +5,7 @@
 
 // Hello, Mr. Spock
 
-const sayHello = (name) => {
-  return
-}
+const sayHello = (name) => `Hello, ${name}`
 
 console.log(sayHello('Mr. Spock'))
 console.log(sayHello('Captain Kirk'))
