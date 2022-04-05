@@ -9,7 +9,9 @@
 // ball2.ballType     //=> "super"
 
 class Ball {
-  return
+  constructor(ballType = 'regular') {
+    this.ballType = ballType
+  }
 }
 
 console.log(new Ball().ballType)
