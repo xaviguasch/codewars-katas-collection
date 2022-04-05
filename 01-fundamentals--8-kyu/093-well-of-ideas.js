@@ -15,3 +15,11 @@ const well = (x) => {
 console.log(well(['bad', 'bad', 'bad']))
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad']))
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']))
+
+// ALTERNATIVE SOLUTION
+
+// const well = x => {
+//   const good_count = x.filter(x => x == 'good').length;
+//   return good_count < 1 ? 'Fail!' :
+//          good_count < 3 ? 'Publish!' : 'I smell a series!';
+// }
