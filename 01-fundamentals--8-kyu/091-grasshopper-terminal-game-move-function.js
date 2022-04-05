@@ -6,9 +6,7 @@
 // Example:
 // move(3, 6) should equal 15
 
-const move = (position, roll) => {
-  return
-}
+const move = (position, roll) => position + roll * 2
 
 console.log(move(0, 4))
 console.log(move(3, 6))
