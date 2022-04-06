@@ -8,7 +8,11 @@
 // array = [1, 2, 3] and N = 3, but N is outside of the array, so the result is -1.
 
 const index = (array, n) => {
-  return
+  if (n < array.length) {
+    return Math.pow(array[n], n)
+  } else {
+    return -1
+  }
 }
 
 console.log(index([1, 2, 3, 4], 2))
