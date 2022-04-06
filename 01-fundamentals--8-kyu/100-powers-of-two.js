@@ -6,7 +6,12 @@
 // n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 
 const powersOfTwo = (n) => {
-  return []
+  let finalArr = []
+  for (let i = 0; i <= n; i++) {
+    finalArr.push(Math.pow(2, i))
+  }
+
+  return finalArr
 }
 
 console.log(powersOfTwo(0))
