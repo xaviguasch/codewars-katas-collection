@@ -12,3 +12,4 @@ n085 - **Is it even** Check alternative solution
 n089 - **I love you a little**
 n090 - **All Star Code Challenge #18** Check alternative solutions
 n093 - **Well of Ideas - Easy Version** Check alternative solution
+n097 - **Filter Out The Geese** Took long to solve it
