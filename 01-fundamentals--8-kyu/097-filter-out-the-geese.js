@@ -38,3 +38,10 @@ console.log(gooseFilter(['Mallard', 'Barbary', 'Hook Bill', 'Blue Swedish', 'Cre
 console.log(
   gooseFilter(['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'])
 )
+
+// ALTERNATIVE SOLUTION
+
+// function gooseFilter(birds) {
+//   var geese = ['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher']
+//   return birds.filter((bird) => geese.indexOf(bird) < 0)
+// }
