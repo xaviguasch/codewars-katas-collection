@@ -19,3 +19,12 @@ console.log(index([1, 2, 3, 4], 2))
 console.log(index([1, 3, 10, 100], 3))
 console.log(index([1, 2], 3))
 console.log(index([1, 1, 1, 1, 1, 1, 1, 1, 1, 2], 9))
+
+// ALTERNATIVE SOLUTIONS
+
+// const index = (array, n) => array.length > n ? Math.pow(array[n], n) : -1;
+
+// function index(array, n){
+//   //your code here
+//   return array[n] ** n || -1;
+// }
