@@ -7,7 +7,12 @@
 // --> [1, 2, 3, 4]
 
 const between = (a, b) => {
-  return
+  let newArr = []
+  for (let i = a; i <= b; i++) {
+    newArr.push(i)
+  }
+
+  return newArr
 }
 
 console.log(between(1, 4))
