@@ -16,9 +16,11 @@
 // -3  =>  -3
 
 const getRealFloor = (n) => {
-  return
+  if (n <= 0) return n
+  else if (n <= 12) return n - 1
+  else return n - 2
 }
 
 console.log(getRealFloor(1))
 console.log(getRealFloor(5))
-console.log(getRealFloor(25))
+console.log(getRealFloor(15))
