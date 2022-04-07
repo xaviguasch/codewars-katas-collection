@@ -17,7 +17,13 @@
 // Note: newlines should be added between rows, but there should be no trailing newline at the end. If you're unsure about the format, look at the sample tests.
 
 const multiTable = (number) => {
-  return
+  let table = ''
+
+  for (let i = 1; i <= 10; i++) {
+    table += `${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`
+  }
+
+  return table
 }
 
 console.log(multiTable(5))
