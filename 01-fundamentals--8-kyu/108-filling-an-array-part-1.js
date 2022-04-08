@@ -7,6 +7,14 @@
 // arr(5) // => [0,1,2,3,4]
 // Note: The parameter is optional. So you have to give it a default value.
 
-const arr = (N) => []
+const arr = (N) => {
+  const newArr = []
+
+  for (let i = 0; i < N; i++) {
+    newArr.push(i)
+  }
+
+  return newArr
+}
 
 console.log(arr(5))
