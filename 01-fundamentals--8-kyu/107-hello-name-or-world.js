@@ -17,3 +17,8 @@ const hello = (name) =>
 console.log(hello('Alice'))
 console.log(hello())
 console.log(hello(''))
+
+// ALTERNATIVE SOLUTION
+
+// const hello = (s) =>
+//   `Hello, ${s ? s[0].toUpperCase() + s.slice(1).toLowerCase() : 'World'}!`
