@@ -9,7 +9,14 @@
 // y is not considered a vowel for this kata
 
 const shortcut = (string) => {
-  return ''
+  return string
+    .split('')
+    .filter((letter) => {
+      if (['a', 'e', 'i', 'o', 'u'].indexOf(letter) < 0) {
+        return true
+      }
+    })
+    .join('')
 }
 
 console.log(shortcut('hello'))
