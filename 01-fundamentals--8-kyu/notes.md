@@ -14,3 +14,4 @@ n090 - **All Star Code Challenge #18** Check alternative solutions
 n093 - **Well of Ideas - Easy Version** Check alternative solution
 n097 - **Filter Out The Geese** Took long to solve it
 n104 - **Multiplication table for number** Look at main solution ( '\n' part) and alternative ones.
+n105 - **Cat years, dog years** Check alternative solutions
