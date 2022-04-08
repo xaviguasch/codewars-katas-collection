@@ -7,7 +7,7 @@
 // All inputs will be integers. Please return an integer. Round down.
 
 const dutyFree = (normPrice, discount, hol) => {
-  return
+  return Math.floor(hol / (normPrice * (discount / 100)))
 }
 
 console.log(dutyFree(12, 50, 1000))
