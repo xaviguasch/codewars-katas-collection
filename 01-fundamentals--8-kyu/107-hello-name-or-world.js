@@ -9,9 +9,10 @@
 // * With `name` not given
 //   or `name` = ""        => return "Hello, World!"
 
-const hello = (name) => {
-  return
-}
+const hello = (name) =>
+  name
+    ? `Hello, ${name.toUpperCase()[0] + name.slice(1).toLowerCase()}!`
+    : 'Hello, World!'
 
 console.log(hello('Alice'))
 console.log(hello())
