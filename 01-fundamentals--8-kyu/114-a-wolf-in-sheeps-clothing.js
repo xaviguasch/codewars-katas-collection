@@ -16,11 +16,18 @@
 // Output: "Pls go away and stop eating my sheep"
 
 const warnTheSheep = (queue) => {
-  return
+  if (queue[queue.length - 1] === 'wolf') return 'Pls go away and stop eating my sheep'
+  else {
+    const wolfPosition = queue.indexOf('wolf')
+
+    const number = queue.length - 1 - wolfPosition
+
+    return `Oi! Sheep number ${number}! You are about to be eaten by a wolf!`
+  }
 }
 
+console.log(warnTheSheep(['sheep', 'sheep', 'wolf']))
+console.log(warnTheSheep(['sheep', 'wolf', 'sheep']))
 console.log(
   warnTheSheep(['sheep', 'sheep', 'sheep', 'sheep', 'sheep', 'wolf', 'sheep', 'sheep'])
 )
-console.log(warnTheSheep(['sheep', 'sheep', 'wolf']))
-console.log(warnTheSheep(['sheep', 'wolf', 'sheep']))
