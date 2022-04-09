@@ -31,3 +31,21 @@ console.log(warnTheSheep(['sheep', 'wolf', 'sheep']))
 console.log(
   warnTheSheep(['sheep', 'sheep', 'sheep', 'sheep', 'sheep', 'wolf', 'sheep', 'sheep'])
 )
+
+// ALTERNATIVE SOLUTIONS
+
+// function warnTheSheep(queue) {
+//   const position = queue.reverse().indexOf('wolf');
+//   return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;
+// }
+
+// function warnTheSheep(q) {
+//   return q[q.length-1] === 'wolf' ? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${q.length - (q.indexOf('wolf')+1)}! You are about to be eaten by a wolf!`
+// }
+
+// function warnTheSheep(queue) {
+//   let sheepIndex = queue.length - queue.indexOf('wolf') - 1;
+//   if (sheepIndex === 0)
+//       return 'Pls go away and stop eating my sheep';
+//   return `Oi! Sheep number ${sheepIndex}! You are about to be eaten by a wolf!`;
+// }
