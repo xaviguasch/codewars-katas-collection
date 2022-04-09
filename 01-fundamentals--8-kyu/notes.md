@@ -16,3 +16,4 @@ n097 - **Filter Out The Geese** Took long to solve it
 n104 - **Multiplication table for number** Look at main solution ( '\n' part) and alternative ones.
 n105 - **Cat years, dog years** Check alternative solutions
 n110 - **Vowel remover** Check alternative solutions
+n111 - **Exclusive or (xor) Logical Operator** Check alternative solutions
