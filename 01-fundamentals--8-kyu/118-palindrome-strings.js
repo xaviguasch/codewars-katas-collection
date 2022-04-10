@@ -9,9 +9,8 @@
 // isPalindrome(12321)    ==> true
 // isPalindrome(123456)   ==> false
 
-const isPalindrome = (line) => {
-  return
-}
+const isPalindrome = (line) =>
+  line.toString().split('').reverse().join('') === line.toString()
 
 console.log(isPalindrome('anna'))
 console.log(isPalindrome('walter'))
