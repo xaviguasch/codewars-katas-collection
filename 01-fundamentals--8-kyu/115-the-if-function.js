@@ -6,9 +6,7 @@
 // _if(true, function(){console.log("True")}, function(){console.log("false")})
 // // Logs 'True' to the console.
 
-const _if = (bool, func1, func2) => {
-  return
-}
+const _if = (bool, func1, func2) => (bool ? func1() : func2())
 
 console.log(
   _if(
@@ -17,7 +15,7 @@ console.log(
       console.log('True')
     },
     function () {
-      console.log('false')
+      console.log('False')
     }
   )
 )
