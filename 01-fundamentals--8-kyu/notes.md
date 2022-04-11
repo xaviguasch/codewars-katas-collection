@@ -19,3 +19,4 @@ n110 - **Vowel remover** Check alternative solutions
 n111 - **Exclusive or (xor) Logical Operator** Check alternative solutions
 n114 - **A wolf in sheep's clothing** Check alternative solutions
 n117 - **Remove duplicates from list** Check alternative solution
+n120 - **Gravity Flip** Check alternative solution
