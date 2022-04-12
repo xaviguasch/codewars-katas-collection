@@ -5,7 +5,12 @@
 // If you can, try writing it in only one line of code.
 
 const findMultiples = (integer, limit) => {
-  return
+  let newArr = []
+  for (let i = integer; i <= limit; i += integer) {
+    newArr.push(i)
+  }
+
+  return newArr
 }
 
 console.log(findMultiples(5, 25))
