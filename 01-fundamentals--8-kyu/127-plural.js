@@ -4,9 +4,7 @@
 
 // All values will be positive integers or floats, or zero.
 
-const plural = (n) => {
-  return
-}
+const plural = (n) => n !== 1
 
 console.log(plural(0))
 console.log(plural(0.5))
