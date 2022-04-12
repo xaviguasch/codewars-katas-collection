@@ -19,9 +19,7 @@
 // m = 1
 // result - division by zero (refer to the specifications on how to handle this in your language)
 
-const remainder = (n, m) => {
-  return
-}
+const remainder = (n, m) => (n >= m ? n % m : m % n)
 
 console.log(remainder(17, 5))
 console.log(remainder(13, 72))
