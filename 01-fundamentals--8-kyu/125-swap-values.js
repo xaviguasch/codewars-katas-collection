@@ -9,5 +9,5 @@ function swapValues() {
   args[1] = temp
 }
 
-console.log(swapValue([0, 1]))
-console.log(swapValue([1, 1]))
+console.log(swapValues([0, 1]))
+console.log(swapValues([1, 1]))
