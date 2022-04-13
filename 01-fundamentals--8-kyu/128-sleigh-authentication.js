@@ -21,11 +21,8 @@ console.log(sleigh('jhoffner', 'CodeWars'))
 
 // ALTERNATIVE SOLUTION
 
-// function Sleigh() {
-//   this.name = 'Santa Claus'
-//   this.password = 'Ho Ho Ho!'
-// }
+function Sleigh() {}
 
-// Sleigh.prototype.authenticate = function (name, password) {
-//   return this.name == name && this.password == password
-// }
+Sleigh.prototype.authenticate = function (name, password) {
+  return name === 'Santa Claus' && password === 'Ho Ho Ho!'
+}
