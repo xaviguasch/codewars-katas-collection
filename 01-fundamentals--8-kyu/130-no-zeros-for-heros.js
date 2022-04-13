@@ -17,3 +17,17 @@ console.log(noBoringZeros(9600000))
 console.log(noBoringZeros(1050))
 console.log(noBoringZeros(-105))
 console.log(noBoringZeros(0))
+
+// ALTERNATIVE SOLUTIONS
+
+// function noBoringZeros(n) {
+//   while (n % 10 === 0 && n !== 0) {
+//     n = n / 10
+//   }
+//   return n
+// }
+
+// RECURSION
+// function noBoringZeros(n) {
+//   return n % 10 || n === 0 ? n : noBoringZeros(n / 10);
+// }
