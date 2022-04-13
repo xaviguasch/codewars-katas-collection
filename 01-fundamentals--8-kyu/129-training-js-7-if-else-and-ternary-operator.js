@@ -10,9 +10,7 @@
 
 // In the end, click "Submit" to submit your code pass this kata.
 
-const saleHotDogs = (n) => {
-  return
-}
+const saleHotDogs = (n) => (n < 5 ? n * 100 : n < 10 ? n * 95 : n >= 10 ? n * 90 : '')
 
 console.log(saleHotDogs(1))
 console.log(saleHotDogs(4))
