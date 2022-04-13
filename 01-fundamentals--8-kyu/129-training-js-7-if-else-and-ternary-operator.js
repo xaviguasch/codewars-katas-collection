@@ -18,3 +18,23 @@ console.log(saleHotDogs(5))
 console.log(saleHotDogs(9))
 console.log(saleHotDogs(10))
 console.log(saleHotDogs(100))
+
+// ALTERNATIVE SOLUTIONS
+
+// function saleHotdogs(n){
+//   return n*(n<5?100:n<10?95:90);
+// }
+
+// function saleHotdogs(n){
+//   var money = 0;
+//   if (n < 5 ) {
+//     money = n * 100
+//   }
+//   else if ( n >= 5 && n < 10 ) {
+//     money = n * 95
+//   }
+//   else if ( n >= 10 )  {
+//    money = n * 90
+//   }
+//   return money
+// }
