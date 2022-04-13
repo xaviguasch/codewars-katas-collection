@@ -10,9 +10,7 @@
 // -1050 -> -105
 // Zero alone is fine, don't worry about it. Poor guy anyway
 
-const noBoringZeros = (n) => {
-  return
-}
+const noBoringZeros = (n) => Number(n.toString().replace(/0+$/, ''))
 
 console.log(noBoringZeros(1450))
 console.log(noBoringZeros(9600000))
