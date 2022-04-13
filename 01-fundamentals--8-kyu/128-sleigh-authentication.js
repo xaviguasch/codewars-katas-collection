@@ -11,8 +11,10 @@
 // sleigh.authenticate("Santa Claus", "Ho Ho!"); // must return FALSE
 // sleigh.authenticate("jhoffner", "CodeWars"); // Nope, even Jake is not allowed to use the sleigh ;)
 
-function Sleigh() {}
-
-Sleigh.prototype.authenticate = function (name, password) {
-  // TODO
+function sleigh(name, password) {
+  if (name === 'Santa Claus' && password === 'Ho Ho Ho!') return true
+  else return false
 }
+
+console.log(sleigh('Santa Claus', 'Ho Ho Ho!'))
+console.log(sleigh('jhoffner', 'CodeWars'))
