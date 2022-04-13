@@ -18,3 +18,17 @@ function sleigh(name, password) {
 
 console.log(sleigh('Santa Claus', 'Ho Ho Ho!'))
 console.log(sleigh('jhoffner', 'CodeWars'))
+
+// ALTERNATIVE SOLUTION
+
+// function Sleigh() {
+//   this.name = 'Santa Claus'
+//   this.password = 'Ho Ho Ho!'
+// }
+
+// Sleigh.prototype.authenticate = function (name, password) {
+//   return this.name == name && this.password == password
+// }
+
+// console.log(Sleigh.authenticate('Santa Claus', 'Ho Ho Ho!'))
+// console.log(Sleigh.authenticate('Ramiro', 'lalala!'))
