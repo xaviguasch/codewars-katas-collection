@@ -27,3 +27,4 @@ n130 - **No Zeros for Heros** WASN'T ABLE TO SOLVE IT THE FIRST TRY!!!!!
 n131 - **To square(root) or not to square(root)** Check alternative solution
 n132 - **Exclamation marks series #1: Remove an exclamation mark from the end of string** Check alternative solutions
 n133 - **L1: Bartender, drinks!** Check alternative solution, VERY CLEVER
+n134 - **Merge two sorted arrays into one** Check alternative solution, but also the original (very clever way to eliminate duplicates in an array)
