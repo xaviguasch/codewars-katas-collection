@@ -10,7 +10,14 @@
 // remove("Hi") === "Hi"
 
 const remove = (string) => {
-  return ''
+  let newArr = string.split('')
+
+  if (newArr[newArr.length - 1] === '!') {
+    newArr.splice(newArr.length - 1)
+    return newArr.join('')
+  } else {
+    return string
+  }
 }
 
 console.log(remove('Hi!'))
