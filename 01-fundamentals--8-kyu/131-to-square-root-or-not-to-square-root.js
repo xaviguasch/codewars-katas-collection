@@ -10,7 +10,10 @@
 // The input array will always contain only positive numbers, and will never be empty or null.
 
 const squareOrSquareRoot = (array) => {
-  return
+  return array.map((num) => {
+    if (Number.isInteger(Math.sqrt(num))) return Math.sqrt(num)
+    else return Math.pow(num, 2)
+  })
 }
 
 console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]))
