@@ -26,3 +26,11 @@ console.log(remove('!Hi'))
 console.log(remove('!Hi!'))
 console.log(remove('Hi! Hi!'))
 console.log(remove('Hi'))
+
+// ALTERNATIVE SOLUTIONS
+
+// const remove = s => s.replace(/!$/, '');
+
+// function remove(s) {
+//   return s.endsWith('!') ? s.slice(0, -1) : s;
+// }
