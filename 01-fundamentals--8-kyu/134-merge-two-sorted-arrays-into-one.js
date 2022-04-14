@@ -13,7 +13,13 @@
 // Happy coding!
 
 const mergeArrays = (arr1, arr2) => {
-  return
+  const newArr = [...arr1, ...arr2]
+
+  const sortedArr = newArr.sort((a, b) => a - b)
+
+  const filteredArr = sortedArr.filter((item, index) => sortedArr.indexOf(item) === index)
+
+  return filteredArr
 }
 
 console.log(mergeArrays([1, 2, 3, 4], [5, 6, 7, 8]))
