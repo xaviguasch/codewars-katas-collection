@@ -25,3 +25,4 @@ n127 - **Plural** Solution is easy but question is confusing. Take a look at it 
 n128 - **Sleigh Authentication** Check constructor function structure.
 n130 - **No Zeros for Heros** WASN'T ABLE TO SOLVE IT THE FIRST TRY!!!!!
 n131 - **To square(root) or not to square(root)** Check alternative solution
+n132 - **Exclamation marks series #1: Remove an exclamation mark from the end of string** Check alternative solutions
