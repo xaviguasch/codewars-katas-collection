@@ -24,3 +24,4 @@ n125 - **Swap Values** Check alternative solutions
 n127 - **Plural** Solution is easy but question is confusing. Take a look at it again.
 n128 - **Sleigh Authentication** Check constructor function structure.
 n130 - **No Zeros for Heros** WASN'T ABLE TO SOLVE IT THE FIRST TRY!!!!!
+n131 - **To square(root) or not to square(root)** Check alternative solution
