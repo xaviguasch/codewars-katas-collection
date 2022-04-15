@@ -3,7 +3,9 @@
 // nameShuffler('john McClane'); => "McClane john"
 
 const nameShuffler = (str) => {
-  return
+  ;[first, last] = str.split(' ')
+
+  return [last, first].join(' ')
 }
 
 console.log(nameShuffler('john McClane'))
