@@ -9,3 +9,13 @@
 const printArray = (array) => array.join(',')
 
 console.log(printArray([2, 4, 5, 2]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function printArray(array){
+//   return array.join();
+// }
+
+// function printArray(array){
+//   return array.toString();
+// }
