@@ -5,7 +5,7 @@
 // Good luck :)
 
 const unusualFive = () => {
-  return
+  return 'abcde'.length
 }
 
 console.log(unusualFive())
