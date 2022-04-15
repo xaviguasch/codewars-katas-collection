@@ -9,3 +9,7 @@ const nameShuffler = (str) => {
 }
 
 console.log(nameShuffler('john McClane'))
+
+// ALTERNATIVE SOLUTION
+
+// const nameShuffler = (str) => str.split(' ').reverse().join(' ')
