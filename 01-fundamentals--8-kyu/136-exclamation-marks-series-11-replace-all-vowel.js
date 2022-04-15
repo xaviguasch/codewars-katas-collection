@@ -6,9 +6,7 @@
 // replace("aeiou") === "!!!!!"
 // replace("ABCDE") === "!BCD!"
 
-const replace = (s) => {
-  return
-}
+const replace = (s) => s.replace(/[aeiou]/gi, '!')
 
 console.log(replace('Hi!'))
 console.log(replace('!Hi! Hi!'))
