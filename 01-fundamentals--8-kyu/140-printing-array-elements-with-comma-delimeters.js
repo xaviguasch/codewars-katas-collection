@@ -6,8 +6,6 @@
 
 // "h,o,l,a"
 
-const printArray = (array) => {
-  return
-}
+const printArray = (array) => array.join(',')
 
 console.log(printArray([2, 4, 5, 2]))
