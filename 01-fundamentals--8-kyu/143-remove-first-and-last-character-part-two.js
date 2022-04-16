@@ -34,3 +34,19 @@ console.log(array('1,2,3,4,5'))
 console.log(array(''))
 console.log(array('1'))
 console.log(array('1,2'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function array(arr) {
+//   return arr.split(',').slice(1, -1).join(' ') || null
+// }
+
+// function array(arr) {
+//   arr = arr.split(',')
+
+//   if (arr.length < 3) {
+//     return null
+//   }
+
+//   return arr.slice(1, arr.length - 1).join(' ')
+// }
