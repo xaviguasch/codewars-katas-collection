@@ -16,9 +16,21 @@
 // "1,2"  =>  NULL
 
 const array = (arr) => {
-  return
+  const newArr = arr.split(',')
+
+  newArr.shift()
+  newArr.pop()
+
+  if (newArr.length === 0) {
+    return null
+  } else {
+    return newArr.join(' ')
+  }
 }
 
 console.log(array('1,2,3'))
 console.log(array('1,2,3,4'))
 console.log(array('1,2,3,4,5'))
+console.log(array(''))
+console.log(array('1'))
+console.log(array('1,2'))
