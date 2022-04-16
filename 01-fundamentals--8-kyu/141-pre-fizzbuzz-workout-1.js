@@ -7,7 +7,12 @@
 // Your job is to write an algorithm that gets you from the input to the output.
 
 const preFizz = (n) => {
-  return
+  let arr = []
+  for (let i = 1; i <= n; i++) {
+    arr.push(i)
+  }
+
+  return arr
 }
 
 console.log(preFizz(1))
