@@ -9,3 +9,10 @@ for (let i = 0; i < 1000; i++) {
 }
 
 console.log(websites.length)
+
+// ALTERNATIVE SOLUTIONS
+
+// var websites = new Array(1000).fill('codewars')
+
+// var websites = [];
+// while (websites.length < 1000) websites.push("codewars")
