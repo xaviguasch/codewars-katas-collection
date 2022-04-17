@@ -30,3 +30,4 @@ n133 - **L1: Bartender, drinks!** Check alternative solution, VERY CLEVER
 n134 - **Merge two sorted arrays into one** Check alternative solution, but also the original (very clever way to eliminate duplicates in an array)
 n142 - **Grasshopper - Terminal game combat function** Check alternative solution
 n143 - **Remove First and Last Character Part Two** Check alternative solutions
+n148 - **Smallest Unused ID** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!!
