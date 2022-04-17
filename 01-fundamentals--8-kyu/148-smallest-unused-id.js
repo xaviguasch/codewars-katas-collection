@@ -20,3 +20,18 @@ const nextId = (ids) => {
 
 console.log(nextId([0, 1, 2, 3, 5]))
 console.log(nextId([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function nextId(ids) {
+//   var x = 0
+//   while (ids.includes(x)) x++
+//   return x
+// }
+
+// function nextId(ids){
+//   const used = new Set(ids);
+//   for (let i = 0; i <= ids.length; i++) {
+//     if (!used.has(i)) return i;
+//   }
+// }
