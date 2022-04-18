@@ -14,9 +14,7 @@
 // 16/4 = 4
 // 3. The mean (or average) of this list is 4
 
-const findAverage = (nums) => {
-  return
-}
+const findAverage = (nums) => nums.reduce((acc, currV) => acc + currV, 0) / nums.length
 
 console.log(findAverage([1]))
 console.log(findAverage([1, 3, 5, 7]))
