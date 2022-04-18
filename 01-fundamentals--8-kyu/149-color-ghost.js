@@ -8,6 +8,16 @@
 // ghost = new Ghost();
 // ghost.color //=> "white" or "yellow" or "purple" or "red"
 
-var Ghost = function () {
-  // your code goes here
+class Ghost {
+  constructor() {
+    this.colors = ['white', 'yellow', 'purple', 'red']
+  }
+
+  get color() {
+    const randomPosition = Math.trunc(Math.random() * this.colors.length)
+    return this.colors[randomPosition]
+  }
 }
+
+console.log(new Ghost())
+console.log(new Ghost().color)
