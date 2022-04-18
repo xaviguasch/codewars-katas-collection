@@ -5,9 +5,11 @@
 // The input string will only consist of lower case letters and/or spaces.
 
 const getCount = (str) => {
-  let vowelsCount = 0
+  const newArr = str
+    .split('')
+    .filter((letter) => ['a', 'e', 'i', 'o', 'u'].indexOf(letter) !== -1)
 
-  return vowelsCount
+  return newArr.length
 }
 
 console.log(getCount('abracadabra'))
