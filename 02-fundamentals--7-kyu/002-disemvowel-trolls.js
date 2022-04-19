@@ -9,7 +9,21 @@
 // Note: for this kata y isn't considered a vowel.
 
 const disemvowel = (str) => {
-  return
+  const arrOfLetters = str.split('')
+
+  const filteredArrOfLetters = arrOfLetters.filter((letter) => {
+    if (letter === letter.toUpperCase()) {
+      if (['a', 'e', 'i', 'o', 'u'].indexOf(letter.toLowerCase()) === -1) {
+        return letter.toUpperCase()
+      }
+    } else {
+      if (['a', 'e', 'i', 'o', 'u'].indexOf(letter) === -1) {
+        return letter
+      }
+    }
+  })
+
+  return filteredArrOfLetters.join('')
 }
 
 console.log(disemvowel('This website is for losers LOL!'))
