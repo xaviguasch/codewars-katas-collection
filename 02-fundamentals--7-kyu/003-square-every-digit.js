@@ -17,3 +17,18 @@ const squareDigits = (num) => {
 console.log(squareDigits(3212))
 console.log(squareDigits(2112))
 console.log(squareDigits(0))
+
+// ALTERNATIVE SOLUTION
+
+function squareDigits(num) {
+  var array = num
+    .toString()
+    .split('')
+    .map(function (int) {
+      // ojo al parseInt aquest
+      var i = parseInt(int)
+      return i * i
+    })
+
+  return parseInt(array.join(''))
+}
