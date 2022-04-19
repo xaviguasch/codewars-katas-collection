@@ -29,3 +29,15 @@ const disemvowel = (str) => {
 console.log(disemvowel('This website is for losers LOL!'))
 console.log(disemvowel("No offense but,\nYour writing is among the worst I've ever read"))
 console.log(disemvowel('What are you, a communist?'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function disemvowel(str) {
+//   var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+//   return str.split('').filter(function(el) {
+//     return vowels.indexOf(el.toLowerCase()) == -1;
+//   }).join('');
+// }
+
+// disemvowel = str => str.replace(/[aeiou]/gi,'');
