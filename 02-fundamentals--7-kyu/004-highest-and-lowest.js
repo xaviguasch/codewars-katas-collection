@@ -10,7 +10,12 @@
 // Output string must be two numbers separated by a single space, and highest number is first.
 
 const highAndLow = (numbers) => {
-  return
+  const numbersArr = numbers.split(' ').map((num) => Number(num))
+
+  const max = Math.max(...numbersArr)
+  const min = Math.min(...numbersArr)
+
+  return [max, min].toString()
 }
 
 console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'))
