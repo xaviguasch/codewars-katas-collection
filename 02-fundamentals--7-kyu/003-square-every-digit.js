@@ -5,7 +5,13 @@
 // Note: The function accepts an integer and returns an integer
 
 const squareDigits = (num) => {
-  return 0
+  const newStr = num
+    .toString()
+    .split('')
+    .map((n) => Math.pow(n, 2))
+    .join('')
+
+  return Number(newStr)
 }
 
 console.log(squareDigits(3212))
