@@ -15,8 +15,20 @@ const highAndLow = (numbers) => {
   const max = Math.max(...numbersArr)
   const min = Math.min(...numbersArr)
 
-  return [max, min].toString()
+  return `${max} ${min}`
 }
 
 console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'))
 console.log(highAndLow('1 2 3'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function highAndLow(numbers){
+//   numbers = numbers.split(' ').map(Number);
+//   return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
+// }
+
+// function highAndLow(numbers){
+//   var arr = numbers.split(' ').sort(function(a, b) { return a - b });
+//   return arr[arr.length -1] + ' ' + arr[0];
+// }
