@@ -18,9 +18,7 @@
 // 25  =>  true
 // 26  =>  false
 
-const isSquare = (n) => {
-  return false
-}
+const isSquare = (n) => Math.sqrt(n) % 1 === 0
 
 console.log(isSquare(-1))
 console.log(isSquare(0))
