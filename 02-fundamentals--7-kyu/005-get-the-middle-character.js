@@ -18,7 +18,15 @@
 // The middle character(s) of the word represented as a string.
 
 const getMiddle = (s) => {
-  return
+  if (s.length % 2 === 0) {
+    const middleChar = Math.trunc(s.length / 2)
+
+    return s.slice(middleChar - 1, middleChar + 1)
+  } else {
+    const middleChar = Math.trunc(s.length / 2)
+
+    return s.slice(middleChar, middleChar + 1)
+  }
 }
 
 console.log(getMiddle('test'))
