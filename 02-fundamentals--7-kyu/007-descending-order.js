@@ -7,9 +7,15 @@
 
 // Input: 123456789 Output: 987654321
 
-const descendingOrder = (n) => {
-  return
-}
+const descendingOrder = (n) =>
+  Number(
+    n
+      .toString()
+      .split('')
+      .map((str) => Number(str))
+      .sort((a, b) => b - a)
+      .join('')
+  )
 
 console.log(descendingOrder(0))
 console.log(descendingOrder(1))
