@@ -26,3 +26,7 @@ console.log(isSquare(3))
 console.log(isSquare(4))
 console.log(isSquare(25))
 console.log(isSquare(26))
+
+// ALTERNATIVE SOLUTION
+
+// const isSquare = n => Number.isInteger(Math.sqrt(n));
