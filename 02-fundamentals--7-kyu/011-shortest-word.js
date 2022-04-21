@@ -2,12 +2,22 @@
 
 // String will never be empty and you do not need to account for different data types.
 
-const findShorts = (s) => {
-  return
+const findShort = (s) => {
+  const wordsArr = s.split(' ')
+
+  let shortestWordLength = wordsArr[0].length
+
+  wordsArr.map((w) => {
+    if (w.length <= shortestWordLength) {
+      shortestWordLength = w.length
+    }
+  })
+
+  return shortestWordLength
 }
 
-console.log(findShorts('bitcoin take over the world maybe who knows perhap'))
+console.log(findShort('bitcoin take over the world maybe who knows perhap'))
 console.log(
-  findShorts('turns out random test cases are easier than writing out basic ones')
+  findShort('turns out random test cases are easier than writing out basic ones')
 )
-console.log(findShorts("Letn's travel abroad shall we"))
+console.log(findShort("Letn's travel abroad shall we"))
