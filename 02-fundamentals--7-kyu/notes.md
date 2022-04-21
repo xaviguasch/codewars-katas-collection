@@ -9,3 +9,4 @@ n002 - **Disemvowel Trolls** Check simplified alternative solution and also the 
 n004 - **Highest and Lowest** Check alternative solutions
 n005 - **Get the Middle Character** Check alternative solutions
 n006 - **You're a Square!** Check alternative solution
+n009 - **Mumbling** Check alternative solution
