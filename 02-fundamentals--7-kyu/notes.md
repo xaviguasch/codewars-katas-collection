@@ -10,3 +10,4 @@ n004 - **Highest and Lowest** Check alternative solutions
 n005 - **Get the Middle Character** Check alternative solutions
 n006 - **You're a Square!** Check alternative solution
 n009 - **Mumbling** Check alternative solution
+n011 - **Shortest Word** Check alternative solution
