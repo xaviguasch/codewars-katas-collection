@@ -23,3 +23,12 @@ const accum = (s) => {
 
 console.log(accum('ZpglnRxqenU'))
 console.log(accum('NyffsGeyylB'))
+
+// ALTERNATIVE SOLUTION
+
+// function accum(s) {
+//   return s
+//     .split('')
+//     .map((c, i) => c.toUpperCase() + c.toLowerCase().repeat(i))
+//     .join('-')
+// }
