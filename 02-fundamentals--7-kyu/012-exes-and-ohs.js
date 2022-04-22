@@ -8,8 +8,23 @@
 // XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 // XO("zzoo") => false
 
-const X0 = (str) => {
-  return
+const XO = (str) => {
+  const arr = str.split('')
+
+  const arrLower = arr.map((letter) => letter.toLowerCase())
+
+  let exes = []
+  let ohs = []
+
+  for (let i = 0; i < arrLower.length; i++) {
+    if (arrLower[i] === 'x') {
+      exes.push(arrLower[i])
+    } else if (arrLower[i] === 'o') {
+      ohs.push(arrLower[i])
+    }
+  }
+
+  return exes.length === ohs.length
 }
 
 console.log(XO('xo'))
