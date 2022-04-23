@@ -14,9 +14,31 @@
 // dnaStrand [A,T,G,C] `shouldBe` [T,A,C,G]
 // dnaStrand [G,T,A,T] `shouldBe` [C,A,T,A]
 // dnaStrand [A,A,A,A] `shouldBe` [T,T,T,T]
+//
 
 const DNAStrand = (dna) => {
-  return
+  const arrDNA = dna.split('')
+
+  const compArrDNA = arrDNA.map((letter) => {
+    switch (letter) {
+      case 'A':
+        return 'T'
+        break
+      case 'T':
+        return 'A'
+        break
+      case 'G':
+        return 'C'
+        break
+      case 'C':
+        return 'G'
+        break
+      default:
+        break
+    }
+  })
+
+  return compArrDNA.join('')
 }
 
 console.log(DNAStrand('AAAA'))
