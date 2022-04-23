@@ -7,7 +7,25 @@
 // "moOse" --> false (ignore letter case)
 
 const isIsogram = (str) => {
-  return
+  const arr = str.toLowerCase().split('')
+
+  const letterObj = {}
+
+  arr.forEach((letter) => {
+    if (!letterObj[letter]) {
+      letterObj[letter] = 1
+    } else {
+      letterObj[letter] = null
+    }
+  })
+
+  for (const key in letterObj) {
+    if (letterObj[key] === null) {
+      return false
+    }
+  }
+
+  return true
 }
 
 console.log(isIsogram('Dermatoglyphics'))
