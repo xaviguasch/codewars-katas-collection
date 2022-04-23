@@ -44,3 +44,19 @@ const DNAStrand = (dna) => {
 console.log(DNAStrand('AAAA'))
 console.log(DNAStrand('ATTGC'))
 console.log(DNAStrand('GTAT'))
+
+// ALTERNATIVE SOLUTIONS
+
+// var pairs = { A: 'T', T: 'A', C: 'G', G: 'C' }
+
+// function DNAStrand(dna) {
+//   return dna
+//     .split('')
+//     .map(function (v) {
+//       return pairs[v]
+//     })
+//     .join('')
+// }
+
+// let pairs = {A:'T',T:'A',C:'G',G:'C'};
+// const DNAStrand = dna => dna.replace(/./g, c => pairs[c]);
