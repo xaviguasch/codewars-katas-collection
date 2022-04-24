@@ -9,7 +9,13 @@
 // longest(a, a) -> "abcdefghijklmnopqrstuvwxyz
 
 const longest = (s1, s2) => {
-  return
+  const arr = [...s1.split(''), ...s2.split('')]
+
+  const sortedArr = arr.sort()
+
+  const setOfArrValues = new Set(sortedArr)
+
+  return Array.from(setOfArrValues).join('')
 }
 
 console.log(longest('aretheyhere', 'yestheyarehere'))
