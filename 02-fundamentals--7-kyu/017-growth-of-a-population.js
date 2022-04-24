@@ -25,7 +25,13 @@
 // Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
 const nbYear = (p0, percent, aug, p) => {
-  return
+  let years = 0
+
+  for (years; p0 < p; years++) {
+    p0 = Math.floor(p0 + (p0 * percent) / 100 + aug)
+  }
+
+  return years
 }
 
 console.log(nbYear(1500, 5, 100, 5000))
