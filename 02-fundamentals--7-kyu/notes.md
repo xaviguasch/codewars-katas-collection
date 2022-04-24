@@ -19,3 +19,5 @@ n016 - **Sum of two lowest positive integers** Check alternative solution
 n017 - **Growth of a population** DIDN'T SOLVED IT AT FIRST TRY!!!!!
 
 n018 - **Is this a triangle?** DIDN'T SOLVED IT AT FIRST TRY!!!!!
+
+n020 - **Two to One** Check alternative solutions
