@@ -14,3 +14,4 @@ n011 - **Shortest Word** Check alternative solution
 n012 - **Exes and Ohs** Check alternative solutions
 n013 - **Isograms** Check out very clever alternative solutions
 n014 - **Complimentary DNA** Check alternative solutions
+n016 - **Sum of two lowest positive integers** Check alternative solution
