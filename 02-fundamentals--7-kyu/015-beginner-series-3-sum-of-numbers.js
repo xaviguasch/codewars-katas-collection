@@ -11,7 +11,16 @@
 // (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 
 const getSum = (a, b) => {
-  return
+  const minNum = Math.min(a, b)
+  const maxNum = Math.max(a, b)
+
+  let sum = 0
+
+  for (let i = minNum; i <= maxNum; i++) {
+    sum += i
+  }
+
+  return sum
 }
 
 console.log(getSum(0, -1))
