@@ -21,3 +21,5 @@ n017 - **Growth of a population** DIDN'T SOLVED IT AT FIRST TRY!!!!!
 n018 - **Is this a triangle?** DIDN'T SOLVED IT AT FIRST TRY!!!!!
 
 n020 - **Two to One** Check alternative solutions
+
+n021 - **Find the next perfect square!** DIDN?T SOLVED IT AT FIRST TRY!!!!!
