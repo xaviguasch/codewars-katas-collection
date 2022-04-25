@@ -16,7 +16,15 @@
 // printer_error(s) => "8/22"
 
 const printerError = (s) => {
-  return
+  const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M']
+
+  const alphabetLowerCase = alphabet.map((letter) => letter.toLowerCase())
+
+  const arr = s.split('')
+
+  const filteredArr = arr.filter((letter) => alphabetLowerCase.indexOf(letter) === -1)
+
+  return `${filteredArr.length}/${arr.length}`
 }
 
 console.log(printerError('aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz'))
