@@ -13,7 +13,7 @@
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 const openOrSenior = (data) => {
-  return
+  return data.map((pair) => ((pair[0] >= 55) & (pair[1] > 7) ? 'Senior' : 'Open'))
 }
 
 console.log(
