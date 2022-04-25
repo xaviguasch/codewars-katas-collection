@@ -25,3 +25,5 @@ n020 - **Two to One** Check alternative solutions
 n021 - **Find the next perfect square!** DIDN'T SOLVED IT AT FIRST TRY!!!!!
 
 n022 - **Binary Addition** DIDN'T SOLVED IT AT FIRST TRY!!!!!
+
+n023 - **Sum of odd numbers** DIDN'T SOLVED IT AT FIRST TRY!!!!! Weird math exercise, leave it aside for now
