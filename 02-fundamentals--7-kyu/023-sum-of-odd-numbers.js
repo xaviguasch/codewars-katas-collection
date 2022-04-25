@@ -12,7 +12,7 @@
 // 2 --> 3 + 5 = 8
 
 const rowSumOddNumbers = (n) => {
-  return
+  return Math.pow(n, 3)
 }
 
 console.log(rowSumOddNumbers(1))
