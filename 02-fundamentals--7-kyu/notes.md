@@ -28,3 +28,4 @@ n022 - **Binary Addition** DIDN'T SOLVED IT AT FIRST TRY!!!!!
 n023 - **Sum of odd numbers** DIDN'T SOLVED IT AT FIRST TRY!!!!! Weird math exercise, leave it aside for now
 n024 - **Printer errors** Check alternative solutions
 n025 - **Categorize New Member** Check alternative solution
+n026 - **String Ends With?** Check alternative solution (uses common method)
