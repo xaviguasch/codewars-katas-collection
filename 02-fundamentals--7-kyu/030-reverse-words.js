@@ -4,9 +4,11 @@
 // "This is an example!" ==> "sihT si na !elpmaxe"
 // "double  spaces"      ==> "elbuod  secaps"
 
-const reverseWords = (str) => {
-  return
-}
+const reverseWords = (str) =>
+  str
+    .split(' ')
+    .map((word) => word.split('').reverse().join(''))
+    .join(' ')
 
 console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
 console.log(reverseWords('apple'))
