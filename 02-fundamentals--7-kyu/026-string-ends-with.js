@@ -18,3 +18,9 @@ console.log(solution('abcde', 'abc'))
 
 console.log(solution('abc', 'bc'))
 console.log(solution('abc', ''))
+
+// ALTERNATIVE SOLUTION
+
+// function solution(str, ending) {
+//   return str.endsWith(ending)
+// }
