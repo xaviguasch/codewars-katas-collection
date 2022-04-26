@@ -6,8 +6,15 @@
 // solution('abc', 'd') // returns false
 
 const solution = (str, ending) => {
-  return
+  const endingLength = ending.length
+
+  if (endingLength === 0) return true
+
+  return str.slice(-endingLength) === ending ? true : false
 }
 
 console.log(solution('abcde', 'cde'))
 console.log(solution('abcde', 'abc'))
+
+console.log(solution('abc', 'bc'))
+console.log(solution('abc', ''))
