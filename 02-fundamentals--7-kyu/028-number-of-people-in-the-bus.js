@@ -11,7 +11,14 @@
 // The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 
 const number = (busStops) => {
-  return
+  let passengers = 0
+
+  busStops.map((stop) => {
+    passengers += stop[0]
+    passengers -= stop[1]
+  })
+
+  return passengers
 }
 
 console.log(
