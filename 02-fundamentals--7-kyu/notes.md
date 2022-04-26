@@ -29,3 +29,4 @@ n023 - **Sum of odd numbers** DIDN'T SOLVED IT AT FIRST TRY!!!!! Weird math exer
 n024 - **Printer errors** Check alternative solutions
 n025 - **Categorize New Member** Check alternative solution
 n026 - **String Ends With?** Check alternative solution (uses common method)
+n028 - **Number of People in the Bus** Check alternative solutions (using a particular method!)
