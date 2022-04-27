@@ -9,7 +9,15 @@
 // 30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
 
 const getDivisorsCnt = (n) => {
-  return
+  const divisorsArr = []
+
+  for (let i = 1; i <= n; i++) {
+    if (n % i === 0) {
+      divisorsArr.push(i)
+    }
+  }
+
+  return divisorsArr.length
 }
 
 console.log(getDivisorsCnt(4))
