@@ -14,7 +14,19 @@
 // 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
 
 const seriesSum = (n) => {
-  return
+  if (n === 0) return '0.00'
+  if (n === 1) return '1.00'
+
+  let sum = 1
+
+  let partial = 1
+
+  for (let i = 2; i <= n; i++) {
+    partial += 3
+    sum += 1 / partial
+  }
+
+  return sum.toFixed(2).toString()
 }
 
 console.log(seriesSum(1))
