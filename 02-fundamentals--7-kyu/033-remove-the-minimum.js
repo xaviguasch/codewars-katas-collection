@@ -14,7 +14,15 @@
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
 const removeSmallest = (numbers) => {
-  return
+  const min = Math.min(...numbers)
+
+  const indexMin = numbers.indexOf(min)
+
+  const newArr = [...numbers]
+
+  newArr.splice(indexMin, 1)
+
+  return newArr
 }
 
 console.log(removeSmallest([1, 2, 3, 4, 5]))
