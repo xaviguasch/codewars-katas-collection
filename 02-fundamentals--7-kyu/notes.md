@@ -30,3 +30,4 @@ n024 - **Printer errors** Check alternative solutions
 n025 - **Categorize New Member** Check alternative solution
 n026 - **String Ends With?** Check alternative solution (uses common method)
 n028 - **Number of People in the Bus** Check alternative solutions (using a particular method!)
+n031 - **Sum of the first nth term of Series** Check alternative solutions (MUCH LESS HACKY!!!)
