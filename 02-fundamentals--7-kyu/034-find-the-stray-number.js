@@ -29,3 +29,26 @@ const stray = (numbers) => {
 
 console.log(stray([1, 2, 2]))
 console.log(stray([17, 17, 3, 17, 17, 17, 17]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function stray(numbers){
+//   for (var i in numbers){
+//      if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])){return numbers[i]}
+//   }
+// }
+
+// function stray(numbers) {
+//   var a = numbers.sort();
+
+//   if(a[0] != a[1]) {
+//     return a[0]
+//   }
+//   return a[a.length-1]
+// }
+
+// function stray(nums){
+//   let max = Math.max(...nums);
+//   let min = Math.min(...nums);
+//   return nums.filter(x => x == max).length == 1 ? max : min
+// }
