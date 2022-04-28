@@ -9,9 +9,7 @@
 // number([]) // => []
 // number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"]
 
-const number = (array) => {
-  return
-}
+const number = (array) => array.map((item, idx) => `${idx + 1}: ${item}`)
 
 console.log(number([]))
 console.log(number(['a', 'b', 'c']))
