@@ -16,3 +16,27 @@ console.log(solution(null))
 console.log(solution([]))
 console.log(solution([20, 2, 10]))
 console.log(solution([2, 20, 10]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function solution(nums) {
+//   return (nums || []).sort(function (a, b) {
+//     return a - b
+//   })
+// }
+
+// function solution(nums) {
+//   return nums !== null
+//     ? nums.sort(function (a, b) {
+//         return a - b
+//       })
+//     : []
+// }
+
+// function solution(nums) {
+//   return nums
+//     ? nums.sort(function (a, b) {
+//         return a - b
+//       })
+//     : []
+// }
