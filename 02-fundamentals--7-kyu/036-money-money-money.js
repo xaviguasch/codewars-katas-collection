@@ -26,7 +26,20 @@
 const calculateYears = (principal, interest, tax, desired) => {
   // your code
 
-  return
+  if (principal === desired) {
+    return 0
+  }
+
+  let years
+
+  for (years = 0; principal <= desired; years++) {
+    let accruedInterest = principal * interest
+    let taxedTotal = accruedInterest * tax
+
+    principal = principal + accruedInterest - taxedTotal
+  }
+
+  return years
 }
 
 console.log(calculateYears(1000, 0.05, 0.18, 1100))
