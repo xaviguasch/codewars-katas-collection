@@ -45,3 +45,26 @@ const calculateYears = (principal, interest, tax, desired) => {
 console.log(calculateYears(1000, 0.05, 0.18, 1100))
 console.log(calculateYears(1000, 0.01625, 0.18, 1200))
 console.log(calculateYears(1000, 0.05, 0.18, 1000))
+
+// ALTERNATIVE SOLUTIONS
+
+// function calculateYears(principal, interest, tax, desired) {
+//   // your code
+//   var years = 0;
+//   while(principal < desired){
+//     principal += (principal * interest) * (1 - tax);
+//     years++;
+//   }
+//   return years;
+// }
+
+// function calculateYears(principal, interest, tax, desired) {
+//   var start = 0;
+//   while(principal < desired) {
+//     var intBeforeTax = principal * interest;
+//     var intRate = (intBeforeTax - (intBeforeTax * tax));
+//     principal+=intRate;
+//     start++;
+//   }
+//   return start;
+// }
