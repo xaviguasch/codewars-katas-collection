@@ -3,7 +3,17 @@
 // Write a function to calculate factorial for a given input. If input is below 0 or above 12 throw an exception of type ArgumentOutOfRangeException (C#) or IllegalArgumentException (Java) or RangeException (PHP) or throw a RangeError (JavaScript) or ValueError (Python) or return -1 (C).
 
 const factorial = (n) => {
-  return
+  if (n < 0 || n > 12) throw new RangeError('Range must be between 0 and 12')
+
+  if (n === 0) return 1
+
+  let result = n
+
+  for (let i = 1; i < n; i++) {
+    result *= i
+  }
+
+  return result
 }
 
 console.log(factorial(0))
