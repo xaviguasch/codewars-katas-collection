@@ -35,3 +35,4 @@ n033 - **Remove the minimum** Check alternative solutions (some quite clever)
 n034 - **Find the stray number** Check alternative solutions (very different from mine!!)
 n036 - **Money, Money, Money** Check alternative solutions
 n039 - **Factorial** Check alternative solution, try recursion this time!!!
+n040 - **Don't give me five!** Check alternative solution
