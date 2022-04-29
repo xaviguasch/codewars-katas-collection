@@ -11,7 +11,17 @@
 // I'm very curious for your solutions and the way you solve it. Maybe someone of you will find an easy pure mathematics solution.
 
 const dontGiveMeFive = (start, end) => {
-  return
+  let arr = []
+
+  for (let i = start; i <= end; i++) {
+    const splittedNums = ('' + i).split('')
+
+    if (splittedNums.indexOf('5') === -1) {
+      arr.push(i)
+    }
+  }
+
+  return arr.length
 }
 
 console.log(dontGiveMeFive(1, 9))
