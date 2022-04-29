@@ -5,7 +5,16 @@
 // "www.codewars.com?page=1" -->"www.codewars.com?page=1"
 
 const removeUrlAnchor = (url) => {
-  return
+  const urlArr = url.split('')
+
+  const anchorIdx = urlArr.indexOf('#')
+
+  if (anchorIdx !== -1) {
+    return urlArr.slice(0, anchorIdx).join('')
+  } else {
+    console.log('testing')
+    return url
+  }
 }
 
 console.log(removeUrlAnchor('www.codewars.com#about'))
