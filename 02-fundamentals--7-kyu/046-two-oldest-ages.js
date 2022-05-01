@@ -7,7 +7,9 @@
 // twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
 
 const twoOldestAges = (ages) => {
-  return
+  const sortedAges = ages.sort((a, b) => b - a)
+
+  return [sortedAges[1], sortedAges[0]]
 }
 
 console.log(twoOldestAges([1, 5, 87, 45, 8, 8]))
