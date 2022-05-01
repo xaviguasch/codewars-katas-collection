@@ -38,3 +38,4 @@ n039 - **Factorial** Check alternative solution, try recursion this time!!!
 n040 - **Don't give me five!** Check alternative solution
 n041 - **Remove anchor from URL** Check alternative solutions
 n043 - **Find the capitals** Check alternative solutions
+n045 - **Breaking chocolate problem** Redo the problem again, I didn't understand the premise originally!
