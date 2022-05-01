@@ -5,7 +5,8 @@
 // If input data is invalid you should return 0 (as in no breaks are needed if we do not have any chocolate to split). Input will always be a non-negative integer.
 
 const breakChocolate = (n, m) => {
-  return
+  if (n === 0 || m === 0) return 0
+  return n * m - 1
 }
 
 console.log(breakChocolate(5, 5))
