@@ -8,7 +8,12 @@
 // Let's assume that all numbers in the input will be integer values.
 
 const sumDigits = (number) => {
-  return
+  return number
+    .toString()
+    .split('')
+    .map((el) => Number(el))
+    .filter((el) => !isNaN(el))
+    .reduce((acc, currV) => acc + currV, 0)
 }
 
 console.log(sumDigits(10))
