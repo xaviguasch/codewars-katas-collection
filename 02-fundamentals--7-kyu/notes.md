@@ -37,3 +37,4 @@ n036 - **Money, Money, Money** Check alternative solutions
 n039 - **Factorial** Check alternative solution, try recursion this time!!!
 n040 - **Don't give me five!** Check alternative solution
 n041 - **Remove anchor from URL** Check alternative solutions
+n043 - **Find the capitals** Check alternative solutions
