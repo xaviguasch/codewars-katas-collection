@@ -14,7 +14,12 @@
 // N.B. If your solution passes all fixed tests but fails at the random tests, make sure you aren't mutating the input array.
 
 const inAscOrder = (arr) => {
-  return
+  const ascOrderArr = [...arr].sort((a, b) => a - b)
+
+  console.log(ascOrderArr)
+  console.log(arr)
+
+  return JSON.stringify(ascOrderArr) === JSON.stringify(arr)
 }
 
 console.log(inAscOrder([1, 2, 4, 7, 19]))
