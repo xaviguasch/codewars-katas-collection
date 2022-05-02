@@ -25,3 +25,16 @@ const inAscOrder = (arr) => {
 console.log(inAscOrder([1, 2, 4, 7, 19]))
 console.log(inAscOrder([1, 2, 3, 4, 5]))
 console.log(inAscOrder([1, 6, 10, 18, 2, 4, 20]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function inAscOrder(arr) {
+//   for(let i = 0; i < arr.length - 1; i++) {
+//     if (arr[i] > arr[i+1]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// const inAscOrder = arr => arr.join('') === arr.sort((a, b) => a - b).join('');
