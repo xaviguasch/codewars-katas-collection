@@ -9,7 +9,13 @@
 // findSum(10) should return 33 (3 + 5 + 6 + 9 + 10)
 
 const findSum = (n) => {
-  return
+  let sum = 0
+
+  for (let i = 1; i <= n; i++) {
+    i % 3 === 0 ? (sum += i) : i % 5 === 0 ? (sum += i) : null
+  }
+
+  return sum
 }
 
 console.log(findSum(5))
