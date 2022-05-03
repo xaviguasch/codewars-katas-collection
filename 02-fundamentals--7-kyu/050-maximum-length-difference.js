@@ -13,7 +13,18 @@
 // output: number as a string
 
 const mxdiflg = (a1, a2) => {
-  return
+  if (a1.length === 0 || a2.length === 0) return -1
+
+  const a1Lengths = a1.map((str) => str.length)
+  const a2Lengths = a2.map((str) => str.length)
+
+  const a1Max = a1Lengths.reduce((a, b) => Math.max(a, b))
+  const a2Max = a2Lengths.reduce((a, b) => Math.max(a, b))
+
+  const a1Min = a1Lengths.reduce((a, b) => Math.min(a, b))
+  const a2Min = a2Lengths.reduce((a, b) => Math.min(a, b))
+
+  return a1Max - a2Min >= a2Max - a1Min ? a1Max - a2Min : a2Max - a1Min
 }
 
 var s1 = [
