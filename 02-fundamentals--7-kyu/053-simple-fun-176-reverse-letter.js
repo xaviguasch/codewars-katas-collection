@@ -53,3 +53,7 @@ console.log(reverseLetter('krishan'))
 console.log(reverseLetter('ultr53o?n'))
 console.log(reverseLetter('ab23c'))
 console.log(reverseLetter('krish21an'))
+
+// ALTERNATIVE SOLUTION
+
+// reverseLetter=(s)=>s.replace(/[^a-z]/gi,'').split('').reverse().join('');
