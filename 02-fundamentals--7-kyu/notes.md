@@ -43,3 +43,4 @@ n045 - **Breaking chocolate problem** Redo the problem again, I didn't understan
 n049 - **Are the numbers in order** Check totally different alternative solutions
 n051 - **Small enough?** Check alternative solution
 n052 - **The Coupon Code** Hesitated with using the right method to compare dates
+n053 - **Reverse Letter** Check alternative solution using basic Regex
