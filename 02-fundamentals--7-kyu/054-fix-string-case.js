@@ -9,7 +9,16 @@
 // solve("coDE") = "code". Upper == lowercase. Change all to lowercase.
 
 const solve = (s) => {
-  return
+  let lowerNum = 0
+  let upperNum = 0
+
+  const arr = s.split('').map((char) => {
+    char === char.toLowerCase() ? lowerNum++ : upperNum++
+
+    return char
+  })
+
+  return lowerNum >= upperNum ? s.toLowerCase() : s.toUpperCase()
 }
 
 console.log(solve('code'))
