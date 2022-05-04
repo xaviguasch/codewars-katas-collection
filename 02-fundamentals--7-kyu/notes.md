@@ -42,3 +42,4 @@ n044 - **Summing a number's digits** Check out more elegant alternative solution
 n045 - **Breaking chocolate problem** Redo the problem again, I didn't understand the premise originally!
 n049 - **Are the numbers in order** Check totally different alternative solutions
 n051 - **Small enough?** Check alternative solution
+n052 - **The Coupon Code** Hesitated with using the right method to compare dates
