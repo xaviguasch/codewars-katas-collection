@@ -11,7 +11,7 @@
 // 'alpha beta gamma delta'
 
 const removeDuplicateWords = (s) => {
-  return s.split(' ')
+  return [...new Set(s.split(' '))].join(' ')
 }
 
 console.log(
