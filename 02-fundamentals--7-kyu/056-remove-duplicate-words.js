@@ -19,3 +19,23 @@ console.log(
     'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
   )
 )
+
+// ALTERNATIVE SOLUTIONS
+
+// const removeDuplicateWords = (s) => {
+//   let arr = s.split(' ')
+//   let sFiltered = []
+
+//   for (let str of arr) if (!sFiltered.includes(str)) sFiltered.push(str)
+
+//   return sFiltered.join(' ')
+// }
+
+// function removeDuplicateWords(s) {
+//   return s
+//     .split(' ')
+//     .filter((n, i, s) => {
+//       return s.indexOf(n) === i
+//     })
+//     .join(' ')
+// }
