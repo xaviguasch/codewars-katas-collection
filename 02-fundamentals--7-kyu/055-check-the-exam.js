@@ -12,7 +12,13 @@
 // checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0
 
 const checkExam = (array1, array2) => {
-  return
+  const score = array2.reduce(
+    (acc, currV, idx) =>
+      currV === '' ? (acc += 0) : currV === array1[idx] ? (acc += 4) : (acc -= 1),
+    0
+  )
+
+  return score <= 0 ? 0 : score
 }
 
 console.log(checkExam(['a', 'a', 'b', 'b'], ['a', 'c', 'b', 'd']))
