@@ -25,3 +25,16 @@ console.log(checkExam(['a', 'a', 'b', 'b'], ['a', 'c', 'b', 'd']))
 console.log(checkExam(['a', 'a', 'c', 'b'], ['a', 'a', 'b', '']))
 console.log(checkExam(['a', 'a', 'b', 'c'], ['a', 'a', 'b', 'c']))
 console.log(checkExam(['b', 'c', 'b', 'a'], ['', 'a', 'a', 'c']))
+
+// ALTERNATIVE SOLUTION (cleaner)
+
+// const checkExam = (array1, array2) => {
+//   let result = array2.reduce(
+//     (score, answer, i) => {
+//       if(answer == array1[i]) return score += 4;
+//       else if(answer == 0) return score += 0;
+//       else return score - 1;
+//     }
+//   , 0);
+//   return result < 0 ? 0 : result;
+// }
