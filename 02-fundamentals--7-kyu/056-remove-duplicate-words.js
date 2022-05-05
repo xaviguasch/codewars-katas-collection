@@ -11,12 +11,11 @@
 // 'alpha beta gamma delta'
 
 const removeDuplicateWords = (s) => {
-  return
+  return s.split(' ')
 }
 
 console.log(
   removeDuplicateWords(
     'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
-  ),
-  'alpha beta gamma delta'
+  )
 )
