@@ -13,8 +13,9 @@
 
 // Some random tests might fail due to a bug in the JavaScript implementation. Simply resubmit if that happens to you.
 
-const predictAge = (age1, age2, age3, age4, age5, age6, age7, age8) => {
-  // your code
-}
+const predictAge = (...args) =>
+  Math.floor(
+    Math.sqrt(args.map((age) => age * age).reduce((acc, currV) => acc + currV, 0)) / 2
+  )
 
 console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45))
