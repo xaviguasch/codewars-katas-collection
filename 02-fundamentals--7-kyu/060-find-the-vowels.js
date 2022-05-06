@@ -12,7 +12,18 @@
 // This is indexed from [1..n] (not zero indexed!)
 
 const vowelIndices = (word) => {
-  return
+  const vocals = ['a', 'e', 'i', 'o', 'u', 'y']
+
+  const resultArr = []
+
+  word
+    .toLowerCase()
+    .split('')
+    .forEach((letter, idx) =>
+      vocals.indexOf(letter) !== -1 ? resultArr.push(idx + 1) : null
+    )
+
+  return resultArr
 }
 
 console.log(vowelIndices('mmm'))
