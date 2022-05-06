@@ -21,3 +21,9 @@ const gimme = (triplet) => {
 console.log(gimme([2, 3, 1]))
 console.log(gimme([5, 10, 14]))
 console.log(gimme([2.1, 3.2, 1.4]))
+
+// ALTERNATIVE SOLUTION
+
+// var gimme = function (inputArray) {
+//   return inputArray.indexOf(inputArray.slice(0).sort(function(a,b) { return a-b; })[1]);
+// };
