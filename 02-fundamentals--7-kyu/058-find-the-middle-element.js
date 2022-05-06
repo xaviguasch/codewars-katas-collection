@@ -13,7 +13,9 @@
 // 10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
 
 const gimme = (triplet) => {
-  return
+  const middleValue = [...triplet].sort((a, b) => a - b)[1]
+
+  return triplet.indexOf(middleValue)
 }
 
 console.log(gimme([2, 3, 1]))
