@@ -7,7 +7,17 @@
 // Good luck!
 
 const capitalize = (s) => {
-  return
+  const oddLetters = s
+    .split('')
+    .map((letter, idx) => (idx % 2 === 0 ? letter.toUpperCase() : letter))
+    .join('')
+
+  const evenLetters = s
+    .split('')
+    .map((letter, idx) => (idx % 2 !== 0 ? letter.toUpperCase() : letter))
+    .join('')
+
+  return [oddLetters, evenLetters]
 }
 
 console.log(capitalize('abcdef'))
