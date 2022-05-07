@@ -45,3 +45,4 @@ n051 - **Small enough?** Check alternative solution
 n052 - **The Coupon Code** Hesitated with using the right method to compare dates
 n053 - **Reverse Letter** Check alternative solution using basic Regex
 n056 - **Remove duplicate words** Check alternative solutions (not using the obvious!!!)
+n062 - **Greet Me** Check alternative solutions (using other string methods!!!)
