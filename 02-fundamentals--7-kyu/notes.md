@@ -47,3 +47,4 @@ n053 - **Reverse Letter** Check alternative solution using basic Regex
 n056 - **Remove duplicate words** Check alternative solutions (not using the obvious!!!)
 n062 - **Greet Me** Check alternative solutions (using other string methods!!!)
 n064 - **Round up to the next multiple of 5** DIDN'T SOLVED IT AT FIRST TRY!!!!! Very creative solution
+n065 - **My Language Skills** Check alternative solutions, WORTH DOING THE CHALLENGE AGAIN. QUITE TRICKY
