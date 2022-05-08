@@ -17,9 +17,16 @@
 // You can assume that all inputs are valid integers.
 
 const roundToNext5 = (n) => {
-  return
+  while (n % 5 !== 0) {
+    n++
+  }
+
+  return n
 }
 
-console.log(roundToNext(12))
-console.log(roundToNext(21))
-console.log(roundToNext(40))
+console.log(roundToNext5(12))
+console.log(roundToNext5(21))
+console.log(roundToNext5(40))
+console.log(roundToNext5(-2))
+console.log(roundToNext5(-5))
+console.log(roundToNext5(-11))
