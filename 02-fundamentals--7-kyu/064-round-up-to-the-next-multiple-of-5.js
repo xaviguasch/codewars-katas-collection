@@ -33,6 +33,6 @@ console.log(roundToNext5(-11))
 
 // ALTERNATIVE SOLUTION
 
-function roundToNext5(n) {
-  return Math.ceil(n / 5) * 5
-}
+// function roundToNext5(n) {
+//   return Math.ceil(n / 5) * 5
+// }
