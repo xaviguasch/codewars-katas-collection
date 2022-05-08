@@ -24,3 +24,17 @@ const myLanguages = (results) => {
 
 console.log(myLanguages({ Java: 10, Ruby: 80, Python: 65 }))
 console.log(myLanguages({ Hindi: 60, Dutch: 93, Greek: 71 }))
+
+// ALTERNATIVE SOLUTIONS
+
+// function myLanguages(results) {
+//   return Object.keys(results)
+//     .filter((r) => results[r] > 59)
+//     .sort((a, b) => results[b] - results[a])
+// }
+
+// const myLanguages = (results) =>
+//   Object.entries(results)
+//     .filter(([name, points]) => points >= 60)
+//     .sort(([name1, points1], [name2, points2]) => points2 - points1)
+//     .map(([name, points]) => name)
