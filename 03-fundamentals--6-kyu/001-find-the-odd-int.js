@@ -10,7 +10,19 @@
 // [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
 const findOdd = (a) => {
-  return
+  const obj = {}
+
+  a.forEach((a) => (obj[a] ? (obj[a] += 1) : (obj[a] = 1)))
+
+  let result = ''
+
+  for (const key in obj) {
+    if (obj[key] % 2 !== 0) {
+      result = key
+    }
+  }
+
+  return Number(result)
 }
 
 console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]))
