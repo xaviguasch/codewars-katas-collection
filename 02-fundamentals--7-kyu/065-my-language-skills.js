@@ -9,7 +9,18 @@
 // {"C++": 50, "ASM": 10, "Haskell": 20}     -->  []
 
 const myLanguages = (results) => {
-  return
+  const arr = []
+
+  for (const key in results) {
+    if (results[key] >= 60) {
+      arr.push([key, results[key]])
+    }
+  }
+
+  const orderedArr = arr.sort((a, b) => b[1] - a[1])
+
+  return orderedArr.map((intArr) => intArr[0])
 }
 
 console.log(myLanguages({ Java: 10, Ruby: 80, Python: 65 }))
+console.log(myLanguages({ Hindi: 60, Dutch: 93, Greek: 71 }))
