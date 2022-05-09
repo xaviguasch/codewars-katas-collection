@@ -7,7 +7,9 @@
 // uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 
 const uniqueInOrder = (iterable) => {
-  return
+  const newArr = [...iterable]
+
+  return newArr.filter((el, idx) => el !== iterable[idx + 1])
 }
 
 console.log(uniqueInOrder('AAAABBBCCDAABBB'))
