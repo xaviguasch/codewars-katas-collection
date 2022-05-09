@@ -7,9 +7,7 @@
 
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
-const arrayDiff = (a, b) => {
-  return a.filter((el) => (b.indexOf(el) >= 0 ? null : true))
-}
+const arrayDiff = (a, b) => a.filter((el) => (b.indexOf(el) >= 0 ? null : true))
 
 console.log(arrayDiff([1, 2], [1]))
 console.log(arrayDiff([1, 2, 2], [1]))
