@@ -68,3 +68,28 @@ console.log(high('what time are we climbing up the volcano'))
 console.log(high('take me to semynak'))
 console.log(high('aa b'))
 console.log(high('b aa'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function high(words) {
+//   const alpha = ' abcdefghijklmnopqrstuvwxyz'
+//   const score = (word) => word.split('').reduce((a, b) => a + alpha.indexOf(b), 0)
+
+//   return words
+//     .split(' ')
+//     .map((word, pos) => ({ word: word, pos: pos, score: score(word) }))
+//     .sort((a, b) => a.score - b.score || b.pos - a.pos)
+//     .pop().word
+// }
+
+// function high(x) {
+//   const alpha = 'abcdefghijklmnopqrstuvwxyz'
+//   const words = x.split(' ')
+//   const scores = words
+//     .map((x) => [...x].map((y) => alpha.indexOf(y) + 1))
+//     .map((x) => x.reduce((a, b) => a + b, 0))
+
+//   console.log(scores)
+
+//   return words[scores.indexOf(Math.max(...scores))]
+// }
