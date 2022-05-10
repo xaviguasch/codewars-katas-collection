@@ -9,7 +9,58 @@
 // All letters will be lowercase and all inputs will be valid.
 
 const high = (x) => {
-  return
+  const alphabet = [
+    'A',
+    'B',
+    'C',
+    'D',
+    'E',
+    'F',
+    'G',
+    'H',
+    'I',
+    'J',
+    'K',
+    'L',
+    'M',
+    'N',
+    'O',
+    'P',
+    'Q',
+    'R',
+    'S',
+    'T',
+    'U',
+    'V',
+    'W',
+    'X',
+    'Y',
+    'Z',
+  ]
+    .join('')
+    .toLowerCase()
+    .split('')
+
+  const wordsArr = x.split(' ')
+
+  const wordObjWinner = wordsArr.reduce(
+    (acc, word) => {
+      const totalPoints = word.split('').reduce((acc, currV) => {
+        const points = alphabet.indexOf(currV) + 1
+
+        return acc + points
+      }, 0)
+
+      const wordObj = {}
+      wordObj['fullWord'] = word
+      wordObj['points'] = totalPoints
+
+      return wordObj['points'] > acc['points'] ? wordObj : acc
+    },
+    { fullWord: '', points: 0 }
+  )
+
+  return wordObjWinner.fullWord
 }
 
 console.log(high('man i need a taxi up to ubud'))
