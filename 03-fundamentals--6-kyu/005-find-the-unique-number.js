@@ -7,7 +7,21 @@
 // The tests contain some very huge arrays, so think about performance.
 
 const findUniq = (arr) => {
-  return
+  const newObj = {}
+
+  arr.forEach((num) => {
+    return newObj[num] ? (newObj[num] += 1) : (newObj[num] = 1)
+  })
+
+  let unique = ''
+
+  for (const key in newObj) {
+    if (newObj[key] === 1) {
+      unique = key
+    }
+  }
+
+  return unique
 }
 
 console.log(findUniq([1, 0, 0]))
