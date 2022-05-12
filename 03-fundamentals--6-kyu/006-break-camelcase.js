@@ -31,3 +31,23 @@ console.log(solution('camelCasingTest'))
 console.log(solution('identifier'))
 console.log(solution(''))
 console.log(solution('bigManInCampus'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function solution(string) {
+//   string = string.split('').map(function (el) {
+//     if (el === el.toUpperCase()) {
+//       el = ' ' + el
+//     }
+//     return el
+//   })
+//   return string.join('')
+// }
+
+// const solution = (string) => {
+//   return [...string]
+//     .map((char) => {
+//       return char === char.toUpperCase() ? ` ${char}` : char
+//     })
+//     .join('')
+// }
