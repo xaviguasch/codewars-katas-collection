@@ -7,3 +7,16 @@
 
 // var addThree = add(3);
 // addThree(3); // 6
+
+const add = (n) => {
+  const newFunc = (a) => a + n
+
+  return newFunc
+}
+
+// var addOne = add(1)
+
+// console.log(addOne(3))
+
+// var addThree = add(3)
+// console.log(addThree(3))
