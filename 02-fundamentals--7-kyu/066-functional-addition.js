@@ -20,3 +20,7 @@ const add = (n) => {
 
 // var addThree = add(3)
 // console.log(addThree(3))
+
+// ALTERNATIVE SOLUTION
+
+// const add = n => x => x + n;
