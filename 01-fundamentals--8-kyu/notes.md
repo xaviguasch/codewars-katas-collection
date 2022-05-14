@@ -32,3 +32,4 @@ n142 - **Grasshopper - Terminal game combat function** Check alternative solutio
 n143 - **Remove First and Last Character Part Two** Check alternative solutions
 n148 - **Smallest Unused ID** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!!
 n149 - **Color Ghost** Check main solution and also alternative one
+n151 - **String Cleaning** Check alternative solution that doesn't include REGEX!!!!
