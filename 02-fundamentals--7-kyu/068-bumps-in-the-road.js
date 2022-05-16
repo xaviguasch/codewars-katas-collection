@@ -14,3 +14,9 @@ const bump = (x) => {
 console.log(bump('n'))
 console.log(bump('_nnnnnnn_n__n______nn__nn_nnn'))
 console.log(bump('______n___n_'))
+
+// ALTERNATIVE SOLUTIONS
+
+// const bump = (x) => (x.split('n').length > 16 ? 'Car Dead' : 'Woohoo!')
+
+// const bump = x => x.split``.filter(e => e === 'n').length > 15 ? 'Car Dead' : 'Woohoo!';
