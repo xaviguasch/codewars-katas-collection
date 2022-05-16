@@ -3,7 +3,12 @@
 // Unfortunately for you, your drive is very bumpy! Given a string showing either flat road ("_") or bumps ("n"), work out if you make it home safely. 15 bumps or under, return "Woohoo!", over 15 bumps return "Car Dead".
 
 const bump = (x) => {
-  return
+  const roadArr = []
+  const bumpsArr = []
+
+  x.split('').forEach((char) => (char === 'n' ? bumpsArr.push(char) : roadArr.push(char)))
+
+  return bumpsArr.length <= 15 ? 'Woohoo!' : 'Car Dead'
 }
 
 console.log(bump('n'))
