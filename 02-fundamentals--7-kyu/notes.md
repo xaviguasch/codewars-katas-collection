@@ -51,3 +51,4 @@ n064 - **Round up to the next multiple of 5** DIDN'T SOLVED IT AT FIRST TRY!!!!!
 n065 - **My Language Skills** Check alternative solutions, WORTH DOING THE CHALLENGE AGAIN. QUITE TRICKY
 
 n067 - **Most digits** DIDN'T SOLVED IT AT FIRST TRY!!!!! Check other solutions too.
+n068 - **Bumps in the road** Check alternative solutions that are one-liners.
