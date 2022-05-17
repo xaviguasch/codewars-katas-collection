@@ -14,11 +14,43 @@
 // For the sake of simplicity, you can assume that any numbers passed into the function will correspond to vowels.
 
 const encode = (string) => {
-  return
+  const cryptoObj = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  }
+
+  const encodedArr = string.split('').map((char) => {
+    if (cryptoObj[char]) {
+      return cryptoObj[char]
+    } else {
+      return char
+    }
+  })
+
+  return encodedArr.join('')
 }
 
 const decode = (string) => {
-  return
+  const cryptoObj2 = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  }
+
+  const decodedArr = string.split('').map((char) => {
+    if (cryptoObj2[char]) {
+      return cryptoObj2[char]
+    } else {
+      return char
+    }
+  })
+
+  return decodedArr.join('')
 }
 
 console.log(encode('hello'))
