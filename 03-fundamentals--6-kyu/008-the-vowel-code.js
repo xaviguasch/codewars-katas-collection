@@ -57,3 +57,27 @@ console.log(encode('hello'))
 console.log(encode('How are you today?'))
 console.log(encode('This is an encoding test.'))
 console.log(decode('h2ll4'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function encode(string){
+//   var vowelMapping = {'a': 1, 'e': 2, 'i': 3, 'o': 4, 'u': 5};
+//   return codeStringGivenMapping(string, vowelMapping);
+// }
+
+// function decode(string){
+//   var vowelMapping = {'1': 'a', '2': 'e', '3': 'i', '4': 'o', '5': 'u'};
+//   return codeStringGivenMapping(string, vowelMapping);
+// }
+
+// function codeStringGivenMapping(string, mapping){
+//   return string.split('').map(function(char){
+//     return mapping[char] || char;
+//   }).join('');
+// }
+
+///////////////////////////////////////////////////
+
+// const table = ['a', 'e', 'i', 'o', 'u']
+// const encode = string => string.split('').map(x => table.indexOf(x) + 1 || x).join('')
+// const decode = string => string.split('').map(x => table[Number(x) - 1] || x).join('')
