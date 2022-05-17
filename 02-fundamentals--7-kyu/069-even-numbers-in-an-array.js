@@ -7,7 +7,9 @@
 // ([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
 
 const evenNumbers = (array, number) => {
-  return
+  const evenNumsArr = array.filter((n) => n % 2 === 0)
+
+  return evenNumsArr.slice(-number)
 }
 
 console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))
