@@ -3,3 +3,4 @@ n004 - **Highest Scoring Word** Check alternative solutions, THEY ARE REALLY COO
 n005 - **Find the unique number** Check alternative solution, USES AN UNCOMMON METHOD
 n006 - **Break camelCase** Check alternative solutions, MUCH LESS COMPLICATED THAN MY IMPLEMENTATION.
 n007 - **Detect Pangram** Check alternative solutions, MUCH MORE SIMPLE THAN MY IMPLEMENTATION.
+n008 - **The Vowel Code** Check alternative solutions, specially the 2nd one.
