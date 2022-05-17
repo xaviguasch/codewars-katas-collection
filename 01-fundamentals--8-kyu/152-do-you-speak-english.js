@@ -6,9 +6,7 @@
 
 // Return value as boolean values, true for the string to contains "English", false for it does not.
 
-const spEng = (sentence) => {
-  return
-}
+const spEng = (sentence) => sentence.toLowerCase().includes('english')
 
 console.log(spEng('english'))
 console.log(spEng('egnlish'))
