@@ -10,3 +10,9 @@ const spEng = (sentence) => sentence.toLowerCase().includes('english')
 
 console.log(spEng('english'))
 console.log(spEng('egnlish'))
+
+// ALTERNATIVE SOLUTION
+
+// function spEng(s){
+//   return s.toLowerCase().indexOf('english')!=-1
+// }
