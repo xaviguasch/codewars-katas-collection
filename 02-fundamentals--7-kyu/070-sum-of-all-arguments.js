@@ -6,9 +6,7 @@
 // sum(8, 2) // => 10
 // sum(1, 2, 3, 4, 5) // => 15
 
-const sum = () => {
-  return
-}
+const sum = (...args) => args.reduce((acc, currV) => acc + currV, 0)
 
 console.log(sum(1))
 console.log(sum(1, 2))
