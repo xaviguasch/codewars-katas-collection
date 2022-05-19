@@ -26,7 +26,7 @@ const assembleString = (array) => {
 
   for (let i = 0; i < array.length; i++) {
     for (let j = 0; j < array[i].length; j++) {
-      if (i == 0) result.push(array[i][j])
+      if (i === 0) result.push(array[i][j])
       if (result[j] == '*' || array[i][j] !== '*') result[j] = array[i][j]
     }
   }
