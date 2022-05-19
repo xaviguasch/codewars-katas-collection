@@ -14,7 +14,16 @@
 // 24, -8 --> -1
 
 const findDigit = (num, nth) => {
-  return
+  const numArr = Math.abs(num).toString().split('')
+
+  if (nth <= 0) {
+    return -1
+  } else if (nth > numArr.length) {
+    return 0
+  } else {
+    const resultNum = Number(numArr.splice(-nth, 1))
+    return resultNum
+  }
 }
 
 console.log(findDigit(5673, 4))
