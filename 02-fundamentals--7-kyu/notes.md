@@ -53,3 +53,4 @@ n065 - **My Language Skills** Check alternative solutions, WORTH DOING THE CHALL
 n067 - **Most digits** DIDN'T SOLVED IT AT FIRST TRY!!!!! Check other solutions too.
 n068 - **Bumps in the road** Check alternative solutions that are one-liners.
 n069 - **Even numbers in an array** Check alternative solution, one liner!
+n072 - **Find the nth Digit of a Number** Check alternative solutions, one I don't really get... EXPLORE!
