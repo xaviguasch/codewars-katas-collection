@@ -33,3 +33,15 @@ console.log(findDigit(-456, 4))
 console.log(findDigit(0, 20))
 console.log(findDigit(65, 0))
 console.log(findDigit(24, -8))
+
+// ALTERNATIVE SOLUTION
+
+// var findDigit = function (num, nth) {
+//   if (nth <= 0) return -1
+//   let arr = Math.abs(num).toString().split('')
+//   if (nth > arr.length) return 0
+//   return Number(arr[arr.length - nth])
+// }
+
+// const findDigit = (num, nth) =>
+//   nth > 0 ? +[...`${num}`].reverse()[--nth] || 0 : -1;
