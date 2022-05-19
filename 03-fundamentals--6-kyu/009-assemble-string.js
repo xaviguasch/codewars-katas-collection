@@ -22,7 +22,16 @@
 // result = "a#cd#"
 
 const assembleString = (array) => {
-  return
+  let result = []
+
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].length; j++) {
+      if (i == 0) result.push(array[i][j])
+      if (result[j] == '*' || array[i][j] !== '*') result[j] = array[i][j]
+    }
+  }
+
+  return result.map((x) => (x == '*' ? '#' : x)).join('')
 }
 
 console.log(assembleString(['H*llo, W*rld!', 'Hel*o, *or*d!', '*ello* World*']))
@@ -44,5 +53,14 @@ console.log(
     '***456**9',
     '1*3*5*7*9',
     '*2*456789',
+  ])
+)
+console.log(assembleString(['******', '******', '******', '******']))
+console.log(
+  assembleString([
+    '*#*#*#*#*#*#*#*',
+    '*#*#*#*#*#*#*#*',
+    '*#*#*#*#*#*#*#*',
+    '*#*#*#*#*#*#*#*',
   ])
 )
