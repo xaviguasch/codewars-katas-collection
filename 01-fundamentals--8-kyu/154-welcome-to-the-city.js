@@ -13,3 +13,8 @@ const sayHello = (name, city, state) => {
 
 console.log(sayHello(['John', 'Smith'], 'Phoenix', 'Arizona'))
 console.log(sayHello(['Zendaya'], 'Phoenix', 'Arizona'))
+
+// ALTERNATIVE SOLUTION
+
+// const sayHello = (name, city, state) =>
+//   `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
