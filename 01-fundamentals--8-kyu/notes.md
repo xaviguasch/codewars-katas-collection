@@ -33,3 +33,4 @@ n143 - **Remove First and Last Character Part Two** Check alternative solutions
 n148 - **Smallest Unused ID** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!!
 n149 - **Color Ghost** Check main solution and also alternative one
 n151 - **String Cleaning** Check alternative solution that doesn't include REGEX!!!!
+n153 - **Define a card suit** Check more elegant alternative solutions
