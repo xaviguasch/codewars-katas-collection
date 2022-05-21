@@ -8,9 +8,8 @@
 // "Hi", 2 --> "HiHi"
 // 1234, 5 --> "Not a string"
 
-const repeatIt = (str, n) => {
-  return
-}
+const repeatIt = (str, n) => (typeof str !== 'string' ? 'Not a string' : str.repeat(n))
 
 console.log(repeatIt('*', 3))
 console.log(repeatIt('Hello', 11))
+console.log(repeatIt(1234, 5))
