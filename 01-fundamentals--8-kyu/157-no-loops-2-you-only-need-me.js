@@ -4,9 +4,7 @@
 
 // Array can contain numbers or strings. X can be either. Return true if the array contains the value, false if not. With strings you will need to account for case.
 
-const check = (a, x) => {
-  return
-}
+const check = (a, x) => a.includes(x)
 
 console.log(check([66, 101], 66))
 console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45))
