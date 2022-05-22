@@ -10,7 +10,19 @@
 // Otherwise returns "Wrong, please enter a number between 1 and 7"
 
 const whatDay = (num) => {
-  return
+  const daysArr = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ]
+
+  return daysArr[num - 1]
+    ? daysArr[num - 1]
+    : 'Wrong, please enter a number between 1 and 7'
 }
 
 console.log(whatDay(1))
