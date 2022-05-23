@@ -15,8 +15,19 @@
 // Because you're a nice person, you always round up the tip, regardless of the service.
 
 const calculateTip = (amount, rating) => {
-  return
+  const tips = {
+    terrible: 0,
+    poor: 0.05,
+    good: 0.1,
+    great: 0.15,
+    excellent: 0.2,
+  }
+
+  rating = rating.toLowerCase()
+
+  return rating in tips ? Math.ceil(tips[rating] * amount) : 'Rating not recognised'
 }
 
 console.log(calculateTip(20, 'Excellent'))
 console.log(calculateTip(26.95, 'good'))
+console.log(calculateTip(26.95, 'generous'))
