@@ -8,8 +8,6 @@
 
 // 'James Stevens'
 
-const combineNames = (firstN, lastN) => {
-  return
-}
+const combineNames = (firstN, lastN) => `${firstN} ${lastN}`
 
 console.log(combineNames('James', 'Stevens'))
