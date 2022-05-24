@@ -10,7 +10,48 @@
 // Good luck!
 
 const solve = (arr) => {
-  return
+  const alphabet = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
+  ]
+
+  return arr.map((word) => {
+    const wordArr = word.toLowerCase().split('')
+
+    let positionSym = 0
+
+    for (let i = 0; i < wordArr.length; i++) {
+      if (wordArr[i] === alphabet[i]) {
+        positionSym++
+      }
+    }
+
+    return positionSym
+  })
 }
 
 console.log(solve(['abode', 'ABc', 'xyzD']))
