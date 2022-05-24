@@ -58,3 +58,27 @@ console.log(solve(['abode', 'ABc', 'xyzD']))
 console.log(solve(['abide', 'ABc', 'xyz']))
 console.log(solve(['IAMDEFANDJKL', 'thedefgh', 'xyzDEFghijabc']))
 console.log(solve(['encode', 'abc', 'xyzD', 'ABmD']))
+
+// ALTERNATIVE SOLUTIONS
+
+// function solve(arr) {
+//   const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+//   let final = []
+//   for (let i = 0; i < arr.length; i++) {
+//     let count = 0
+//     for (let j = 0; j < arr[i].length; j++) {
+//       if (arr[i][j].toLowerCase() === alphabet[j]) {
+//         count++
+//       }
+//     }
+//     final.push(count)
+//   }
+//   return final
+// }
+
+// // map&map&reduce
+// function solve(arr, abc = 'abcdefghijklmnopqrstuvwxyz'){
+//   arr = arr.map(el => el.toLowerCase());
+//   return arr.map(el => [...el].map((e, i)=> e === abc[i] ? 1 : 0).reduce((a, b) => a+b, 0))
+// };
