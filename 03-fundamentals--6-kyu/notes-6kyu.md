@@ -6,3 +6,4 @@ n007 - **Detect Pangram** Check alternative solutions, MUCH MORE SIMPLE THAN MY 
 n008 - **The Vowel Code** Check alternative solutions, specially the 2nd one.
 
 n009 - **Assemble string** DIDN'T SOLVE IT ON FIRST TRY, you gotta try again!!!!
+n010 - **CamelCase Method** It went well but there's a little detail that tricked me. DO IT AGAIN!!!!
