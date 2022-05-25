@@ -2,9 +2,7 @@
 
 // All inputs will be valid.
 
-const digits = (n) => {
-  return
-}
+const digits = (n) => n.toString().split('').length
 
 console.log(digits(5))
 console.log(digits(12345))
