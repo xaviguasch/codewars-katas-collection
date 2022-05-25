@@ -6,7 +6,9 @@
 // "camel case word".camelCase() => CamelCaseWord
 
 String.prototype.camelCase = function () {
-  //your code here
+  return this.split(' ')
+    .map((word) => word.charAt().toUpperCase() + word.slice(1))
+    .join('')
 }
 
 console.log('test case'.camelCase())
