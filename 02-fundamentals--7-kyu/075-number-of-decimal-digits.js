@@ -7,3 +7,17 @@ const digits = (n) => n.toString().split('').length
 console.log(digits(5))
 console.log(digits(12345))
 console.log(digits(9876543210))
+
+// ALTERNATIVE SOLUTIONS
+
+// function digits(n) {
+//   return n.toString().length
+// }
+
+// function digits(n) {
+//   return String(n).length
+// }
+
+// function digits(n) {
+//   return `${n}`.length;
+// }
