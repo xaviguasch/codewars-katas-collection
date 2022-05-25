@@ -7,3 +7,4 @@ n008 - **The Vowel Code** Check alternative solutions, specially the 2nd one.
 
 n009 - **Assemble string** DIDN'T SOLVE IT ON FIRST TRY, you gotta try again!!!!
 n010 - **CamelCase Method** It went well but there's a little detail that tricked me. DO IT AGAIN!!!!
+n011 - **Closures and Scopes** Very important interview question! You must explain how and why this happens.
