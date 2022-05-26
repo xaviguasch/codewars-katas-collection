@@ -5,8 +5,20 @@
 // pigIt('Hello world !');     // elloHay orldway !
 
 const pigIt = (str) => {
-  return
+  return str
+    .split(' ')
+    .map((word) => {
+      if (/([a-zA-Z])/.test(word)) {
+        const firstLetter = word[0]
+
+        return word.slice(1) + firstLetter + 'ay'
+      } else {
+        return word
+      }
+    })
+    .join(' ')
 }
 
 console.log(pigIt('Pig latin is cool'))
 console.log(pigIt('This is my string'))
+console.log(pigIt('Hello world !'))
