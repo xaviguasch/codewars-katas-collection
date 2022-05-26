@@ -24,4 +24,4 @@ console.log(callbacks[0]()) // must return 0
 console.log(callbacks[3]()) // must return 3
 
 // Comment after the solution.
-// The "let i = 0" in the for-loop was a "var" initially and that's why it failed it and always returned 5. You must explain why this is happening!!!!
+// The "let i = 0" in the for-loop was a "var" initially and that's why it failed it and always returned 5. You must explain why this is happening!!!! Has to do why closures and scoping.
