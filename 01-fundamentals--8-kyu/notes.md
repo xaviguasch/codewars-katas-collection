@@ -35,3 +35,5 @@ n149 - **Color Ghost** Check main solution and also alternative one
 n151 - **String Cleaning** Check alternative solution that doesn't include REGEX!!!!
 n153 - **Define a card suit** Check more elegant alternative solutions
 n157 - **No Loops 2 - You only need one** Check other solutions with alternate methods, they are easy but try to guess them!
+
+n161 - **Parse float** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Check out what method it uses
