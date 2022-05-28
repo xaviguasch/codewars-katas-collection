@@ -16,9 +16,24 @@
 // grader(0.6) should be "D"
 
 const grader = (score) => {
-  return
+  if (score > 1) {
+    return 'F'
+  } else if (score >= 0.9) {
+    return 'A'
+  } else if (score >= 0.8) {
+    return 'B'
+  } else if (score >= 0.7) {
+    return 'C'
+  } else if (score >= 0.6) {
+    return 'D'
+  } else {
+    return 'F'
+  }
 }
 
-console.log(grader(0.7))
+console.log(grader(1.1))
+console.log(grader(0))
 console.log(grader(0.9))
+console.log(grader(0.8))
+console.log(grader(0.7))
 console.log(grader(0.6))
