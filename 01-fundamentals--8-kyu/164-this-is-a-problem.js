@@ -21,6 +21,6 @@ function NameMe(first, last) {
 
 var n = new NameMe('John', 'Doe')
 
-console.log(typeof n.firstName != undefined && n.firstName == 'John')
-console.log(typeof n.lastName != undefined && n.lastName == 'Doe')
-console.log(typeof n.name != undefined && n.name == 'John Doe')
+console.log(n.firstName)
+console.log(n.lastName)
+console.log(n.name)
