@@ -38,3 +38,5 @@ n157 - **No Loops 2 - You only need one** Check other solutions with alternate m
 
 n161 - **Parse float** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Check out what method it uses
 n163 - **Classy Classes** Bit of confusion with getters in classes
+
+n165 - **Is there a vowel in there** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Uses Regex and fromCharCode method
