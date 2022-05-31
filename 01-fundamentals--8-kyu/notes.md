@@ -40,3 +40,4 @@ n161 - **Parse float** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Check out what m
 n163 - **Classy Classes** Bit of confusion with getters in classes
 
 n165 - **Is there a vowel in there** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Uses fromCharCode() method.
+n166 - **Check same case** Check more elegant alternative solutions.
