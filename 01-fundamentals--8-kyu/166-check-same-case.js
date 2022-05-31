@@ -14,8 +14,56 @@
 
 // '0' and '?' returns -1
 
+const alphabet = [
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z',
+]
+
+const isItALetter = (char) => {
+  return alphabet.indexOf(char.toLowerCase()) >= 0 ? true : false
+}
+
+const isItUpperCase = (char) => {
+  return char.toLowerCase() !== char
+}
+
 const sameCase = (a, b) => {
-  return
+  if (isItALetter(a) && isItALetter(b)) {
+    if (
+      (isItUpperCase(a) && isItUpperCase(b)) ||
+      (!isItUpperCase(a) && !isItUpperCase(b))
+    ) {
+      return 1
+    } else {
+      return 0
+    }
+  } else {
+    return -1
+  }
 }
 
 console.log(sameCase('C', 'B'))
