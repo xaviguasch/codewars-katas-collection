@@ -1,7 +1,9 @@
 // Return the type of the sum of the two arguments
 
 const typeOfSum = (a, b) => {
-  return
+  const sum = a + b
+
+  return typeof sum
 }
 
 console.log(typeOfSum(12, 1))
