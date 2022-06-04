@@ -12,4 +12,12 @@
 // For prolog you can use write but there are better ways
 // If you still don't get it probably you can define main as an attribute of the Solution class that accepts a single argument, and that only prints "Hello World!" without any return.
 
-class Solution {}
+class Solution {
+  main() {
+    console.log('Hello World!')
+  }
+}
+
+const mySolution = new Solution()
+
+console.log(mySolution.main())
