@@ -17,9 +17,7 @@
 // Non-whitespace (ex. breakspace, unicode chars) should be treated as a delimiter
 // Doublecheck that words with chars like -, ', ` are counted right.
 
-const countWords = (str) => {
-  return
-}
+const countWords = (string) => string.split(/\s/g).filter(Boolean).length
 
 console.log(countWords('Hello'))
 console.log(countWords('Hello, World!'))
@@ -30,3 +28,4 @@ console.log(
   )
 )
 console.log(countWords(''))
+console.log(countWords('   Arthur    '))
