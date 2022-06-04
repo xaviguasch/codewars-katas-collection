@@ -29,3 +29,19 @@ console.log(
 )
 console.log(countWords(''))
 console.log(countWords('   Arthur    '))
+
+// ALTERNATIVE SOLUTIONS
+
+// function countWords(str) {
+//   return (str.match(/[^\s]+/g) || []).length
+// }
+
+// const countWords = (str) => str.split(/\s+/).filter((x) => x).length
+
+// function countWords(str) {
+//   str = str.trim()
+//   if (str === '') return 0
+//   return str.split(/\s+/).length
+// }
+
+// const countWords = (str) => str.split(/\S+/).length - 1
