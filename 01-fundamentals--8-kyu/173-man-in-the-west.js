@@ -2,9 +2,7 @@
 
 // So, you need to check if there is gold in the bucket, and if so, return True/true. If not, return False/false.
 
-const checkTheBucket = (bucket) => {
-  return
-}
+const checkTheBucket = (bucket) => bucket.includes('gold')
 
 console.log(checkTheBucket(['stone', 'stone', 'stone', 'stone', 'stone']))
 console.log(checkTheBucket(['stone', 'stone', 'stone', 'stone', 'gold']))
