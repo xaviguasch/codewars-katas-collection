@@ -10,3 +10,12 @@ const ensureQuestion = (s) => (s[s.length - 1] === '?' ? s : s + '?')
 console.log(ensureQuestion(''))
 console.log(ensureQuestion('Yes'))
 console.log(ensureQuestion('No?'))
+
+// ALTERNATIVE SOLUTIONS
+
+// const ensureQuestion = (s) => (s.endsWith('?') ? s : s + '?')
+
+// function ensureQuestion(s) {
+//   // Code here
+//   return s.includes('?') ? s : `${s}?`
+// }
