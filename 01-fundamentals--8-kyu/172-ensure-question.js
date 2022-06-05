@@ -5,9 +5,7 @@
 // "Yes" --> "Yes?"
 // "No?" --> "No?"
 
-const ensureQuestion = (s) => {
-  return
-}
+const ensureQuestion = (s) => (s[s.length - 1] === '?' ? s : s + '?')
 
 console.log(ensureQuestion(''))
 console.log(ensureQuestion('Yes'))
