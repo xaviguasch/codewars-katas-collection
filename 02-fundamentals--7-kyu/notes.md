@@ -55,3 +55,4 @@ n068 - **Bumps in the road** Check alternative solutions that are one-liners.
 n069 - **Even numbers in an array** Check alternative solution, one liner!
 n072 - **Find the nth Digit of a Number** Check alternative solutions, one I don't really get... EXPLORE!
 n074 - **Alphabet Symmetry** Check alternative solutions, one doesn't use methods and the other is quite complex.
+n076 - **Number Of Occurrences** Check alternative solutions, ones that aren't using filter!
