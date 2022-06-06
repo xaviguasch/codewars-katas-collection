@@ -7,7 +7,16 @@
 // arr.numberOfOccurrences(2) === 2;
 // arr.numberOfOccurrences("a") === 0;
 
-Array.prototype.numberOfOccurrences = function () {}
+Array.prototype.numberOfOccurrences = function (num) {
+  return this.filter((el) => el === num).length
+}
 
-var arr = [4, 0, 4]
-console.log(arr.numberOfOccurrences(4), 2)
+// var arr = [4, 0, 4]
+// console.log(arr.numberOfOccurrences(4), 2)
+
+var arr = [0, 1, 2, 2, 3]
+console.log(arr.numberOfOccurrences(0))
+
+console.log(arr.numberOfOccurrences(4))
+console.log(arr.numberOfOccurrences(2))
+console.log(arr.numberOfOccurrences('a'))
