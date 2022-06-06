@@ -11,7 +11,14 @@
 // Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 const averages = (numbers) => {
-  return
+  if (numbers.length <= 1) {
+    return []
+  }
+
+  const averagesArr = numbers.map((el, idx) => (el + numbers[idx + 1]) / 2)
+
+  return averagesArr.slice(0, averagesArr.length - 1)
 }
 
+console.log(averages([2, 2, 2, 2, 2]))
 console.log(averages([1, 3, 5, 1, -10]))
