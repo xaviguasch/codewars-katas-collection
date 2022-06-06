@@ -7,8 +7,6 @@
 // Output
 // You must output a string containing the two strings with the word ```' are '```
 
-const TemplateStrings = (obj, feature) => {
-  return
-}
+const TemplateStrings = (obj, feature) => `${obj} are ${feature}`
 
 console.log(TemplateStrings('Animals', 'Good'))
