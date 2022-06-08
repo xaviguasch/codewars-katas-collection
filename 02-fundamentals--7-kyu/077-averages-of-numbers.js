@@ -11,7 +11,7 @@
 // Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 const averages = (numbers) => {
-  if (numbers.length <= 1) {
+  if (numbers === null || numbers.length <= 1) {
     return []
   }
 
