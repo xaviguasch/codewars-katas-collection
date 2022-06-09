@@ -15,3 +15,11 @@ const switcheroo = (x) => {
 console.log(switcheroo('abc'))
 console.log(switcheroo('aaabcccbaaa'))
 console.log(switcheroo('ccccc'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function switcheroo(x) {
+//   return [...x].map((v) => (v == 'a' ? (v = 'b') : v == 'b' ? (v = 'a') : v)).join('')
+// }
+
+// const switcheroo = (x) => x.replace(/[ab]/g, (x) => (x == 'a' ? 'b' : 'a'))
