@@ -6,7 +6,10 @@
 // 'aabacbaa' --> 'bbabcabb'
 
 const switcheroo = (x) => {
-  return
+  return x
+    .split('')
+    .map((char) => (char === 'a' ? (char = 'b') : char === 'b' ? (char = 'a') : char))
+    .join('')
 }
 
 console.log(switcheroo('abc'))
