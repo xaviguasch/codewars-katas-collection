@@ -6,7 +6,9 @@
 // min([1,2,3,4,5], 'index') // => 0
 
 const min = (arr, toReturn) => {
-  return
+  const minValue = Math.min(...arr)
+
+  return toReturn === 'value' ? minValue : arr.indexOf(minValue)
 }
 
 console.log(min([1, 2, 3, 4, 5], 'value'))
