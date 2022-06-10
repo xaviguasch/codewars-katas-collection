@@ -13,3 +13,20 @@ const min = (arr, toReturn) => {
 
 console.log(min([1, 2, 3, 4, 5], 'value'))
 console.log(min([1, 2, 3, 4, 5], 'index'))
+
+// ALTERNATIVE SOLUTION
+
+// function min(arr, toReturn) {
+//   return arr.reduce(
+//     function (o, v, i) {
+//       return v < o.value ? ((o.value = v), (o.index = i), o) : o
+//     },
+//     { value: Infinity, index: 0 }
+//   )[toReturn]
+// }
+
+// function min(arr, toReturn) {
+//   return arr.reduce(function(o, v, i){
+//     return (v < o.value) ? (o.value = v, o.index = i, o) : o;
+//   }, {value: Infinity, index: 0})[toReturn];
+// }
