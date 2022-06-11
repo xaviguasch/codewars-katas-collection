@@ -13,14 +13,15 @@
 // http://stackoverflow.com/questions/6093874/why-doesnt-the-sort-function-of-javascript-work-well
 
 const flattenAndSort = (array) => {
-  const resultArr = []
+  // new array method
+  // return array.flat().sort((a, b) => a - b)
 
+  const resultArr = []
   for (const intArr of array) {
     for (const el of intArr) {
       resultArr.push(el)
     }
   }
-
   return resultArr.sort((a, b) => a - b)
 }
 
@@ -35,3 +36,13 @@ console.log(
   ])
 )
 console.log(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function flattenAndSort(array) {
+//   return [].concat(...array).sort((a, b) => a - b)
+// }
+
+// const flattenAndSort = array => array
+//   .reduce((a, c) => [...a, ...c], [])
+//   .sort((a, b) => a - b);
