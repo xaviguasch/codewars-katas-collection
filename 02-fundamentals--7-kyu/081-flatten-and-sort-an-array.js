@@ -13,7 +13,15 @@
 // http://stackoverflow.com/questions/6093874/why-doesnt-the-sort-function-of-javascript-work-well
 
 const flattenAndSort = (array) => {
-  return
+  const resultArr = []
+
+  for (const intArr of array) {
+    for (const el of intArr) {
+      resultArr.push(el)
+    }
+  }
+
+  return resultArr.sort((a, b) => a - b)
 }
 
 console.log(flattenAndSort([]))
