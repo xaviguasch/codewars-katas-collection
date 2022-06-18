@@ -34,7 +34,10 @@
 // Since , (Duplications are not included when separating) , then you can see only one (-282) was appeared in the final array/list .
 
 const menFromBoys = (arr) => {
-  return
+  const evens = arr.filter((num) => num % 2 === 0).sort((a, b) => a - b)
+  const odds = arr.filter((num) => num % 2 !== 0).sort((a, b) => b - a)
+
+  return [...new Set(evens), ...new Set(odds)]
 }
 
 console.log(menFromBoys([7, 3, 14, 17]))
