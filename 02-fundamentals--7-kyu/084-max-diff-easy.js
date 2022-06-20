@@ -12,6 +12,7 @@ const maxDiff = (list) => {
   if (list.length <= 1) {
     return 0
   }
+
   const max = Math.max(...list)
   const min = Math.min(...list)
 
@@ -23,3 +24,13 @@ console.log(maxDiff([-0, 1, 2, -3, 4, 5, -6]))
 console.log(maxDiff([0, 1, 2, 3, 4, 5, 16]))
 console.log(maxDiff([16]))
 console.log(maxDiff([]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function maxDiff(list) {
+//   return list.length > 1 ? Math.max(...list) - Math.min(...list) : 0
+// }
+
+// function maxDiff(list) {
+//   return list.length ? Math.max(...list) - Math.min(...list) : 0;
+// }
