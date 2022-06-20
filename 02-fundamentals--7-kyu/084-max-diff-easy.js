@@ -9,7 +9,13 @@
 // Have fun!
 
 const maxDiff = (list) => {
-  return 0
+  if (list.length <= 1) {
+    return 0
+  }
+  const max = Math.max(...list)
+  const min = Math.min(...list)
+
+  return max - min
 }
 
 console.log(maxDiff([0, 1, 2, 3, 4, 5, 6]))
