@@ -5,8 +5,29 @@
 // "no" - otherwise
 // You can assume the array will always be valid, and there will always be one correct answer.
 
+const areArraysEqual = (originalArr, otherArr) => {
+  if (
+    originalArr.length === otherArr.length &&
+    originalArr.every((el, idx) => el === otherArr[idx])
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
+
 const isSortedAndHow = (array) => {
-  return
+  const arrayCopy = [...array]
+  const arrayCopy2 = [...array]
+
+  const arrayAsc = arrayCopy.sort((a, b) => a - b)
+  const arrayDesc = arrayCopy2.sort((a, b) => b - a)
+
+  return areArraysEqual(array, arrayAsc)
+    ? 'yes, ascending'
+    : areArraysEqual(array, arrayDesc)
+    ? 'yes, descending'
+    : 'no'
 }
 
 console.log(isSortedAndHow([1, 2]))
