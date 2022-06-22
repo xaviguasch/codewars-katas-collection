@@ -61,3 +61,4 @@ n078 - **Flatten** DIDN'T SOLVED IT AT FIRST TRY!!!!! The method flat() is not y
 
 n080 - **Smallest value of an array** DIDN'T SOLVED IT AT FIRST TRY!!!!! Don't bother with sorting, get the minimum value (with other ways).
 n081 - **Flatten and sort an array** Check alternative solutions, very interesting ways of solving it.
+n085 - **Sorted? yes? no? how?** Redo the problem again, VERY INTERESTING!!!! Also check alternative solutions.
