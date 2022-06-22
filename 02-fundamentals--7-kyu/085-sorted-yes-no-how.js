@@ -33,3 +33,52 @@ const isSortedAndHow = (array) => {
 console.log(isSortedAndHow([1, 2]))
 console.log(isSortedAndHow([15, 7, 3, -8]))
 console.log(isSortedAndHow([4, 2, 30]))
+
+// ALTERNATIVE SOLUTIONS
+
+// const isSortedAndHow = (array) => {
+//   let ascending = array.filter((e, i, a) => e > a[i + 1]).length == 0
+//   let descending = array.filter((e, i, a) => e < a[i + 1]).length == 0
+
+//   return ascending ? 'yes, ascending' : descending ? 'yes, descending' : 'no'
+// }
+
+// function isSortedAndHow(arr) {
+//   return arr.every((x, i) => i == 0 || arr[i] >= arr[i - 1])
+//     ? 'yes, ascending'
+//     : arr.every((x, i) => i == 0 || arr[i] <= arr[i - 1])
+//     ? 'yes, descending'
+//     : 'no'
+// }
+
+// function isSortedAndHow(array) {
+//   var ans
+//   if (array[1] > array[0]) {
+//     ans = 'yes, ascending'
+//   }
+
+//   if (ans === 'yes, ascending') {
+//     for (var i = 1; i < array.length; i++) {
+//       if (array[i] >= array[i - 1]) {
+//         ans = 'yes, ascending'
+//       } else return (ans = 'no')
+//     }
+//   }
+//   if (ans !== 'yes, ascending') {
+//     for (var i = 1; i < array.length; i++) {
+//       if (array[i] <= array[i - 1]) {
+//         ans = 'yes, descending'
+//       } else return (ans = 'no')
+//     }
+//   }
+//   return ans
+// }
+
+// const isSortedAndHow = (a) => {
+//   const s = a.join``
+//   return s === a.sort((x, y) => x - y).join``
+//     ? 'yes, ascending'
+//     : s === a.sort((x, y) => y - x).join``
+//     ? 'yes, descending'
+//     : 'no'
+// }
