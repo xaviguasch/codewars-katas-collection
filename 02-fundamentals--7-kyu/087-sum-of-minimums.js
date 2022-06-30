@@ -12,8 +12,8 @@
 
 // ENJOY CODING :)
 
-const sumOfMinumums = (arr) => {
-  return
+const sumOfMinimums = (arr) => {
+  return arr.reduce((acc, currV) => acc + Math.min(...currV), 0)
 }
 
 console.log(
