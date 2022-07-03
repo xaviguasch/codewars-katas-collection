@@ -26,3 +26,20 @@ console.log(solve([1, 2, 1, 2, 1, 2, 3]))
 console.log(solve([1, 2, 3, 4]))
 console.log(solve([1, 1, 4, 5, 1, 2, 1]))
 console.log(solve([1, 2, 1, 2, 1, 1, 3]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function solve(arr) {
+//   return arr.filter((val, i) => arr.lastIndexOf(val) == i)
+// }
+
+// const solve = (arr) => [...new Set(arr.reverse())].reverse()
+
+// function solve(arr) {
+//   var a = []
+//   var ar = arr.reverse()
+//   for (var i = 0; i < ar.length; ++i) if (a.indexOf(ar[i]) == -1) a.push(ar[i])
+//   return a.reverse()
+// }
+
+// const solve = (a) => Array.from(new Set(a.reverse())).reverse()
