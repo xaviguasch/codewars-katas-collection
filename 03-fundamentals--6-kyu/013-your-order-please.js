@@ -11,9 +11,21 @@
 // ""  -->  ""
 
 const order = (words) => {
-  return
+  let arr = words.split(' ')
+  let r = []
+
+  arr.forEach((word) => {
+    let x = word.split('')
+    let num = x.find((el) => parseInt(el))
+
+    r.push([word, parseInt(num)])
+  })
+
+  r.sort((a, b) => a[1] - b[1]).map((x) => x.splice(1, 1))
+
+  return r.join(' ')
 }
 
 console.log(order('is2 Thi1s T4est 3a'))
-console.log(order('4of Fo1r pe6ople g3ood th5e the2'))
-console.log(order(''))
+// console.log(order('4of Fo1r pe6ople g3ood th5e the2'))
+// console.log(order(''))
