@@ -5,7 +5,11 @@
 // orderedCount("abracadabra") == [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
 
 const orderedCount = (text) => {
-  return []
+  const letters = text.split('')
+
+  const uniqs = letters.filter((letter, index) => letters.indexOf(letter) === index)
+
+  return uniqs.map((letter) => [letter, text.split(letter).length - 1])
 }
 
 console.log(orderedCount('abracadabra'))
