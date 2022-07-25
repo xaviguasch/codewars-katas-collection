@@ -66,3 +66,4 @@ n085 - **Sorted? yes? no? how?** Redo the problem again, VERY INTERESTING!!!! Al
 n088 - **Simple remove duplicates** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
 
 n089 - **Ordered Count of Characters** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
+n090 - **Filter the number** Deceptively tricky, there's one last step that's hard. Do it again!
