@@ -20,3 +20,12 @@ const FilterString = (value) => {
 console.log(FilterString('123'))
 console.log(FilterString('a1b2c3'))
 console.log(FilterString('aa1bb2cc3dd'))
+
+// ALTERNATIVE SOLUTIONS
+
+// var FilterString = function (value) {
+//   return +value
+//     .split('')
+//     .filter((n) => !isNaN(n))
+//     .join('')
+// }
