@@ -25,7 +25,26 @@
 // alphabetWar("wwwwwwz");  //=> Left side wins!
 
 const alphabetWar = (fight) => {
-  return
+  const leftSideLetters = { w: 4, p: 3, b: 2, s: 1 }
+  const rightSideLetters = { m: 4, q: 3, d: 2, z: 1 }
+
+  let leftPoints = 0
+  let rightPoints = 0
+
+  fight.split('').map((letter) => {
+    if (leftSideLetters[letter]) {
+      leftPoints += leftSideLetters[letter]
+    }
+    if (rightSideLetters[letter]) {
+      rightPoints += rightSideLetters[letter]
+    }
+  })
+
+  return leftPoints > rightPoints
+    ? 'Left side wins!'
+    : leftPoints === rightPoints
+    ? "Let's fight again!"
+    : 'Right side wins!'
 }
 
 console.log(alphabetWar('z'))
