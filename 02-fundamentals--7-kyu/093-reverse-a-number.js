@@ -34,3 +34,22 @@ console.log(reverseNumber(4321234))
 console.log(reverseNumber(5))
 console.log(reverseNumber(0))
 console.log(reverseNumber(98989898))
+
+// ALTERNATIVE SOLUTIONS
+// function reverseNumber(n) {
+//   let isNegative = n < 0
+//   let reverseAsString = Math.abs(n).toString().split('').reverse().join('')
+//   let result = Number(reverseAsString)
+
+//   return isNegative ? -result : result
+// }
+
+// function reverseNumber(n) {
+//   let x = Math.abs(n)
+//   let y = 0
+//   while (x > 0) {
+//     y = y * 10 + (x % 10)
+//     x = Math.floor(x / 10)
+//   }
+//   return Math.sign(n) * y
+// }
