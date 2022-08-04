@@ -8,8 +8,18 @@
 // joe.greet('Kate'); // should return 'Hello Kate, my name is Joe'
 // joe.name           // should == 'Joe'
 
-function greet(myName, yourName) {
-  return 'Hello ' + yourName + ', my name is ' + myName
+// function greet(myName, yourName) {
+//   return 'Hello ' + yourName + ', my name is ' + myName
+// }
+
+class Person {
+  constructor(name) {
+    this.name = name
+  }
+
+  greet(guest) {
+    return `Hello ${guest}, my name is ${this.name}`
+  }
 }
 
 var joe = new Person('Joe')
