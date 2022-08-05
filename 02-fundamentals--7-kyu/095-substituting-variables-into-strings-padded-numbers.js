@@ -4,9 +4,7 @@
 
 // solution(5) // should return "Value is 00005"
 
-const solution = (value) => {
-  return
-}
+const solution = (value) => `Value is ${value.toString().padStart(5, '0')}`
 
 console.log(solution(5))
 console.log(solution(1204))
