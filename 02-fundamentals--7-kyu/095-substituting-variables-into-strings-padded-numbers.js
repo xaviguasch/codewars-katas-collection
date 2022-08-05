@@ -10,3 +10,9 @@ console.log(solution(5))
 console.log(solution(1204))
 console.log(solution(109))
 console.log(solution(0))
+
+// ALTERNATIVE SOLUTION
+
+// function solution(value) {
+//   return 'Value is ' + ('00000' + value).slice(-5)
+// }
