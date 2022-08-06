@@ -14,7 +14,13 @@
 // caffeineBuzz(12)  => "CoffeeScript"
 
 const caffeineBuzz = (n) => {
-  return
+  if (n % 3 === 0 && n % 4 === 0) {
+    return n % 2 === 0 ? 'CoffeScript' : 'Coffee'
+  } else if (n % 3 === 0) {
+    return n % 2 === 0 ? 'JavaScript' : 'Java'
+  } else {
+    return 'mocha_missing!'
+  }
 }
 
 console.log(caffeineBuzz(1))
