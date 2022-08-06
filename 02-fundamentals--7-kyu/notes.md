@@ -70,3 +70,4 @@ n090 - **Filter the number** Deceptively tricky, there's one last step that's ha
 n091 - **Alphabet war** Check clever alternative solution.
 n093 - **Reverse a Number** Check much more elegant alternative solutions (ORIGINAL WAS A MESS!)
 n095 - **Padded Numbers** Check alternative solution that doesn't use THAT particular method
+n096 - **Caffeine Script** Check alternative more elegant solutions
