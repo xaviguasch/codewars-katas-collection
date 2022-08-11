@@ -36,3 +36,17 @@ const sortMyString = (S) => {
 
 console.log(sortMyString('CodeWars'))
 console.log(sortMyString("YCOLUE'VREER"))
+
+// ALTERNATIVE SOLUTIONS
+
+// const sortMyString = s => {
+//   let even = s.split('').filter((v, i) => i % 2 === 0).join('')
+//   let odd = s.split('').filter((v, i) => i % 2 !== 0).join('')
+//   return even + ' ' + odd
+// }
+
+// function sortMyString(S) {
+//   let even = [], odd = [];
+//   S.split('').forEach((e, i) => { i % 2 === 0 ? even.push(e) : odd.push(e) })
+//   return `${even.join('')} ${odd.join('')}`;
+// }
