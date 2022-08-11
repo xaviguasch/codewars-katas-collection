@@ -19,7 +19,19 @@
 // And the final string to return is 'Cdwr oeas'
 
 const sortMyString = (S) => {
-  return ''
+  const splittedStr = S.split('')
+
+  const evenChars = []
+  const oddChars = []
+
+  splittedStr.forEach((char, idx) => {
+    if (idx % 2 === 0) {
+      evenChars.push(char)
+    } else {
+      oddChars.push(char)
+    }
+  })
+  return [evenChars.join(''), oddChars.join('')].join(' ')
 }
 
 console.log(sortMyString('CodeWars'))
