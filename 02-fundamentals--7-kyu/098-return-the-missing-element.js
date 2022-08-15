@@ -17,3 +17,13 @@ const getMissingElement = (superImportantArray) => {
 
 console.log(getMissingElement([0, 5, 1, 3, 2, 9, 7, 6, 4]))
 console.log(getMissingElement([9, 2, 4, 5, 7, 0, 8, 6, 1]))
+
+// ALTERNATIVE SOLUTIONS
+
+function getMissingElement(a) {
+  for (let i = 0; i < 10; i++) {
+    if (!a.includes(i)) {
+      return i
+    }
+  }
+}
