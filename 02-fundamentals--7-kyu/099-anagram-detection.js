@@ -22,3 +22,14 @@ console.log(isAnagram('Twoo', 'WooT'))
 console.log(isAnagram('dumble', 'bumble'))
 console.log(isAnagram('ound', 'round'))
 console.log(isAnagram('apple', 'pale'))
+
+// ALTERNATIVE SOLUTION
+
+// // write the function isAnagram
+// function isAnagram(str1, str2){
+//   return sortWord(str1) == sortWord(str2);
+// }
+
+// function sortWord(word){
+//   return word.toLowerCase().split("").sort().join("");
+// }
