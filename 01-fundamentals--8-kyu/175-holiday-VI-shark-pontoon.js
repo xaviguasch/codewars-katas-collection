@@ -22,7 +22,10 @@
 // If you make it, return "Alive!", if not, return "Shark Bait!".
 
 const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) => {
-  return
+  const sharkTimeToPontoon = sharkDistance / (dolphin ? sharkSpeed / 2 : sharkSpeed)
+  const meTimeToPontoon = pontoonDistance / youSpeed
+
+  return sharkTimeToPontoon > meTimeToPontoon ? 'Alive!' : 'Shark Bait!'
 }
 
 console.log(shark(12, 50, 4, 8, true))
