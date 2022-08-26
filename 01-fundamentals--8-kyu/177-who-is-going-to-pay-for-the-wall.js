@@ -3,7 +3,11 @@
 // Your code will show Full name of the neighbor and the truncated version of the name as an array. If the number of the characters in name is less than or equal to two, it will return an array containing only the name as is"
 
 const whoIsPaying = (name) => {
-  return
+  if (name.length <= 2) {
+    return [name]
+  } else {
+    return [name, name.slice(0, 2)]
+  }
 }
 
 console.log(whoIsPaying('Mexico'))
@@ -12,3 +16,11 @@ console.log(whoIsPaying('Melissa'))
 console.log(whoIsPaying('Me'))
 console.log(whoIsPaying(''))
 console.log(whoIsPaying('I'))
+
+// ALTERNATIVE SOLUTIONS
+
+function whoIsPaying(name) {
+  return name.length > 2 ? [name, name.substr(0, 2)] : [name]
+}
+
+const whoIsPaying = (name) => [...new Set([name, name.slice(0, 2)])]
