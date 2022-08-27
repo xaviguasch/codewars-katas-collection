@@ -44,5 +44,6 @@ n166 - **Check same case** Check more elegant alternative solutions.
 n167 - **Barking mad** Check alternative solution using classes, syntactic sugar.
 
 n171 - **Count words** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Failed at the edge cases, check solutions.
-
 n178 - **Take an Arrow to the knee, Functionally** Check out clever alternative solution
+
+n180 - **Get number from string** My initial solution didn't pass the tests even though seems fine, check alternative one with Regex (only one that passed).
