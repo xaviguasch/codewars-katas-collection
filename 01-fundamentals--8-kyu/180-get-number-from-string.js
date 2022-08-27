@@ -6,7 +6,14 @@
 // getNumberFromString(s)
 
 const getNumberFromString = (s) => {
-  return
+  const result = s
+    .split('')
+    .filter((char) => !isNaN(char))
+    .filter((el) => Number(el))
+    .map((el) => Number(el))
+    .join('')
+
+  return Number(result)
 }
 
 console.log(getNumberFromString('1'))
