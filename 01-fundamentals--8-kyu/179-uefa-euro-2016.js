@@ -5,7 +5,15 @@
 // uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, teams played draw."
 
 const uefaEuro2016 = (teams, scores) => {
-  return
+  const firstLine = `At match ${teams[0]} - ${teams[1]}`
+  const winningLine =
+    scores[0] > scores[1]
+      ? `${teams[0]} won!`
+      : scores[0] < scores[1]
+      ? `${teams[1]} won!`
+      : `teams played draw.`
+
+  return `${firstLine}, ${winningLine}`
 }
 
 console.log(uefaEuro2016(['Germany', 'Ukraine'], [2, 0]))
