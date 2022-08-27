@@ -19,3 +19,9 @@ const getNumberFromString = (s) => {
 console.log(getNumberFromString('1'))
 console.log(getNumberFromString('123'))
 console.log(getNumberFromString('this is number: 7'))
+
+// ALTERNATIVE SOLUTION
+
+// function getNumberFromString(s) {
+//   return +s.replace(/\D/g, '')
+// }
