@@ -18,7 +18,22 @@
 // "Jędrzej Błądziński"  -->  "Jedrzej Bladzinski"
 
 const correctPolishNames = (string) => {
-  return
+  const polishLetters = {
+    ą: 'a',
+    ć: 'c',
+    ę: 'e',
+    ł: 'l',
+    ń: 'n',
+    ó: 'o',
+    ś: 's',
+    ź: 'z',
+    ż: 'z',
+  }
+
+  return string
+    .split('')
+    .map((letter) => (polishLetters[letter] ? polishLetters[letter] : letter))
+    .join('')
 }
 
 console.log(correctPolishNames('Jędrzej Błądziński'))
