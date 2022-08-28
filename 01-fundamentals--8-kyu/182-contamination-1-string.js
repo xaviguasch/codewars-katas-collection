@@ -14,7 +14,12 @@
 // text after  = "zzz"
 
 const contamination = (text, char) => {
-  return
+  if (!char) return ''
+
+  return text
+    .split('')
+    .map((textChar) => char)
+    .join('')
 }
 
 console.log(contamination('abc', 'z'))
