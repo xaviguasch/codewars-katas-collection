@@ -27,3 +27,17 @@ console.log(contamination('', 'z'))
 console.log(contamination('abc', ''))
 console.log(contamination('_3ebzgh4', '&'))
 console.log(contamination('//case', ' '))
+
+// ALTERNATIVE SOLUTIONS
+
+// function contamination(text, char) {
+//   return char.repeat(text.length)
+// }
+
+// function contamination(text, char) {
+//   return text.replace(/./g, char)
+// }
+
+// function contamination(text, char) {
+//   return text.split('').fill(char).join('')
+// }
