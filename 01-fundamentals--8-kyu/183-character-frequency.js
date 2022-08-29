@@ -8,7 +8,13 @@
 // charFreq("I like cats") // Returns {'a': 1, ' ': 2, 'c': 1, 'e': 1, 'I': 1, 'k': 1, 'l': 1, 'i': 1, 's': 1, 't': 1}
 
 const charFreq = (message) => {
-  return
+  const freqObj = {}
+
+  message
+    .split('')
+    .map((char) => (freqObj[char] ? (freqObj[char] += 1) : (freqObj[char] = 1)))
+
+  return freqObj
 }
 
 console.log(charFreq('I like cats'))
