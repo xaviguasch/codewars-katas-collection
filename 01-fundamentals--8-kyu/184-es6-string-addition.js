@@ -8,9 +8,7 @@
 
 // If one of the arguments is a number your code must coerce it into being a string.
 
-const joinStrings = (string1, string2) => {
-  return
-}
+const joinStrings = (string1, string2) => `${string1} ${string2}`
 
 console.log(joinStrings('string1', 'string2'))
 console.log(joinStrings('testing', 'testing'))
