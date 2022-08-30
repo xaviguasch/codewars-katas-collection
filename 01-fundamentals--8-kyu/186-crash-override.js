@@ -72,6 +72,18 @@ let surFakeName = {
   Z: 'Zombie',
 }
 
-const aliasGen = () => {
-  return
+const aliasGen = (first, last) => {
+  const firstNameLetter = first[0].toUpperCase()
+  const lastNameLetter = last[0].toUpperCase()
+
+  if (!firstFakeName[firstNameLetter] || !surFakeName[lastNameLetter]) {
+    return 'Your name must start with a letter from A - Z.'
+  }
+  return `${firstFakeName[firstNameLetter]} ${surFakeName[lastNameLetter]}`
 }
+
+console.log(aliasGen('Mike', 'Millington'))
+console.log(aliasGen('Fahima', 'Tash'))
+console.log(aliasGen('Daisy', 'Petrovic'))
+console.log(aliasGen('7393424', 'Anumbha'))
+console.log(aliasGen('Anuddanumbha', '23200'))
