@@ -7,8 +7,16 @@
 // This change machine is programmed to accept and distribute strings rather than numbers. The change will be returned as one string with the change separated by single spaces & no commas. The values of the string will be descending.
 
 const changeMe = (moneyIn) => {
-  return
+  if (moneyIn === '£5') return `${'20p '.repeat(5 * 5).trimRight()}`
+  if (moneyIn === '£2') return `${'20p '.repeat(5 * 2).trimRight()}`
+  if (moneyIn === '£1') return `${'20p '.repeat(5 * 1).trimRight()}`
+  if (moneyIn === '50p') return `${'20p '.repeat(2).trimRight()} 10p`
+  if (moneyIn === '20p') return `${'10p '.repeat(2).trimRight()}`
+
+  return moneyIn
 }
 
 console.log(changeMe('£1'))
+console.log(changeMe('£10'))
+console.log(changeMe('50p'))
 console.log(changeMe('Money'))
