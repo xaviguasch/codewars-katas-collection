@@ -87,3 +87,13 @@ console.log(aliasGen('Fahima', 'Tash'))
 console.log(aliasGen('Daisy', 'Petrovic'))
 console.log(aliasGen('7393424', 'Anumbha'))
 console.log(aliasGen('Anuddanumbha', '23200'))
+
+// ALTERNATIVE SOLUTION
+
+// const initialCap = (str) => str[0].toUpperCase();
+// const isValidName = (name) => /^[a-z]/i.test(name);
+// const aliasGen = (fName, lName) => {
+//   return (isValidName(fName) && isValidName(lName))
+//     ? `${ firstName[initialCap(fName)] } ${ surname[initialCap(lName)] }`
+//     : 'Your name must start with a letter from A - Z.';
+// }
