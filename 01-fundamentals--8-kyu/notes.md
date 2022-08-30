@@ -48,3 +48,5 @@ n178 - **Take an Arrow to the knee, Functionally** Check out clever alternative 
 
 n180 - **Get number from string** My initial solution didn't pass the tests even though seems fine, check alternative one with Regex (only one that passed).
 n182- **Contamination #1 -String-** Check out clever alternative solutions.
+
+n187 - **Simple Change Machine** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Check "cheeky" solutions
