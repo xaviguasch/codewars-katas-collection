@@ -20,3 +20,52 @@ console.log(changeMe('£1'))
 console.log(changeMe('£10'))
 console.log(changeMe('50p'))
 console.log(changeMe('Money'))
+
+// ALTERNATIVE SOLUTIONS
+
+// function changeMe(moneyIn) {
+//   var accepted = ['£5', '£2', '£1', '50p', '20p']
+//   var change = [
+//     '20p 20p 20p 20p 20p 20p 20p 20p 20p 20p ' +
+//       '20p 20p 20p 20p 20p 20p 20p 20p 20p 20p ' +
+//       '20p 20p 20p 20p 20p',
+//     '20p 20p 20p 20p 20p 20p 20p 20p 20p 20p',
+//     '20p 20p 20p 20p 20p',
+//     '20p 20p 10p',
+//     '10p 10p',
+//   ]
+//   var moneyIndex = accepted.indexOf(moneyIn)
+//   if (moneyIndex == -1) return moneyIn
+//   else return change[moneyIndex]
+// }
+
+// function changeMe(moneyIn) {
+//   switch (moneyIn) {
+//     case '£5':
+//       var change = Array(25).fill('20p')
+//       return change.join(' ')
+//     case '£2':
+//       var change = Array(10).fill('20p')
+//       return change.join(' ')
+//     case '£1':
+//       var change = Array(5).fill('20p')
+//       return change.join(' ')
+//     case '50p':
+//       return '20p 20p 10p'
+//     case '20p':
+//       return '10p 10p'
+//     default:
+//       return moneyIn
+//   }
+// }
+
+// function changeMe(moneyIn){
+//   switch (moneyIn) {
+//     case '£5': return '20p '.repeat(25).trim()
+//     case '£2': return '20p '.repeat(10).trim()
+//     case '£1': return '20p '.repeat(5).trim()
+//     case '50p': return '20p 20p 10p'
+//     case '20p': return '10p 10p'
+//     default: return moneyIn
+//   }
+// }
