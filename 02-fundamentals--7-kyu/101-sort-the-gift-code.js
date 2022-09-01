@@ -11,9 +11,7 @@
 // "pqksuvy"                     -- => "kpqsuvy"
 // "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"
 
-const sortGiftCode = (code) => {
-  return
-}
+const sortGiftCode = (code) => code.split('').sort().join('')
 
 console.log(sortGiftCode('abcdef'))
 console.log(sortGiftCode('pqksuvy'))
