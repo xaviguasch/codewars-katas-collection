@@ -20,7 +20,13 @@
 // All data will always be valid and uniform as in the example above.
 
 const countDevelopers = (list) => {
-  return
+  return list.reduce((acc, currV) => {
+    if (currV.continent === 'Europe' && currV.language === 'JavaScript') {
+      acc += 1
+    }
+
+    return acc
+  }, 0)
 }
 
 const list1 = [
