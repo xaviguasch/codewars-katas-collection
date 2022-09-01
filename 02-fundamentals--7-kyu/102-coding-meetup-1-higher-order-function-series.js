@@ -85,3 +85,11 @@ const list2 = [
 
 console.log(countDevelopers(list1))
 console.log(countDevelopers(list2))
+
+// ALTERNATIVE SOLUTION
+
+function countDevelopers(list) {
+  return list
+    .filter((dev) => dev.language === 'JavaScript')
+    .filter((dev) => dev.continent === 'Europe').length
+}
