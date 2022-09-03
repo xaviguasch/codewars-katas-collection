@@ -8,7 +8,15 @@
 // solution({a: 1, b: '2'}) // should return "a = 1,b = 2"
 
 const solution = (pairs) => {
-  return
+  let str = ''
+
+  for (const key in pairs) {
+    str += `${key} = ${pairs[key]},`
+  }
+
+  const slicedStr = str.slice(0, -1)
+
+  return slicedStr
 }
 
 console.log(solution({ a: 1, b: '2' }))
