@@ -36,11 +36,15 @@
 // Bash Note:
 // The input strings are separated by , instead of \n. The output strings should be separated by \r instead of \n. See "Sample Tests".
 
+const vertMirror = (arr) => arr.map((word) => [...word].reverse().join(''))
+const horMirror = (arr) => arr.reverse()
+
 const oper = (fct, s) => {
-  return
+  return fct(s.split('\n')).join('\n')
 }
 
-console.log(oper(vertMirror, 'hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu'))
-console.log(oper(vertMirror, 'IzOTWE\nkkbeCM\nWuzZxM\nvDddJw\njiJyHF\nPVHfSx'))
+// console.log(oper(vertMirror, 'hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu'))
+// console.log(oper(vertMirror, 'hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu'))
+// console.log(oper(vertMirror, 'IzOTWE\nkkbeCM\nWuzZxM\nvDddJw\njiJyHF\nPVHfSx'))
 console.log(oper(horMirror, 'lVHt\nJVhv\nCSbg\nyeCt'))
 console.log(oper(horMirror, 'njMK\ndbrZ\nLPKo\ncEYz'))
