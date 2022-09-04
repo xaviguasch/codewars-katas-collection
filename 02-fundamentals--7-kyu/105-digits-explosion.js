@@ -11,7 +11,10 @@
 // "12222666666999999999"
 
 const explode = (s) => {
-  return
+  return s
+    .split('')
+    .map((num) => num.repeat(num))
+    .join('')
 }
 
 console.log(explode('312'))
