@@ -68,3 +68,9 @@ const list1 = [
 ]
 
 console.log(greetDevelopers(list1))
+
+// ALTERNATIVE SOLUTION
+
+// const greetDevelopers = list => list.map(
+//   dev => ({...dev, greeting: `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`})
+// );
