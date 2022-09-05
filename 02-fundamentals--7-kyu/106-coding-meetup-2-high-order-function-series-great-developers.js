@@ -32,7 +32,12 @@
 // This kata is part of the Coding Meetup series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: forEach, filter, map, reduce, some, every, find, findIndex. Other approaches to solving the katas are of course possible.
 
 const greetDevelopers = (list) => {
-  return
+  list.map(
+    (developer) =>
+      (developer.greeting = `Hi ${developer.firstName}, what do you like the most about ${developer.language}?`)
+  )
+
+  return list
 }
 
 const list1 = [
