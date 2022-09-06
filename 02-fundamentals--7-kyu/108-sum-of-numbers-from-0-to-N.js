@@ -24,15 +24,15 @@
 
 // 0=0
 
-var SequenceSum = (function () {
-  function SequenceSum() {}
+function sequenceSum(count) {
+  let sum = 0
 
-  SequenceSum.showSequence = function (count) {
-    // for
-    //while
+  for (let i = 0; i <= count; i++) {
+    console.log(i)
+    sum += i
   }
 
-  return SequenceSum
-})()
+  return sum
+}
 
-console.log(SequenceSum.showSequence(6))
+console.log(sequenceSum(6))
