@@ -3,7 +3,17 @@
 // Return as a number.
 
 const divCon = (x) => {
-  return
+  let sumNumIntegers = 0
+  let sumStringIntegers = 0
+  x.forEach((num) => {
+    if (Number.isInteger(num)) {
+      sumNumIntegers += num
+    } else {
+      sumStringIntegers += Number(num)
+    }
+  })
+
+  return sumNumIntegers - sumStringIntegers
 }
 
 console.log(divCon([9, 3, '7', '3']))
