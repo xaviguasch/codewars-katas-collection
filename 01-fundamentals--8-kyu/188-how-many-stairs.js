@@ -67,3 +67,38 @@ var sunday = [
 var stairs = [sunday, monday, tuesday, wednesday, thursday, friday, saturday]
 
 console.log(stairsIn20(stairs))
+
+// ALTERNATIVE SOLUTIONS
+
+// function stairsIn20(a) {
+//   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0)
+// }
+
+// function stairsIn20(s) {
+//   for (var i = 0, sum = 0; i < s.length; i++) {
+//     for (var j = 0; j < s[i].length; j++) {
+//       sum += s[i][j]
+//     }
+//   }
+//   return sum * 20
+// }
+
+// function stairsIn20(s) {
+//   var arr = [].concat(...s)
+//   var newArr = [].concat(...arr)
+//   return newArr.reduce((a, b) => a + b) * 20
+// }
+
+// function stairsIn20(s) {
+//   return s.reduce((a, b) => a.concat(b)).reduce((a, b) => a + b) * 20
+// }
+
+// function stairsIn20(stairs) {
+//   let total = 0
+//   for (value of stairs) {
+//     for (num of value) {
+//       total += num
+//     }
+//   }
+//   return (total *= 20)
+// }
