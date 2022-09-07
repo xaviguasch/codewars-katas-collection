@@ -16,7 +16,9 @@
 // Your function should return the 20 year estimate of the stairs climbed using the formula above.
 
 const stairsIn20 = (s) => {
-  return
+  const arrOfSumDays = s.map((day) => day.reduce((acc, currV) => acc + currV, 0))
+
+  return arrOfSumDays.reduce((acc, currV) => acc + currV, 0) * 20
 }
 
 var sunday = [
