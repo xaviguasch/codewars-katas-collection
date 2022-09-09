@@ -51,3 +51,4 @@ n182- **Contamination #1 -String-** Check out clever alternative solutions.
 
 n187 - **Simple Change Machine** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Check "cheeky" solutions
 n188 - **How many stairs will Suzuki climb in 20 years?** Check more cleaner and clever alternative solutions
+n189 - **Sum of differences in array** Check out alternative solutions, specially the one using methods
