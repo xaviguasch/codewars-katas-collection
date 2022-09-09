@@ -9,7 +9,17 @@
 // If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell, None in Rust).
 
 const sumOfDifferences = (arr) => {
-  return
+  const sortedArr = arr.sort((a, b) => b - a)
+
+  let result = 0
+
+  for (let i = 0; i < sortedArr.length - 1; i++) {
+    let subtraction = sortedArr[i] - sortedArr[i + 1]
+
+    result += subtraction
+  }
+
+  return result
 }
 
 console.log(sumOfDifferences([1, 2, 10]))
