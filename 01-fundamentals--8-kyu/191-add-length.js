@@ -10,7 +10,7 @@
 // Note: String will have at least one element; words will always be separated by a space.
 
 const addLength = (str) => {
-  return
+  return str.split(' ').map((word) => `${word} ${word.length}`)
 }
 
 console.log(addLength('apple ban'))
