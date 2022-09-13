@@ -19,7 +19,9 @@ let ex_names = ['a', 'b', 'c', 'd', 'c', 'e', 'f', 'g', 'h', 'z']
 let players = ex_names.map((n) => new Player(n))
 
 const duckDuckGoose = (players, goose) => {
-  return
+  const index = (goose - 1) % players.length
+
+  return players[index].name
 }
 
 console.log(duckDuckGoose(players, 1))
