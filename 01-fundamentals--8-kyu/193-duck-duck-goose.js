@@ -9,6 +9,15 @@
 // duck_duck_goose([a, b, c, d], 5) should return a.name
 // duck_duck_goose([a, b, c, d], 4) should return d.name
 
+class Player {
+  constructor(name) {
+    this.name = name
+  }
+}
+
+let ex_names = ['a', 'b', 'c', 'd', 'c', 'e', 'f', 'g', 'h', 'z']
+let players = ex_names.map((n) => new Player(n))
+
 const duckDuckGoose = (players, goose) => {
   return
 }
