@@ -17,9 +17,7 @@
 
 // More details here: https://en.wikipedia.org/wiki/Comma-separated_values
 
-const toCsvText = (array) => {
-  return
-}
+const toCsvText = (array) => array.map((innerArr) => innerArr.join(',')).join('\n')
 
 console.log(
   toCsvText([
