@@ -54,3 +54,5 @@ n188 - **How many stairs will Suzuki climb in 20 years?** Check more cleaner and
 n189 - **Sum of differences in array** Check out alternative solutions, specially the one using methods
 
 n193 - **Duck Duck Goose** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Do it again, it's not that hard
+
+n195 - **Logical calculator** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! It's a bit tricky but interesting. DO IT AGAIN
