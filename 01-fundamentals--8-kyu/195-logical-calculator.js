@@ -21,7 +21,9 @@
 // A Boolean value (True or False).
 
 const logicalCalc = (array, op) => {
-  return
+  if (op == 'AND') return array.reduce((acc, currV) => acc && currV)
+  if (op == 'OR') return array.reduce((acc, currV) => acc || currV)
+  if (op == 'XOR') return array.reduce((acc, currV) => acc !== currV)
 }
 
 console.log(logicalCalc([true, true, true, false], 'AND'))
