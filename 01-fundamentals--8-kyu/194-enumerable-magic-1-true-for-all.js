@@ -9,9 +9,7 @@
 // all((1, 2, 3, 4, 5), greater_than_9) -> false
 // all((1, 2, 3, 4, 5), less_than_9)    -> True
 
-const all = (arr, fun) => {
-  return
-}
+const all = (arr, fun) => arr.every((num) => fun(num))
 
 console.log(
   all([1, 2, 3, 4, 5], function (v) {
