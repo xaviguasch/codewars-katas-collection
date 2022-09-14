@@ -32,3 +32,85 @@ console.log(logicalCalc([true, true, true, false], 'XOR'))
 console.log(logicalCalc([true, true, false, false], 'AND'))
 console.log(logicalCalc([true, true, false, false], 'OR'))
 console.log(logicalCalc([true, true, false, false], 'XOR'))
+
+// ALTERNATIVE SOLUTIONS
+
+// var ops = {
+//   AND: (a, b) => a && b,
+//   OR: (a, b) => a || b,
+//   XOR: (a, b) => a !== b,
+// }
+// function logicalCalc(array, op) {
+//   return array.reduce(ops[op])
+// }
+
+// ///////////
+// ///////////
+
+// function logicalCalc(array, op) {
+//   var result = array[0]
+//   for (var i = 1; i < array.length; i++) {
+//     if (op == 'AND') {
+//       result = result && array[i]
+//     }
+//     if (op == 'OR') {
+//       result = result || array[i]
+//     }
+//     if (op == 'XOR') {
+//       result = result != array[i]
+//     }
+//   }
+//   return result
+// }
+
+// ///////////
+// ///////////
+
+// function logicalCalc(array, op) {
+//   if (op === 'AND') return array.every((v) => v)
+//   else if (op === 'OR') return array.some((v) => v)
+//   else return !!array.reduce((s, v) => s ^ v)
+// }
+
+// ///////////
+// ///////////
+
+// function logicalCalc(array, op) {
+//   switch (op) {
+//     case 'AND':
+//       return array.reduce(and)
+//     case 'OR':
+//       return array.reduce(or)
+//     case 'XOR':
+//       return array.reduce(xor)
+//   }
+// }
+
+// function and(bool1, bool2) {
+//   return bool1 && bool2
+// }
+
+// function or(bool1, bool2) {
+//   return bool1 || bool2
+// }
+
+// function xor(bool1, bool2) {
+//   return bool1 != bool2
+// }
+
+// ///////////
+// ///////////
+
+// function logicalCalc(array, op) {
+//   switch (op) {
+//     case 'OR':
+//       return array.reduce((a, b) => a || b)
+//       break
+//     case 'AND':
+//       return array.reduce((a, b) => a && b)
+//       break
+//     case 'XOR':
+//       return array.reduce((a, b) => a != b)
+//       break
+//   }
+// }
