@@ -9,6 +9,16 @@
 Array.prototype.filterr = function (func) {
   //nothing here, you will feel pretty awesome to write down by yourself
   //have fun :)
+
+  let result = []
+
+  this.map((num) => {
+    if (func(num)) {
+      result.push(num)
+    }
+  })
+
+  return result
 }
 
 console.log(
