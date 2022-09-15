@@ -9,13 +9,11 @@
 // first(arr, 3) //=> ['a', 'b', 'c'];
 // first(arr, 0) //=> [];
 
-const first = (arr, n) => {
-  return
-}
+const first = (arr, n = 1) => arr.slice(0, n)
 
 var arr = ['a', 'b', 'c', 'd', 'e']
 
-console.log(arr)
-console.log(arr, 2)
-console.log(arr, 3)
-console.log(arr, 0)
+console.log(first(arr))
+console.log(first(arr, 2))
+console.log(first(arr, 3))
+console.log(first(arr, 0))
