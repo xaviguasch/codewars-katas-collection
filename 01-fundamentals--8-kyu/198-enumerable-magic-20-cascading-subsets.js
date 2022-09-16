@@ -10,7 +10,9 @@
 // As you can see, the lists are cascading; ie, they overlap, but never out of order.
 
 const eachCons = (array, n) => {
-  return
+  return array
+    .map((num, idx) => array.slice(idx, idx + n))
+    .filter((arr) => arr.length === n)
 }
 
 const lst = [3, 5, 8, 13]
