@@ -11,7 +11,12 @@
 // This is a modification on the Kata: Array2Binary addition hope you like it
 
 const arr2bin = (arr) => {
-  return
+  const totalNum = arr.reduce(
+    (acc, currV) => acc + (typeof currV === 'number' ? currV : 0),
+    0
+  )
+
+  return totalNum.toString(2)
 }
 
 console.log(arr2bin([1, 2]))
