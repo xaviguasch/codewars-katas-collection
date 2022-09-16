@@ -58,3 +58,5 @@ n193 - **Duck Duck Goose** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Do it again,
 n195 - **Logical calculator** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! It's a bit tricky but interesting. DO IT AGAIN
 
 n198 - **Enumerable Magic #20 - Cascading Subsets** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! It's a bit tricky but very usefult. DO IT AGAIN, PLEASE!!!!
+
+n199 - **Arguments to Binary addition** WASN'T ABLE TO SOLVE IT AT FIRST TRY!!!! Check how to convert from number to binary in JS. That was the part that tricked me.
