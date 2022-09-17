@@ -31,3 +31,17 @@ const fizzbuzz = (n) => {
 
 console.log(fizzbuzz(3))
 console.log(fizzbuzz(10))
+
+// ALTERNATIVE SOLUTION
+
+// Return an array.
+// function fizzbuzz(n) {
+//   var fizzified = []
+//   for (var i = 1; i <= n; i++) {
+//     var val = ''
+//     if (i % 3 == 0) val += 'Fizz'
+//     if (i % 5 == 0) val += 'Buzz'
+//     fizzified.push(val || i)
+//   }
+//   return fizzified
+// }
