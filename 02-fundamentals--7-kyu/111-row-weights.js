@@ -47,3 +47,20 @@ console.log(rowWeights([100, 51, 50, 100]))
 console.log(rowWeights([100, 51, 50, 100]))
 console.log(rowWeights([39, 84, 74, 18, 59, 72, 35, 61]))
 console.log(rowWeights([0, 1, 0]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function rowWeights(array){
+//   let t1 = array.filter((x, i)=>i%2==0).reduce((a,item)=>a+item,0);
+//   let t2 = array.filter((x, i)=>i%2!=0).reduce((a,item)=>a+item,0);
+
+//   return [t1, t2]
+// }
+
+// function rowWeights(array){
+//   var arr = [0, 0];
+//   for (var i = 0; i < array.length; i++) {
+//     i % 2 == 0 ? arr[0] += array[i] : arr[1] += array[i];
+//   }
+//   return arr;
+// }
