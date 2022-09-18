@@ -25,20 +25,15 @@
 // head([1,2,3,4,5]); => 1
 // tail([1,2,3,4,5]); => [2,3,4,5]
 
-const head = (arr) => {
-  return
-}
-const tail = (arr) => {
-  return
-}
-const init = (arr) => {
-  return
-}
-const last = (arr) => {
-  return
-}
+const head = (arr) => arr[0]
+
+const tail = (arr) => arr.slice(1)
+
+const init = (arr) => arr.slice(0, arr.length - 1)
+
+const last = (arr) => arr[arr.length - 1]
 
 console.log(head([5, 1]))
 console.log(tail([1]))
-console.log(head([1, 5, 7, 9]))
+console.log(init([1, 5, 7, 9]))
 console.log(last([7, 2]))
