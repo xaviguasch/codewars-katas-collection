@@ -22,7 +22,18 @@
 // The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 
 const rowWeights = (array) => {
-  return
+  let team1Weight = 0
+  let team2Weight = 0
+
+  array.forEach((weight, idx) => {
+    if (idx % 2 === 0) {
+      team1Weight += weight
+    } else {
+      team2Weight += weight
+    }
+  })
+
+  return [team1Weight, team2Weight]
 }
 
 console.log(rowWeights([80]))
