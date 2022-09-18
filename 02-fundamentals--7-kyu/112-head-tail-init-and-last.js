@@ -37,3 +37,5 @@ console.log(head([5, 1]))
 console.log(tail([1]))
 console.log(init([1, 5, 7, 9]))
 console.log(last([7, 2]))
+
+// TEST
