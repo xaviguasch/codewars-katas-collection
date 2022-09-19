@@ -73,3 +73,4 @@ n095 - **Padded Numbers** Check alternative solution that doesn't use THAT parti
 n096 - **Caffeine Script** Check alternative more elegant solutions
 n109 - **Divide and Conquer** Check clever alternative solution using array method
 n111 - **Row Weights** Check clever alternative solution using methods
+n113 - **Maximum Product** A redo will be useful
