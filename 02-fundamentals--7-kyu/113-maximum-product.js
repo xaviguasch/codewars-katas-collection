@@ -20,7 +20,15 @@
 // The maximum product obtained from multiplying -2 * 7 = -14, and they're adjacent numbers in the array.
 
 const adjacentElementsProduct = (array) => {
-  return
+  const results = []
+
+  for (let i = 0; i < array.length - 1; i++) {
+    const product = array[i] * array[i + 1]
+
+    results.push(product)
+  }
+
+  return Math.max(...results)
 }
 
 console.log(adjacentElementsProduct([5, 8]))
