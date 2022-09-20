@@ -10,8 +10,6 @@
 
 // Note that you can receive floats as well.
 
-const toNumberArray = (stringarray) => {
-  return
-}
+const toNumberArray = (stringarray) => stringarray.map((str) => Number(str))
 
 console.log(toNumberArray(['1.1', '2.2', '3.3']))
