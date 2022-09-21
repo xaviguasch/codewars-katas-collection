@@ -2,9 +2,7 @@
 
 // spacify("hello world") // returns "h e l l o   w o r l d"
 
-const spacify = (str) => {
-  return
-}
+const spacify = (str) => str.split('').join(' ')
 
 console.log(spacify('hello world'))
 console.log(spacify('12345'))
