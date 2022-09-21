@@ -6,7 +6,11 @@
 // => [6,7]
 
 const largest = (n, xs) => {
-  return
+  const sortedArr = xs.sort((a, b) => a - b)
+
+  if (n === 0) return []
+
+  return sortedArr.slice(-n)
 }
 
 console.log(largest(2, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
