@@ -11,5 +11,3 @@ const removeRotten = (bagOfFruits) => {
 
 console.log(removeRotten(['apple', 'banana', 'kiwi', 'melone', 'orange']))
 console.log(removeRotten([]))
-
-// TESTING
