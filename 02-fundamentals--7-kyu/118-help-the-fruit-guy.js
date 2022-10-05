@@ -6,10 +6,18 @@
 // The returned array should be in lowercase.
 
 const removeRotten = (bagOfFruits) => {
-  return
+  if (!bagOfFruits) return []
+
+  return bagOfFruits.map((fruit) => {
+    if (fruit.includes('rotten')) {
+      const [rottenStr, fruitStr] = fruit.split('rotten')
+      return fruitStr.toLowerCase()
+    } else {
+      return fruit
+    }
+  })
 }
 
 console.log(removeRotten(['apple', 'banana', 'kiwi', 'melone', 'orange']))
 console.log(removeRotten([]))
-
-// testing
+console.log(removeRotten(['apple', 'rottenBanana', 'apple']))
