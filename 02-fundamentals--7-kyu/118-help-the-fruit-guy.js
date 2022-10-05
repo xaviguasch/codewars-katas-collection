@@ -21,3 +21,21 @@ const removeRotten = (bagOfFruits) => {
 console.log(removeRotten(['apple', 'banana', 'kiwi', 'melone', 'orange']))
 console.log(removeRotten([]))
 console.log(removeRotten(['apple', 'rottenBanana', 'apple']))
+
+// ALTERNATIVE SOLUTIONS
+// function removeRotten(arr) {
+//   return arr ? arr.map((x) => x.replace('rotten', '').toLowerCase()) : []
+// }
+
+// function removeRotten(bagOfFruits) {
+//   if (!bagOfFruits) {
+//     return []
+//   }
+
+//   return bagOfFruits.map(function (fruit) {
+//     return fruit.replace('rotten', '').toLowerCase()
+//   })
+// }
+
+// removeRotten = (a) =>
+//   a == null ? [] : a.map((e) => e.replace('rotten', '').toLowerCase())
