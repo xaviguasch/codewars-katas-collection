@@ -28,3 +28,13 @@ console.log(hasUniqueChars('  nAa'))
 console.log(hasUniqueChars('abcdef'))
 console.log(hasUniqueChars('aA'))
 console.log(hasUniqueChars('++-'))
+
+// ALTERNATIVE SOLUTIONS
+
+// let hasUniqueChars = (str) => new Set(str).size === str.length;
+
+// function hasUniqueChars(str) {
+//   return str.split('').every(function (v, i, arr) {
+//     return arr.indexOf(v) === i
+//   })
+// }
