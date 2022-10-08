@@ -3,7 +3,25 @@
 // The string may contain any of the 128 ASCII characters. Characters are case-sensitive, e.g. 'a' and 'A' are considered different characters.
 
 const hasUniqueChars = (str) => {
-  return
+  const charObj = {}
+
+  str.split('').forEach((char) => {
+    if (charObj[char]) {
+      charObj[char] += 1
+    } else {
+      charObj[char] = 1
+    }
+  })
+
+  let isUnique = true
+
+  for (const key in charObj) {
+    if (charObj[key] !== 1) {
+      isUnique = false
+    }
+  }
+
+  return isUnique
 }
 
 console.log(hasUniqueChars('  nAa'))
