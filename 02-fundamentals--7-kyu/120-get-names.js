@@ -17,3 +17,7 @@ function getNames(data) {
 
 console.log(getNames(data))
 // should return ['Joe', 'Bill', 'Kate']
+
+// ALTERNATIVE SOLUTION
+
+// const getNames = (data) => data.map((item) => item.name)
