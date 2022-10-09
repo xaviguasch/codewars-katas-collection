@@ -9,5 +9,11 @@ var data = [
   { name: 'Kate', age: 23 },
 ]
 
+function getNames(data) {
+  return data.map(function (item) {
+    item.name
+  })
+}
+
 console.log(getNames(data))
 // should return ['Joe', 'Bill', 'Kate']
