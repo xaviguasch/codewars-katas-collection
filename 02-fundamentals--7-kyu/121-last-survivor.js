@@ -28,3 +28,19 @@ console.log(lastSurvivor('abc', [1, 1]))
 console.log(lastSurvivor('kbc', [0, 1]))
 console.log(lastSurvivor('zbk', [2, 1]))
 console.log(lastSurvivor('c', []))
+
+// ALTERNATIVE SOLUTIONS
+
+// function lastSurvivor(letters, coords) {
+//   letters = letters.split('');
+//   for (let i = 0; i < coords.length; i++) {
+//      letters.splice(coords[i], 1)
+//   }
+//   return letters.join('')
+// }
+
+// function lastSurvivor(string, indices) {
+//   const arr = [...string];
+//   for (const i of indices) arr.splice(i, 1)
+//   return arr[0];
+// }
