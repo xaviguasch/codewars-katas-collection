@@ -17,7 +17,11 @@
 // There can be duplicate letters and numbers.
 
 const lastSurvivor = (letters, coords) => {
-  return
+  const arr = letters.split('')
+
+  coords.forEach((coord, idx) => arr.splice(coord, 1))
+
+  return arr.join('')
 }
 
 console.log(lastSurvivor('abc', [1, 1]))
