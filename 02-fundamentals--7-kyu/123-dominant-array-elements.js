@@ -12,7 +12,7 @@ const solve = (arr) => {
   return arr.filter((el, idx, origArr) => {
     const newRightArr = origArr.slice(idx + 1)
 
-    return newRightArr.every((newEl) => el > newEl) ? el : null
+    return newRightArr.every((newEl) => el > newEl)
   })
 }
 
@@ -23,6 +23,6 @@ console.log(solve([67, 54, 27, 85, 66, 88, 31, 24, 49]))
 
 // ALTERNATIVE SOLUTIONS
 
-function solve(arr) {
-  return arr.filter((e, i) => arr.slice(i + 1).every((x) => x < e))
-}
+// function solve(arr) {
+//   return arr.filter((e, i) => arr.slice(i + 1).every((x) => x < e))
+// }
