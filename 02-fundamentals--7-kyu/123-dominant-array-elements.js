@@ -9,7 +9,11 @@
 // Good luck!
 
 const solve = (arr) => {
-  return
+  return arr.filter((el, idx, origArr) => {
+    const newRightArr = origArr.slice(idx + 1)
+
+    return newRightArr.every((newEl) => el > newEl) ? el : null
+  })
 }
 
 console.log(solve([16, 17, 14, 3, 14, 5, 2]))
