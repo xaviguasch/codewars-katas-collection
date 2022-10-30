@@ -20,3 +20,9 @@ console.log(solve([16, 17, 14, 3, 14, 5, 2]))
 console.log(solve([92, 52, 93, 31, 89, 87, 77, 105]))
 console.log(solve([75, 47, 42, 56, 13, 55]))
 console.log(solve([67, 54, 27, 85, 66, 88, 31, 24, 49]))
+
+// ALTERNATIVE SOLUTIONS
+
+function solve(arr) {
+  return arr.filter((e, i) => arr.slice(i + 1).every((x) => x < e))
+}
