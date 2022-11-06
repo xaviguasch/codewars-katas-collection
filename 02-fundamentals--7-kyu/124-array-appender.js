@@ -7,9 +7,7 @@
 // ['a','b','c'], [1,2,3]     --> ['a','b','c',1,2,3]
 // [['x','x'],'B'], ['c','D'] --> [['x','x'],'B','c','D']
 
-const appendArrays = (arr1, arr2) => {
-  return
-}
+const appendArrays = (arr1, arr2) => arr1.concat(arr2)
 
 console.log(appendArrays([1, 2], [2, 4]))
 console.log(appendArrays([1, 2], [3, 4]))
