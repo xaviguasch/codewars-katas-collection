@@ -14,3 +14,7 @@ console.log(appendArrays([1, 2], [3, 4]))
 console.log(appendArrays(['this'], ['that']))
 console.log(appendArrays(['a', 'B'], ['c', 'D']))
 console.log(appendArrays([1, 2], [1]))
+
+// ALTERNATIVE SOLUTION
+
+// const appendArrays = (arr1, arr2) => [...arr1, ...arr2];
