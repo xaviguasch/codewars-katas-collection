@@ -17,7 +17,14 @@
 // should produce result: [8, 8, 1, 5, 87, 45]
 
 const loopArr = (arr, direction, steps) => {
-  return
+  let spliced
+  if (direction === 'left') {
+    spliced = arr.splice(0, steps)
+    return arr.concat(spliced)
+  } else if (direction === 'right') {
+    spliced = arr.splice(-steps, steps)
+    return spliced.concat(arr)
+  }
 }
 
 console.log(loopArr([1, 5, 87, 45, 8, 8], 'left', 2))
