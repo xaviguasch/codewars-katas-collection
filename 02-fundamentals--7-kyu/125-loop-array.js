@@ -29,3 +29,22 @@ const loopArr = (arr, direction, steps) => {
 
 console.log(loopArr([1, 5, 87, 45, 8, 8], 'left', 2))
 console.log(loopArr([1, 5, 87, 45, 8, 8], 'right', 2))
+
+// ALTERNATIVE SOLUTIONS
+
+// function loopArr(arr, direction, steps) {
+//   const i = direction == 'left' ? steps : -steps
+//   return arr.slice(i).concat(arr.slice(0, i))
+// }
+
+// function loopArr(arr, direction, steps) {
+//   for (let i = 0; i < steps; i++) {
+//     if (direction === 'right') {
+//       arr.unshift(arr.pop())
+//     }
+//     if (direction === 'left') {
+//       arr.push(arr.shift())
+//     }
+//   }
+//   return arr
+// }
