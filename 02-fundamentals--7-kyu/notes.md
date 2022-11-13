@@ -78,3 +78,4 @@ n116 - **Spacify** Check alternative solution, you should be able to do it both 
 n118 - **Help the Fruit Guy** Check more optimal alternative solution
 n119 - **All Unique** Check alternative solutions, much more elegant
 n121 - **Last Survivor** Check alternative solutions
+n125 - **Loop Array** Check more elegant alternative solutions
