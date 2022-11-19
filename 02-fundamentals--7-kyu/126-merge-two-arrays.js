@@ -28,3 +28,31 @@ console.log(mergeArrays([2, 5, 8, 23, 67, 6], ['b', 'r', 'a', 'u', 'r', 's']))
 console.log(
   mergeArrays(['b', 'r', 'a', 'u', 'r', 's', 'e', 'q', 'z'], [2, 5, 8, 23, 67, 6])
 )
+
+// ADDED ALTERNATIVE SOLUTIONS
+
+// function mergeArrays(a, b) {
+//   // your code here
+//   var returnArray = []
+//   var counter = 0
+//   while (a[counter] || b[counter]) {
+//     if (a[counter]) {
+//       returnArray.push(a[counter])
+//     }
+//     if (b[counter]) {
+//       returnArray.push(b[counter])
+//     }
+//     counter++
+//   }
+//   return returnArray
+// }
+
+// function mergeArrays(a, b) {
+//   let j = [],
+//     longest = a.length > b.length ? a : b
+//   for (var i = 0; i < longest.length; i++) {
+//     if (a[i]) j.push(a[i])
+//     if (b[i]) j.push(b[i])
+//   }
+//   return j
+// }
