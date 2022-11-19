@@ -79,3 +79,5 @@ n118 - **Help the Fruit Guy** Check more optimal alternative solution
 n119 - **All Unique** Check alternative solutions, much more elegant
 n121 - **Last Survivor** Check alternative solutions
 n125 - **Loop Array** Check more elegant alternative solutions
+
+n126 - **Merge Two Arrays** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
