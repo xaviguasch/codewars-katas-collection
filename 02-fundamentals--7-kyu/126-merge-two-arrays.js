@@ -11,7 +11,15 @@
 // One array will be of string characters (in lower case, a-z), a second of integers (all positive starting at 1).
 
 const mergeArrays = (a, b) => {
-  return
+  const maxLength = Math.max(a.length, b.length)
+  let result = []
+
+  for (let i = 0; i < maxLength; i++) {
+    result.push(a[i])
+    result.push(b[i])
+  }
+
+  return result.filter((value) => value !== undefined)
 }
 
 console.log(mergeArrays([1, 2, 3, 4, 5, 6, 7, 8], ['a', 'b', 'c', 'd', 'e']))
