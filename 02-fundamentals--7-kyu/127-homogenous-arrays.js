@@ -15,7 +15,10 @@
 // No implicit type casting is allowed. A subarray [1, '2'] would be considered illegal and should be filtered out.
 
 const filterHomogenous = (arrays) => {
-  return
+  return arrays.filter(
+    (innerArr) =>
+      innerArr.length > 0 && innerArr.every((el) => typeof el === typeof innerArr[0])
+  )
 }
 
 console.log(filterHomogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]]))
