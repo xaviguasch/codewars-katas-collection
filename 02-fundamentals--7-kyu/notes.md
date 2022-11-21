@@ -81,3 +81,5 @@ n121 - **Last Survivor** Check alternative solutions
 n125 - **Loop Array** Check more elegant alternative solutions
 
 n126 - **Merge Two Arrays** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
+
+n127 - **Homogenous Arrays** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
