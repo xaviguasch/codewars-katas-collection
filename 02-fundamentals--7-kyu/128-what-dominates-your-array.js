@@ -27,3 +27,52 @@ console.log(dominator([3, 4, 3, 2, 3, 1, 3, 3]))
 console.log(dominator([1, 2, 3, 4, 5]))
 console.log(dominator([1, 1, 1, 2, 2, 2]))
 console.log(dominator([1, 1, 1, 2, 2, 2, 2]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function dominator(arr) {
+//   arr.sort()
+//   for (var i = 0, v = 0, c = 0; i < arr.length; i++) {
+//     if (v == arr[i]) c++
+//     else {
+//       v = arr[i]
+//       c = 1
+//     }
+//     if (c > arr.length / 2) return v
+//   }
+//   return -1
+// }
+
+// function dominator(arr) {
+//   for (let i = 0, obj = {}; i < arr.length; i++) {
+//     obj[arr[i]] = obj[arr[i]] + 1 || 1
+//     if (obj[arr[i]] > arr.length / 2) return arr[i]
+//   }
+//   return -1
+// }
+
+// const dominator = (arr) => {
+//   let count = {}
+//   arr.forEach((el) => {
+//     count[el] ? count[el]++ : (count[el] = 1)
+//   })
+//   for (let k in count) {
+//     if (count[k] > arr.length / 2) return +k
+//   }
+//   return -1
+// }
+
+// const dominator = function (arr) {
+//   const dic = arr.reduce((a, i) => ((a[i] = a[i] + 1 || 1), a), {})
+//   for (const i in dic) {
+//     if (dic[i] > arr.length / 2) {
+//       return Number(i)
+//     }
+//   }
+//   return -1
+// }
+
+// const dominator = (arr) =>
+//   ((obj) => arr.find((val) => obj[val] > arr.length / 2) || -1)(
+//     arr.reduce((pre, val) => ((pre[val] = -~pre[val]), pre), {})
+//   )
