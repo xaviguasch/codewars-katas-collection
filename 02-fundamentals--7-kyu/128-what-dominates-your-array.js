@@ -4,7 +4,23 @@
 // Write a function dominator(arr) that, given a zero-indexed array arr consisting of n integers, returns the dominator of arr. The function should return −1 if array does not have a dominator. All values in arr will be >=0.
 
 const dominator = (arr) => {
-  return
+  const objResults = {}
+
+  arr.forEach((el) => {
+    if (objResults[el]) {
+      objResults[el] += 1
+    } else {
+      objResults[el] = 1
+    }
+  })
+
+  for (const num in objResults) {
+    if (objResults[num] > arr.length / 2) {
+      return Number(num)
+    }
+  }
+
+  return -1
 }
 
 console.log(dominator([3, 4, 3, 2, 3, 1, 3, 3]))
