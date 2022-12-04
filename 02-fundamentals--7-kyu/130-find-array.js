@@ -15,8 +15,14 @@
 // If either arr1 or arr2 is empty, you should return an empty arr (empty list in python, empty vector in c++). Note for c++ use std::vector arr1, arr2.
 
 const findArray = (arr1, arr2) => {
-  return
+  if (arr1.length === 0 || arr2.length === 0) {
+    return []
+  }
+  return arr2.map((el) => arr1[el])
 }
+
+console.log(findArray(['a', 'a', 'a', 'a', 'a'], [2, 4]))
+console.log(findArray([0, 1, 5, 2, 1, 8, 9, 1, 5], [1, 4, 7]))
 
 console.log(findArray([1, 2, 3], []))
 console.log(findArray([], [2, 1, 3]))
