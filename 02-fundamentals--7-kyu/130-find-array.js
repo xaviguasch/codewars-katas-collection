@@ -27,3 +27,8 @@ console.log(findArray([0, 1, 5, 2, 1, 8, 9, 1, 5], [1, 4, 7]))
 console.log(findArray([1, 2, 3], []))
 console.log(findArray([], [2, 1, 3]))
 console.log(findArray([], []))
+
+// ALTERNATIVE SOLUTIONS
+
+// const findArray = (arr1, arr2) =>
+//   arr2.filter((val) => val < arr1.length).map((val) => arr1[val])
