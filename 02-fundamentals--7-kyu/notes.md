@@ -84,3 +84,5 @@ n126 - **Merge Two Arrays** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated
 
 n127 - **Homogenous Arrays** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
 n128 - **What dominates your array** Check other solutions, not sure on which one is more optimal in time complexity
+
+n129 - **Sum all the arrays** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
