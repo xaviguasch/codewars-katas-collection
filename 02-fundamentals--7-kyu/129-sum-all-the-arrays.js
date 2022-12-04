@@ -5,7 +5,10 @@
 // Ignore all other types of values.
 
 const arraySum = (arr) => {
-  return
+  return arr.reduce(
+    (acc, currV) =>
+      acc + (Array.isArray(currV) ? arraySum(currV) : isNaN(currV) ? 0 : currV)
+  )
 }
 
 console.log(arraySum([1, 2]))
