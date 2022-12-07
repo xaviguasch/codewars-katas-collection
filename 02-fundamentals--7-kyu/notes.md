@@ -90,3 +90,4 @@ n130 - **Find Array** Check out other clever solutions
 n131 - **Ultimate Array Reverser** Check out more elegant alternative solution
 n132 - **Array element parity** Check out very clever and more optimal alternative solutions
 n133 - **Is every value in the array an array?** Check out alternative solution with weirder syntax
+n134 - **Multiply the strings in the array** Check alternative solutions with better grammar
