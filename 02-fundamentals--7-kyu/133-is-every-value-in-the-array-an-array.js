@@ -9,9 +9,7 @@
 // ['1','2'] => false
 // [{1:1},{2:2}] => false
 
-const arrCheck = (value) => {
-  return
-}
+const arrCheck = (arr) => arr.every((val) => Array.isArray(val))
 
 console.log(arrCheck([]))
 console.log(arrCheck([['string']]))
