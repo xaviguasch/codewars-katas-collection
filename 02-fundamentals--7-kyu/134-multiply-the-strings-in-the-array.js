@@ -3,7 +3,8 @@
 // arrMultiply(['9','6']) should return '54'
 
 const arrMultiply = (arr) => {
-  return
+  const resultInNums = Number(arr[0]) * Number(arr[1])
+  return resultInNums.toString()
 }
 
 console.log(arrMultiply(['4', '5']))
