@@ -16,9 +16,7 @@
 
 // Good luck!
 
-const solve = (arr) => {
-  return
-}
+const solve = (arr) => arr.filter((val) => !arr.includes(-val))[0]
 
 console.log(solve([1, -1, 2, -2, 3]))
 console.log(solve([-3, 1, 2, 3, -1, -4, -2]))
