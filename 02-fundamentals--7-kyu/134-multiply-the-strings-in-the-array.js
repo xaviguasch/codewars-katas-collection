@@ -10,3 +10,19 @@ const arrMultiply = (arr) => {
 console.log(arrMultiply(['4', '5']))
 console.log(arrMultiply(['2', '-5']))
 console.log(arrMultiply(['9', '0']))
+
+// ALTERNATIVE SOLUTIONS
+
+// let arrMultiply = ([a, b]) => '' + a * b
+
+// const arrMultiply = ([a, b]) => `${a * b}`
+
+// const arrMultiply = (arr) => `${arr[0] * arr[1]}`
+
+// const arrMultiply = (a) => String(a[0] * a[1])
+
+// const arrMultiply = (arr) => '' + eval(arr.join('*'))
+
+// function arrMultiply([a, b]) {
+//   return a * b + ''
+// }
