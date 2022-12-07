@@ -88,3 +88,4 @@ n128 - **What dominates your array** Check other solutions, not sure on which on
 n129 - **Sum all the arrays** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
 n130 - **Find Array** Check out other clever solutions
 n131 - **Ultimate Array Reverser** Check out more elegant alternative solution
+n132 - **Array element parity** Check out very clever and more optimal alternative solutions
