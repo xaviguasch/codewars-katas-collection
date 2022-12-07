@@ -89,3 +89,4 @@ n129 - **Sum all the arrays** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicat
 n130 - **Find Array** Check out other clever solutions
 n131 - **Ultimate Array Reverser** Check out more elegant alternative solution
 n132 - **Array element parity** Check out very clever and more optimal alternative solutions
+n133 - **Is every value in the array an array?** Check out alternative solution with weirder syntax
