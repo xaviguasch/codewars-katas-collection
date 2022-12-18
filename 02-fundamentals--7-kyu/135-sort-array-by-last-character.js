@@ -12,7 +12,7 @@
 // If two elements don't differ in the last character, then they should be sorted by the order they come in the array.
 
 const sortMe = (arr) => {
-  return
+  return arr.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
 }
 
 console.log(sortMe(['acvd', 'bcc']))
