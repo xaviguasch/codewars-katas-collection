@@ -7,3 +7,11 @@
 
 // var arr = [10, 28, 14, 33];
 // arr.sum(); //returns 85
+Array.prototype.sum = function () {
+  return this.reduce((acc, currV) => acc + currV, 0)
+}
+
+var arr = [1, 2, 3, 4]
+arr.sum() //returns 10
+
+console.log(arr.sum())
