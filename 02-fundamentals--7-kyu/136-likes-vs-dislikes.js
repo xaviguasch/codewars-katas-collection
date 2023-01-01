@@ -13,9 +13,22 @@
 // Notes
 // If no button is currently active, return Nothing.
 // If the list is empty, return Nothing.
+const Nothing = 'Nothing'
+const Like = 'like'
+const Dislike = 'dislike'
 
 const likeOrDislike = (buttons) => {
-  return
+  let currentState = Nothing
+
+  buttons.forEach((action) => {
+    if (action !== currentState) {
+      currentState = action
+    } else {
+      currentState = Nothing
+    }
+  })
+
+  return currentState
 }
 
 console.log(likeOrDislike([Dislike]))
