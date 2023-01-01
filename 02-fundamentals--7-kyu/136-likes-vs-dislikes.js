@@ -35,3 +35,8 @@ console.log(likeOrDislike([Dislike]))
 console.log(likeOrDislike([Like, Like]))
 console.log(likeOrDislike([Dislike, Like]))
 console.log(likeOrDislike([Like, Dislike, Dislike]))
+
+// ALTERNATIVE SOLUTIONS
+// function likeOrDislike(buttons) {
+//   return buttons.reduce((state, button) => (button === state ? Nothing : button), Nothing)
+// }
