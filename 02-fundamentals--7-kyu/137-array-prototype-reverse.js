@@ -8,8 +8,16 @@
 // input.reverse(); // == [4, 3, 2, 1]  // returned by .reverse()
 // input;           // == [4, 3, 2, 1]  // items reordered in the original array
 
-const protoReverse = (arr) => {
-  return
+Array.prototype.reverse = function () {
+  var arr = this.splice(0)
+
+  while (arr.length) {
+    this.push(arr.pop())
+  }
+
+  return this
 }
 
-console.log(protoReverse([1, 2, 3, 4]))
+var input = [1, 2, 3, 4]
+input.reverse()
+console.log(input)
