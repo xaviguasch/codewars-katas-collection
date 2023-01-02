@@ -92,3 +92,5 @@ n132 - **Array element parity** Check out very clever and more optimal alternati
 n133 - **Is every value in the array an array?** Check out alternative solution with weirder syntax
 n134 - **Multiply the strings in the array** Check alternative solutions with better grammar
 n136 - **Likes vs Dislikes** Check alternative clever solution
+
+n127 - **Array.prototype.reverse()** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
