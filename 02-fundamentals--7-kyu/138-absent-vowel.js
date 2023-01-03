@@ -12,7 +12,17 @@
 // "Bb Smith sent us six neatly arranged range bicycles"  =>  3  ; missing: "o"
 
 const absentVowel = (x) => {
-  return
+  var vowels = 'aeiou'
+  // loop through the vowels
+  // make them lowercase (as there may be uppercase in the string)
+  // find the index of the vowels and subtract 1.
+  // this will find the zero indexed number.
+  // return that number.
+  for (let i = 0; i <= vowels.length; i++) {
+    if (x.toLowerCase().indexOf(vowels[i]) == -1) {
+      return Number(i)
+    }
+  }
 }
 
 console.log(absentVowel('John Doe hs seven red pples under his bsket'))
