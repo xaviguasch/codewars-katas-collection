@@ -93,4 +93,6 @@ n133 - **Is every value in the array an array?** Check out alternative solution 
 n134 - **Multiply the strings in the array** Check alternative solutions with better grammar
 n136 - **Likes vs Dislikes** Check alternative clever solution
 
-n127 - **Array.prototype.reverse()** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
+n137 - **Array.prototype.reverse()** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
+
+n138 - **Absent Vowel** DIDN'T SOLVED IT AT FIRST TRY!!! Very tricky, worth trying it again
