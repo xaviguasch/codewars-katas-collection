@@ -27,3 +27,18 @@ const absentVowel = (x) => {
 
 console.log(absentVowel('John Doe hs seven red pples under his bsket'))
 console.log(absentVowel('Bb Smith sent us six neatly arranged range bicycles'))
+
+// ALTERNATIVE SOLUTIONS
+
+// const absentVowel = (string) =>
+//   [...'aeiou'].findIndex((letter) => !string.includes(letter))
+
+// function absentVowel(x) {
+//   return ['a', 'e', 'i', 'o', 'u'].findIndex((v) => !x.includes(v))
+// }
+
+// const absentVowel = x => {
+//   for(var v in 'aeiou')
+//     if(x.indexOf('aeiou'[v])==-1)
+//       return +v
+// }
