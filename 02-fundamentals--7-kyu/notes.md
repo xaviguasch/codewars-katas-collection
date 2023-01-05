@@ -96,3 +96,4 @@ n136 - **Likes vs Dislikes** Check alternative clever solution
 n137 - **Array.prototype.reverse()** DIDN'T SOLVED IT AT FIRST TRY!!!!! Quite complicated, try again.
 
 n138 - **Absent Vowel** DIDN'T SOLVED IT AT FIRST TRY!!! Very tricky, worth trying it again
+n139 - **Numbers to Letters** You can check other solutions, but not a superinteresting challenge
