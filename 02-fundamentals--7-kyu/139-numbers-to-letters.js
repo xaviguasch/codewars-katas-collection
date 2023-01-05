@@ -57,3 +57,10 @@ console.log(
   switcher(['25', '7', '8', '4', '14', '23', '8', '25', '23', '29', '16', '16', '4'])
 )
 console.log(switcher(['4', '24']))
+
+// ALTERNATIVE SOLUTIONS
+
+// const alpha = ' zyxwvutsrqponmlkjihgfedcba!? '
+// const switcher = x => x.map(item => alpha[item]).join('')
+
+// const switcher=x=>x.reduce((a,b)=>a+" ?!abcdefghijklmnopqrstuvwxyz"[29-b],"")
