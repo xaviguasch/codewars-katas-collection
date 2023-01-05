@@ -3,7 +3,53 @@
 // All inputs will be valid.
 
 const switcher = (x) => {
-  return
+  const alphabet = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
+  ]
+
+  const reversedAlphabet = alphabet.reverse()
+
+  const numbers = x.map((n) => Number(n))
+
+  const finalArr = numbers.map((num) => {
+    if (num === 27) {
+      return '!'
+    } else if (num === 28) {
+      return '?'
+    } else if (num === 29) {
+      const emptyStr = ' '
+      return emptyStr
+    } else {
+      return alphabet[num - 1]
+    }
+  })
+
+  return finalArr.join('')
 }
 
 console.log(switcher(['24', '12', '23', '22', '4', '26', '9', '8']))
