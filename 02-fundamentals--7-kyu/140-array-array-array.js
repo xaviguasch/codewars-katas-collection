@@ -39,3 +39,15 @@ const explode = (x) => {
 // console.log(explode([6, 'c']))
 // console.log(explode(['a', 'b']))
 // console.log(explode(['a', 0]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function explode(x){
+//   let [a,b] = x;
+
+//   if(typeof a == "number" && typeof b == "number") return new Array(a+b).fill(x);
+//   else if(typeof a == "number") return new Array(a).fill(x);
+//   else if(typeof b == "number") return new Array(b).fill(x);
+
+//   return 'Void!';
+// }
