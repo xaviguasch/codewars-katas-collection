@@ -4,9 +4,7 @@
 // returns true  / True if array is empty.
 // returns false / False for every other input.
 
-function isIntArray(arr) {
-  return true
-}
+function isIntArray(arr) {}
 
 console.log(isIntArray([]))
 console.log(isIntArray([1, 2, 3, 4]))

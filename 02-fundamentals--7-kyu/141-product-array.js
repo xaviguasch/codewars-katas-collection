@@ -36,10 +36,22 @@
 // Finally ,The Fifth element 900 is the product of all array's elements except the fifth element 2
 
 const productArray = (numbers) => {
-  return
+  return numbers.map((num, idx) => {
+    let result = 1
+    for (let i = 0; i < numbers.length; i++) {
+      if (idx === i) {
+        continue
+      }
+
+      result *= numbers[i]
+    }
+
+    return result
+  })
 }
 
 console.log(productArray([12, 20]))
 console.log(productArray([3, 27, 4, 2]))
 console.log(productArray([13, 10, 5, 2, 9]))
 console.log(productArray([16, 17, 4, 3, 5, 2]))
+console.log(productArray([]))
