@@ -55,3 +55,19 @@ console.log(productArray([3, 27, 4, 2]))
 console.log(productArray([13, 10, 5, 2, 9]))
 console.log(productArray([16, 17, 4, 3, 5, 2]))
 console.log(productArray([]))
+
+// ALTERNATIVE SOLUTIONS
+// function productArray(numbers){
+//   return numbers.map(x => numbers.reduce((a,b) => a * b) / x)
+// }
+
+// function productArray(numbers){
+//   let newarr = [];
+//   let mult = numbers.reduce((a, b) => a * b);
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     newarr.push(mult/numbers[i]);
+//   }
+
+//   return newarr;
+// }

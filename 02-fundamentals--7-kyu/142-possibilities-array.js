@@ -8,7 +8,11 @@
 // a includes [0,3] ,hence the function should return true
 
 const isAllPossibilities = (x) => {
-  return
+  let output = x.length > 0
+  for (let i = 0; i < x.length; i++) {
+    if (!x.includes(i)) output = false
+  }
+  return output
 }
 
 console.log(isAllPossibilities([0, 1, 2, 3])) // true
