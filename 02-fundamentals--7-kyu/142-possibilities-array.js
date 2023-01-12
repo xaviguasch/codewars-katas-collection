@@ -17,3 +17,14 @@ const isAllPossibilities = (x) => {
 
 console.log(isAllPossibilities([0, 1, 2, 3])) // true
 console.log(isAllPossibilities([1, 2, 3, 4])) // false
+
+// ALTERNATIVE SOLUTIONS
+
+// function isAllPossibilities(x) {
+//   return x.length > 0 ? x.every((a, i) => x.includes(i)) : false
+// }
+
+// function isAllPossibilities(array) {
+//   const [first, ...rest] = array.slice().sort()
+//   return first === 0 && rest.every((n, i) => n === i + 1)
+// }
