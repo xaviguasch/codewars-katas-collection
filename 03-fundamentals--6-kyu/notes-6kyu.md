@@ -12,3 +12,5 @@ n011 - **Closures and Scopes** Very important interview question! You must expla
 n012 - **Simple Pig Latin** DIDN'T SOLVE IT ON FIRST TRY, an edge case that needed Regex. Solved the main functionality, though
 
 n013 - **Your order, please** DIDN'T SOLVE IT ON FIRST TRY, re-do it again. Quite tricky! Don't use Regex
+
+n015 - **Is Integer Array** DIDN'T SOLVE IT ON FIRST TRY, main solution is to confusing, check the alternative ones.
