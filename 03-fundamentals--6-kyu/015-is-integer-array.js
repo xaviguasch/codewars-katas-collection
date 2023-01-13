@@ -32,3 +32,24 @@ function isIntArray(arr) {
 console.log(isIntArray([]))
 console.log(isIntArray([1, 2, 3, 4]))
 console.log(isIntArray([1, 2, 3, NaN]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function isIntArray(arr) {
+//   return (
+//     Array.isArray(arr) &&
+//     arr.every(function (x) {
+//       return Math.floor(x) === x
+//     })
+//   )
+// }
+
+// let isIntArray = (arr) => !!arr && arr.every(Number.isInteger)
+
+// function isIntArray(arr) {
+//   if (!Array.isArray(arr)) return false
+//   for (i = 0; i < arr.length; i++) {
+//     if (!Number.isInteger(arr[i])) return false
+//   }
+//   return true
+// }
