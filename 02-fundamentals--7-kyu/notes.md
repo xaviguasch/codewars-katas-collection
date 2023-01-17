@@ -101,3 +101,5 @@ n140 - **Array, Array, Array** Check out alternative solution, very nice pattern
 n141 - **Product Array, array series #5** I don't really understand the alt solution, explore further
 
 n142 - **Possibilities Array** DIDN'T SOLVED IT AT FIRST TRY!!! Weird edge case, worth trying again
+
+n143 - **Find the missing element between two arrays** Check out clever solution using reduce
