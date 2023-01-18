@@ -47,3 +47,27 @@ console.log(
   ])
 )
 console.log(getLengthOfMissingArray([]))
+
+// ALTERNATIVE SOLUTIONS
+
+// function getLengthOfMissingArray(arr) {
+//   return !arr ||
+//     (ar = arr.map((x, i) => (x ? x.length : 0)).sort((a, b) => a - b)).indexOf(0) > -1
+//     ? 0
+//     : ar.filter((x, i) => x != i + ar[0]).concat([1])[0] - 1
+// }
+
+// function getLengthOfMissingArray(arrayOfArrays) {
+//   let newArr = (arrayOfArrays || []).map((a) => (a ? a.length : 0)).sort((a, b) => a - b)
+
+//   if (newArr.includes(0)) {
+//     return 0
+//   }
+//   console.log(newArr)
+//   for (let i = 0; i < newArr.length; i++) {
+//     if (newArr[i + 1] - newArr[i] > 1) {
+//       return newArr[i] + 1
+//     }
+//   }
+//   return 0
+// }
