@@ -10,7 +10,25 @@
 // findInArray([1,3,5,6,7], trueIfEven) // should === 3
 
 const findInArray = (array, iterator) => {
-  return
+  for (let i = 0; i < array.length; i++) {
+    if (iterator(array[i], i)) {
+      return i
+    }
+  }
+
+  return -1
+}
+
+const trueIfEven = (value, index) => {
+  return value % 2 === 0
+}
+
+const neverTrue = (value, index) => {
+  return value === value * 2
+}
+
+const trueIfValueEqualsIndex = (value, index) => {
+  return value === index
 }
 
 console.log(findInArray([], trueIfEven))
