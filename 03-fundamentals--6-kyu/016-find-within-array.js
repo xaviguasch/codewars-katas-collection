@@ -36,3 +36,15 @@ console.log(findInArray([1, 3, 5, 6, 7], trueIfEven))
 console.log(findInArray([2, 4, 6, 8], trueIfEven))
 console.log(findInArray([2, 4, 6, 8], neverTrue))
 console.log(findInArray([13, 5, 3, 1, 4, 5], trueIfValueEqualsIndex))
+
+// ALTERNATIVE SOLUTIONS
+
+// const findInArray = (array, iterator) => array.findIndex(iterator)
+
+// var findInArray = function(array, iterator) {
+//   return array.map(iterator).indexOf(true);
+// };
+
+// var findInArray = function(array, iterator) {
+//   return array.indexOf(array.find(iterator));
+// };
