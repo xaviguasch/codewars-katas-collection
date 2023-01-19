@@ -16,3 +16,4 @@ n013 - **Your order, please** DIDN'T SOLVE IT ON FIRST TRY, re-do it again. Quit
 n014 - **Length of missing array** DIDN'T SOLVE IT ON FIRST TRY, solution was working for the examples, but it didn't pass the edge cases. You need to study the given solution
 
 n015 - **Is Integer Array** DIDN'T SOLVE IT ON FIRST TRY, main solution is to confusing, check the alternative ones.
+n016 - **Find within array** Check alternative much more simpler solutions. They might be interesting
