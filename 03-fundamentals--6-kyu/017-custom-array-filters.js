@@ -18,11 +18,10 @@
 
 Array.prototype.even = function () {
   return this.filter((num) => num % 2 === 0)
-  // ...
 }
 
 Array.prototype.odd = function () {
-  // ...
+  return this.filter((num) => num % 2 !== 0)
 }
 
 Array.prototype.under = function (x) {
@@ -37,6 +36,6 @@ Array.prototype.inRange = function (min, max) {
   // ...
 }
 
-console.log([1, 2, 3, 4, 5].even())
-// console.log([1, 2, 3, 4, 5].odd())
+// console.log([1, 2, 3, 4, 5].even())
+console.log([1, 2, 3, 4, 5].odd())
 // console.log([1, 2, 3, 4, 5].under(4))
