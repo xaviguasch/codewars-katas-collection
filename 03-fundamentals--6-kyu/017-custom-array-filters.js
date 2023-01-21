@@ -29,6 +29,7 @@ Array.prototype.under = function (x) {
 }
 
 Array.prototype.over = function (x) {
+  return this.filter((num) => num > x)
   // ...
 }
 
@@ -38,6 +39,6 @@ Array.prototype.inRange = function (min, max) {
 
 // console.log([1, 2, 3, 4, 5].even())
 // console.log([1, 2, 3, 4, 5].odd())
-console.log([1, 2, 3, 4, 5].under(4))
-// console.log([1, 2, 3, 4, 5].over(4))
+// console.log([1, 2, 3, 4, 5].under(4))
+console.log([1, 2, 3, 4, 5].over(4))
 // console.log([1, 2, 3, 4, 5].inRange(1,3))
