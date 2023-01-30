@@ -17,28 +17,32 @@
 // Note: List with non-numbers will be tested as well.
 
 Array.prototype.even = function () {
-  return this.filter((num) => num % 2 === 0)
+  return this.filter(
+    (v) => v % 2 === 0 && typeof v === 'number' && v !== 0 && Number.isInteger(v)
+  )
 }
 
 Array.prototype.odd = function () {
-  return this.filter((num) => num % 2 !== 0)
+  return this.filter((v) => v % 2 !== 0 && typeof v === 'number' && Number.isInteger(v))
 }
 
 Array.prototype.under = function (x) {
-  return this.filter((num) => num < x)
+  return this.filter((v) => v < x && typeof v === 'number' && Number.isInteger(v))
 }
 
 Array.prototype.over = function (x) {
-  return this.filter((num) => num > x)
-  // ...
+  return this.filter((v) => v > x && typeof v === 'number' && Number.isInteger(v))
 }
 
 Array.prototype.inRange = function (min, max) {
-  // ...
+  return this.filter(
+    (v) => v >= min && v <= max && typeof v === 'number' && Number.isInteger(v)
+  )
 }
 
-// console.log([1, 2, 3, 4, 5].even())
-// console.log([1, 2, 3, 4, 5].odd())
-// console.log([1, 2, 3, 4, 5].under(4))
+console.log([1, 2, 3, 4, 5].even())
+console.log([1, 2, 3, 4, 5].odd())
+console.log([1, 2, 3, 4, 5].under(4))
 console.log([1, 2, 3, 4, 5].over(4))
-// console.log([1, 2, 3, 4, 5].inRange(1,3))
+console.log([1, 2, 3, 4, 5].inRange(1, 3))
+console.log([1, 2, 18, 19, 20, 21, 22, 30, 40, 50, 100].even().inRange(18, 30))
