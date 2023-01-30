@@ -17,3 +17,5 @@ n014 - **Length of missing array** DIDN'T SOLVE IT ON FIRST TRY, solution was wo
 
 n015 - **Is Integer Array** DIDN'T SOLVE IT ON FIRST TRY, main solution is to confusing, check the alternative ones.
 n016 - **Find within array** Check alternative much more simpler solutions. They might be interesting
+
+n021 - **Custom Array Filters** DIDN'T SOLVE IT ON FIRST TRY, Original solution was right but didn't pass due to a couple of weird edge cases. Try again!!!!
